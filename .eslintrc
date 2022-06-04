@@ -1,0 +1,84 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "React": true,
+    "JSX": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "@remix-run/eslint-config",
+    "@remix-run/eslint-config/node",
+    "@remix-run/eslint-config/jest",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:markdown/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "autofix",
+    "react",
+    "@typescript-eslint",
+    "unused-imports",
+    "markdown"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "autofix/no-debugger": "error",
+    "autofix/no-unused-vars": "error",
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-throw-literal": ["off"],
+    "arrow-body-style": ["error", "always"],
+    "comma-dangle": ["error", "only-multiline"],
+    "import/no-cycle": "off",
+    "import/named": "error",
+    "import/prefer-default-export": "off",
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unescaped-entities": "off",
+    "react/require-default-props": "off",
+    "import/order": [
+      "warn",
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": [
+          "external",
+          ["index", "sibling", "parent"],
+          "internal",
+          ["type", "unknown", "object"]
+        ],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "group": "object",
+            "pattern": "*.css",
+            "patternOptions": { "matchBase": true },
+            "position": "after"
+          },
+          {
+            "group": "object",
+            "pattern": "*.svg",
+            "patternOptions": { "matchBase": true },
+            "position": "after"
+          }
+        ],
+        "warnOnUnassignedImports": true
+      }
+    ]
+  }
+}

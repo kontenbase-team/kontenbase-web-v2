@@ -1,0 +1,94 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.words": [
+    "classx",
+    "convertkit",
+    "posthog",
+    "splitbee",
+    "stylelint",
+    "urql",
+    "usehooks",
+    "vechaiui"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "jsx",
+    "typescriptreact": "jsx"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorerExclude.backup": null,
+  "files.exclude": {
+    ".cache": true,
+    ".vercel": false,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    "api/index.js.map": true,
+    "build": true,
+    "node_modules": true,
+    "out": true,
+    "package-lock.json": true,
+    "public/build": true
+  },
+  "peacock.color": "38bdf8",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#69cdfa",
+    "activityBar.activeBorder": "#f708ad",
+    "activityBar.background": "#69cdfa",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#f708ad",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#69cdfa",
+    "statusBar.background": "#38bdf8",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#09acf4",
+    "statusBarItem.remoteBackground": "#38bdf8",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#38bdf8",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#38bdf899",
+    "titleBar.inactiveForeground": "#15202b99"
+  }
+}

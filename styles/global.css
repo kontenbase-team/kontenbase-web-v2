@@ -1,0 +1,539 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EDITME */
+
+/**
+ * CSS Variables
+ */
+
+:root {
+  --font-primary: "Archivo";
+  --font-secondary: "Archivo";
+  --font-tertiary: "Archivo";
+}
+
+/**
+ * Tailwind CSS Base
+ */
+
+@layer base {
+  html {
+    @apply font-primary;
+
+    /* https://css-tricks.com/custom-tailwind-css/#aa-webkit-tap-highlight-color */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply scroll-smooth transition duration-200;
+    @apply selection:bg-primary-500/20 selection:text-primary-900;
+    @apply dark:selection:bg-primary-500/20 dark:selection:text-primary-100;
+  }
+
+  header {
+    @apply header;
+  }
+
+  header p {
+    @apply text-lg;
+  }
+
+  header a {
+    @apply prose-a-styles;
+  }
+
+  .h0 {
+    @apply mb-10 text-6xl font-black sm:text-8xl;
+  }
+
+  h1,
+  .h1 {
+    @apply mb-8 text-4xl font-bold sm:text-5xl;
+  }
+
+  h2,
+  .h2 {
+    @apply my-6 text-2xl font-bold sm:text-3xl;
+  }
+
+  h3,
+  .h3 {
+    @apply my-3 text-xl font-semibold sm:text-2xl;
+  }
+
+  h4,
+  .h4 {
+    @apply my-2 font-semibold sm:text-lg;
+  }
+
+  p a,
+  .a {
+    @apply font-bold no-underline;
+  }
+
+  a:focus-visible {
+    @apply focus-ring;
+  }
+
+  a:focus {
+    @apply outline-none;
+  }
+
+  a.btn,
+  a.button {
+    @apply no-underline;
+  }
+
+  input,
+  textarea {
+    @apply caret-primary-500;
+  }
+}
+
+/**
+ * Tailwind CSS Components
+ */
+
+@layer components {
+  /**
+   * Layout
+   */
+  .layout {
+    @apply flex min-h-screen flex-col;
+  }
+
+  .layout-container {
+    @apply mx-auto min-h-[420px] w-full flex-[1] px-4;
+  }
+
+  .layout-center {
+    @apply flex flex-[1] justify-center;
+  }
+
+  .layout-main {
+    @apply mt-10 w-full;
+  }
+
+  .layout-main.small {
+    @apply max-w-screen-sm;
+  }
+
+  .layout-main.medium {
+    @apply max-w-screen-lg;
+  }
+
+  .layout-main.large {
+    @apply max-w-screen-xl;
+  }
+
+  .layout-main.full {
+    @apply mt-0;
+  }
+
+  /**
+   * Example
+   */
+
+  .example {
+    @apply my-20 space-y-5;
+  }
+
+  .example-box {
+    @apply border border-primary-500;
+  }
+
+  /**
+   * Skip Link
+   */
+
+  .skip-link {
+    clip: rect(1px, 1px, 1px, 1px);
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 1px;
+    z-index: 999;
+  }
+
+  .skip-link:focus {
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    width: auto;
+  }
+
+  /**
+   * Header
+   */
+
+  .header {
+    @apply mt-10 mb-20;
+  }
+
+  .header-center {
+    @apply header flex flex-col items-center text-center;
+  }
+
+  /**
+   * Footer
+   */
+
+  .footer {
+    @apply mt-32;
+  }
+
+  .footer-common {
+    @apply flex justify-center;
+  }
+
+  .footer-complex {
+    @apply bg-secondary border-secondary border-t;
+  }
+
+  /**
+   * Special Case Button
+   * When Vechai UI is not available
+   */
+
+  .button {
+    @apply focus-ring inline-block rounded border px-3 py-2 font-bold;
+  }
+
+  .button.solid {
+    @apply bg-white text-black;
+  }
+
+  /**
+   * Vechai UI
+   */
+
+  .btn {
+    @apply focus-ring font-bold;
+  }
+
+  .alert-close-button:focus-visible {
+    @apply focus-ring;
+  }
+
+  /**
+   * Navigation Bar
+   * Navigation Link in Navigation Bar
+   */
+
+  .navigation-bar {
+    @apply sticky top-0 z-10 w-full flex-none select-none p-2 md:p-4;
+    @apply border-b border-transparent;
+  }
+
+  .navigation-bar-scrolled {
+    @apply bg-secondary-blur border-secondary;
+  }
+
+  .navlink {
+    @apply leading-tight;
+    @apply hover:bg-primary-100 dark:hover:bg-primary-800;
+  }
+
+  .navlink-size {
+    @apply px-3 py-2;
+  }
+
+  .navlink-active {
+    @apply bg-primary-100 text-primary-500 dark:bg-neutral-900;
+  }
+
+  .navlink-focus {
+    @apply focus:bg-primary-100 dark:focus:bg-neutral-900;
+  }
+
+  /**
+   * Stack
+   * Similar with Chakra UI
+   */
+
+  .stack {
+    @apply flex justify-start;
+  }
+
+  .stack-v {
+    @apply stack flex-col;
+  }
+
+  .stack-h {
+    @apply stack flex-row;
+  }
+
+  /**
+   * Headless UI - Menu
+   */
+
+  /**
+   * Similar with `navlink` but without `hover` selector
+   * Because Menu.Item has `active` props to handle the hover/selected state
+   */
+  .navlink-menu-active {
+    @apply bg-primary-200 dark:bg-primary-900;
+  }
+
+  .tab-pill {
+    @apply cursor-base whitespace-nowrap font-bold;
+    @apply flex items-center justify-center;
+    @apply -mb-px h-10 px-4 py-2 text-center focus:outline-none;
+    @apply inline-block flex-shrink-0 rounded-md;
+    @apply bg-transparent text-neutral-600;
+    @apply hover:text-neutral-900;
+    @apply selected:bg-primary-200 selected:text-primary-900;
+    @apply dark:bg-transparent dark:text-neutral-400;
+    @apply dark:hover:text-neutral-100;
+    @apply dark:selected:bg-primary-700 dark:selected:text-primary-100;
+  }
+
+  /**
+   * Radix UI - Navigation Menu
+   */
+
+  .nav-menu-root > div {
+    @apply flex;
+  }
+
+  .nav-menu-content-children {
+    @apply w-[30rem] p-3;
+  }
+
+  .nav-menu-link {
+    @apply navlink rounded-base px-3 py-2 font-bold;
+  }
+
+  /**
+   * Radix UI - Dropdown Menu
+   */
+
+  .dropdown-menu-item {
+    @apply px-3 py-2;
+    @apply focus:bg-primary-100 dark:focus:bg-primary-900;
+  }
+
+  .dropdown-menu-icon {
+    @apply mr-2 h-3.5 w-3.5;
+  }
+
+  /**
+   * Radix UI - Scroll Area
+   */
+
+  .scroll-area-corner {
+    @apply bg-primary-800/20;
+  }
+
+  .scroll-area-scrollbar {
+    @apply flex touch-none select-none bg-primary-800/20 p-[2px] transition-all duration-200 ease-out hover:bg-primary-800/30;
+  }
+
+  .scroll-area-scrollbar[data-orientation="vertical"] {
+    @apply w-3;
+  }
+
+  .scroll-area-scrollbar[data-orientation="horizontal"] {
+    @apply h-3 flex-col;
+  }
+
+  .scroll-area-thumb {
+    @apply relative flex-1 cursor-pointer rounded-base bg-primary-900;
+  }
+
+  .scroll-area-thumb::before {
+    content: "";
+    @apply absolute top-1/2 left-1/2 h-full min-h-[50px] w-full min-w-[50px] translate-x-1/2 translate-y-1/2;
+  }
+
+  /**
+   * PrismJS Code Highlight
+   */
+
+  .code-highlight {
+    @apply my-4 overflow-scroll p-2 text-left;
+  }
+
+  .code-highlight .token-line {
+    line-height: 1.3em;
+    height: 1.3em;
+  }
+
+  .code-highlight > div {
+    display: table-row;
+  }
+
+  .code-highlight .line-no {
+    display: table-cell;
+    text-align: right;
+    padding-right: 1em;
+    user-select: none;
+    opacity: 0.5;
+  }
+
+  .code-highlight .line-content {
+    display: table-cell;
+  }
+
+  .code-highlight .line-content .tag {
+    cursor: auto;
+    display: unset;
+  }
+}
+
+/**
+ * Tailwind CSS Utilities
+ */
+
+@layer utilities {
+  .font-primary {
+    font-family: var(--font-primary), ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji", sans-serif;
+  }
+
+  .font-secondary {
+    font-family: var(--font-secondary), sans-serif;
+  }
+
+  .font-tertiary {
+    font-family: var(--font-tertiary), sans-serif;
+  }
+
+  .focus-ring {
+    @apply outline-none ring-offset-2 focus:ring-1;
+    @apply ring-offset-primary-400/80 focus:ring-primary-400/80;
+    @apply dark:ring-offset-primary-500/80 dark:focus:ring-primary-500/80;
+  }
+
+  /* Background */
+
+  .bg-primary {
+    @apply bg-neutral-50 dark:bg-neutral-900;
+  }
+
+  .bg-primary-transparent {
+    @apply bg-neutral-500/80 dark:bg-neutral-900/80;
+  }
+
+  .bg-secondary {
+    @apply bg-neutral-50 dark:bg-neutral-800;
+    @apply dark:border-neutral-50/[0.06];
+  }
+
+  .bg-secondary-blur {
+    @apply bg-neutral-50/90 dark:bg-neutral-800/90;
+    @apply backdrop-blur;
+  }
+
+  .bg-separator {
+    @apply bg-neutral-200 dark:bg-neutral-700;
+  }
+
+  .bg-focusable {
+    @apply rounded-base p-2;
+    @apply hover:bg-neutral-200/80 hover:dark:bg-neutral-800/20;
+    @apply focus:bg-primary-100/80 focus:dark:bg-primary-900/20;
+  }
+
+  /* Shadow */
+
+  .shadow-primary {
+    @apply shadow-xl shadow-neutral-900/10 dark:shadow-neutral-900;
+  }
+
+  /* Border */
+
+  .border-secondary {
+    @apply border-neutral-200 dark:border-neutral-200/5;
+  }
+
+  /* Panel */
+
+  .bg-panel {
+    @apply bg-white dark:bg-neutral-800;
+  }
+
+  .shadow-panel {
+    @apply shadow-xl;
+  }
+
+  .border-panel {
+    @apply border border-neutral-300 dark:border-neutral-700;
+  }
+
+  /* Prose */
+
+  .prose-config {
+    @apply prose dark:prose-invert md:prose-lg;
+    @apply prose-a:prose-a-styles;
+    @apply prose-ul:prose-ul-styles;
+    @apply prose-img:m-0;
+  }
+
+  .prose-config.extralarge {
+    @apply lg:prose-xl;
+  }
+
+  .prose-ul-styles {
+    @apply space-y-3 pl-5 marker:text-primary-500;
+  }
+
+  /* Relate to text-underline-left-right */
+  .prose-a-styles {
+    @apply text-underline-left-right font-bold no-underline;
+    @apply text-primary-500 dark:text-primary-300;
+    @apply visited:text-primary-700 visited:dark:text-primary-500;
+  }
+
+  /* Relate to prose-a-styles */
+  .text-underline-left-right {
+    @apply after:bg-primary-500 dark:after:bg-primary-300;
+    @apply after:-bottom-0.5 after:left-0 after:h-[2px];
+    @apply relative after:absolute after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-in-out hover:after:origin-bottom-left hover:after:scale-x-100;
+  }
+
+  .text-shimmer {
+    @apply animate-text-shimmer bg-[length:250%_100%] bg-clip-text text-transparent;
+  }
+
+  .text-shimmer.bg-gradient-primary {
+    @apply bg-gradient-to-br from-primary-200 via-primary-500 to-primary-800;
+  }
+
+  .text-shimmer.bg-gradient-glossy {
+    @apply bg-[linear-gradient(110deg,#e2e8f0,45%,#1e293b,55%,#e2e8f0)];
+  }
+
+  .text-inherit {
+    font-size: inherit;
+  }
+
+  .text-dim {
+    @apply text-neutral-600 dark:text-neutral-400;
+  }
+
+  .container-low a {
+    @apply text-underline-left-right;
+  }
+
+  .container-high a {
+    @apply prose-a-styles;
+  }
+
+  .ul-checklist {
+    @apply list-disc space-y-2 pl-3 marker:text-primary-500;
+  }
+
+  /* https://css-tricks.com/custom-tailwind-css/#aa-envsafe-area-inset-bottom */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
