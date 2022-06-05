@@ -1,7 +1,7 @@
 {
-  "name": "Rewinds",
-  "short_name": "Rewinds",
-  "description": "Remix Tailwind Starter Kit",
+  "name": "Kontenbase",
+  "short_name": "Kontenbase",
+  "description": "No code backend API",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -9,12 +9,12 @@
       "type": "image/png"
     },
     {
-      "src": "/favicons/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "src": "/favicons/android-chrome-384x384.png",
+      "sizes": "384x384",
       "type": "image/png"
     }
   ],
-  "theme_color": "#38bef8",
+  "theme_color": "#b22222",
   "background_color": "#ffffff",
   "orientation": "portrait-primary",
   "display": "standalone"

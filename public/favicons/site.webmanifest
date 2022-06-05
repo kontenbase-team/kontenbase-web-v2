@@ -1,0 +1,20 @@
+{
+  "name": "Kontenbase",
+  "short_name": "Kontenbase",
+  "theme_color": "#e54d2e",
+  "background_color": "#e54d2e",
+  "start_url": "https://kontenbase.com",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png?v=1",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-384x384.png?v=1",
+      "sizes": "384x384",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone"
+}
