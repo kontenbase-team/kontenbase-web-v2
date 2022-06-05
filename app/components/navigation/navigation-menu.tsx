@@ -41,6 +41,11 @@ export const NavigationBarNavMenu = () => {
         <NavigationMenuItem>
           <NavigationMenuNavLink to="/contact">Contact</NavigationMenuNavLink>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuNavLink to="/subscribe">
+            Subscribe
+          </NavigationMenuNavLink>
+        </NavigationMenuItem>
 
         <NavigationMenuItem>
           <NavigationMenuAnchor href="https://docs.kontenbase.com">

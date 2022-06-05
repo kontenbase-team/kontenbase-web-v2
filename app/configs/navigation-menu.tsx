@@ -1,6 +1,6 @@
 import { FileIcon } from "@radix-ui/react-icons";
 
-import { configNavigationPages } from "~/configs";
+import { configNavigationHome, configNavigationPages } from "~/configs";
 
 import type { RadixDropdownMenuItems } from "~/types";
 
@@ -12,11 +12,13 @@ import type { RadixDropdownMenuItems } from "~/types";
  * Because these are more complicated with shortcut and icon
  */
 
-export const configNavigationDropdownMenuItems: RadixDropdownMenuItems =
-  configNavigationPages.map((item, index) => {
-    return {
-      ...item,
-      shortcut: `⌘+${index + 1}`,
-      icon: <FileIcon className="dropdown-menu-icon" />,
-    };
-  });
+export const configNavigationDropdownMenuItems: RadixDropdownMenuItems = [
+  configNavigationHome,
+  ...configNavigationPages,
+].map((item, index) => {
+  return {
+    ...item,
+    shortcut: `⌘+${index + 1}`,
+    icon: <FileIcon className="dropdown-menu-icon" />,
+  };
+});

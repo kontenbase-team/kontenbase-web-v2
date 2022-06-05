@@ -16,12 +16,11 @@ import type {
 export const configNavigationHome: LinkItem = { to: "/", text: "Home" };
 
 export const configNavigationPages: LinkItems = [
-  { to: "/about", text: "About" },
-  { to: "/contact", text: "Contact" },
   { to: "/pricing", text: "Pricing" },
   { to: "/blog", text: "Blog" },
-  { to: "/jobs", text: "Jobs" },
-  // { to: "/subscribe", text: "Subscribe" },
+  { to: "/about", text: "About" },
+  { to: "/contact", text: "Contact" },
+  { to: "/subscribe", text: "Subscribe" },
 ];
 
 export const configNavigationAuth: AnchorItems = [
