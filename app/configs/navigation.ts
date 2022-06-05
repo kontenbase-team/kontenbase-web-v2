@@ -63,15 +63,13 @@ export const configNavigationDocs: AnchorItems = [
 ];
 
 export const configNavigationFeatures1: LinkItems = [
-  { to: "/features/1", text: "1" },
-  { to: "/features/2", text: "2" },
-  { to: "/features/3", text: "3" },
+  { to: "/features/api-sdk", text: "Database to API & SDK" },
+  { to: "/features/auth", text: "Authentication & Authorization" },
 ];
 
 export const configNavigationFeatures2: LinkItems = [
-  { to: "/features/4", text: "4" },
-  { to: "/features/5", text: "5" },
-  { to: "/features/6", text: "6" },
+  { to: "/features/storage", text: "Object Storage" },
+  { to: "/features/real-time", text: "Real-Time" },
 ];
 
 export const configNavigationFeatures: LinkItems = [

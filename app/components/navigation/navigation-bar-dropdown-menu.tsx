@@ -4,6 +4,7 @@ import { CaretRightIcon, FileIcon } from "@radix-ui/react-icons";
 
 import { Anchor, RemixLink, VechaiIcon } from "~/components";
 import {
+  configNavigationDocs,
   configNavigationDropdownMenuItems,
   configNavigationExamples,
   configNavigationFeatures,
@@ -92,6 +93,22 @@ export const NavigationBarDropdownMenu = () => {
             </DropdownMenuTriggerItem>
             <DropdownMenuSubContent>
               {configNavigationExamples.map(({ href, text }) => {
+                return (
+                  <Anchor key={href} href={href}>
+                    <DropdownMenuItem>{text}</DropdownMenuItem>
+                  </Anchor>
+                );
+              })}
+            </DropdownMenuSubContent>
+          </DropdownMenu.Root>
+
+          <DropdownMenu.Root>
+            <DropdownMenuTriggerItem>
+              <FileIcon className="dropdown-menu-icon" />
+              <span className="flex-grow">Docs</span>
+            </DropdownMenuTriggerItem>
+            <DropdownMenuSubContent>
+              {configNavigationDocs.map(({ href, text }) => {
                 return (
                   <Anchor key={href} href={href}>
                     <DropdownMenuItem>{text}</DropdownMenuItem>
