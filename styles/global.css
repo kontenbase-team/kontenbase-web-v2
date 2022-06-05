@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* EDITME */
-
 /**
  * CSS Variables
  */
 
 :root {
-  --font-primary: "Archivo";
-  --font-secondary: "Archivo";
-  --font-tertiary: "Archivo";
+  --font-primary: "Poppins";
+  --font-secondary: "Poppins";
+  --font-tertiary: "Poppins";
 }
 
 /**
@@ -45,7 +43,7 @@
   }
 
   .h0 {
-    @apply mb-10 text-6xl font-black sm:text-8xl;
+    @apply mb-10 text-6xl font-bold sm:text-8xl;
   }
 
   h1,

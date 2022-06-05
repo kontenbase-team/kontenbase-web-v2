@@ -12,13 +12,10 @@ export const PricingContent = () => {
   const [symbol, setCurrency] = useState<CurrencySymbol>("USD");
 
   const currencies: Currencies = [
-    { symbol: "USD", name: "$ US Dollar" },
-    { symbol: "EUR", name: "€ Euro" },
-    { symbol: "GBP", name: "£ British Pound" },
-    { symbol: "CAD", name: "$ Canadian Dollar" },
-    { symbol: "SGD", name: "$ Singapore Dollar" },
-    { symbol: "MYR", name: "RM Malaysian Ringgit" },
-    { symbol: "IDR", name: "Rp Indonesian Rupiah" },
+    { symbol: "USD", name: "$ USD" },
+    { symbol: "IDR", name: "Rp IDR" },
+    { symbol: "MYR", name: "RM MYR" },
+    { symbol: "SGD", name: "$ SGD" },
   ];
 
   const changeCurrency = (currencySymbol: CurrencySymbol) => {
@@ -27,7 +24,7 @@ export const PricingContent = () => {
 
   return (
     <div className="stack-v items-center gap-10">
-      <ButtonGroup className="justify-center">
+      <ButtonGroup attached className="justify-center">
         {currencies.map((item) => {
           return (
             <Button

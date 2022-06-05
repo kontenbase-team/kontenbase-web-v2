@@ -130,7 +130,7 @@ export const MessageBackReloadButtons = ({
     return (
       <ButtonGroup>
         <ButtonLink variant="solid" to="/">
-          Back to home page
+          Back to home
         </ButtonLink>
         <Button onClick={handleBackToPrevious}>Back to previous page</Button>
         <Button onClick={handleReload}>Reload page</Button>

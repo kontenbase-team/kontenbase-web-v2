@@ -1,18 +1,16 @@
-import { LogoSpan, RemixLink } from "~/components";
-import { classx } from "~/utils";
-
-// EDITME
 export const HomeIntro = () => {
   return (
     <header>
-      <h1 className="tracking-tighter">
-        <LogoSpan className={classx("bg-gradient-primary", "text-shimmer")} />
-        <span>— Remix Tailwind Starter Kit</span>
+      <h1 className="flex flex-wrap">
+        <span>
+          <span className="text-primary-500">No Code</span>
+          <span> Backend API,</span>
+        </span>
+        <span>Fast and Easy!</span>
       </h1>
       <p>
-        Rewinds is a Remix starter kit with Tailwind family of libraries. You
-        can read more on <RemixLink to="/about">the about page</RemixLink>.
-        Below are the quick examples on the UI components.
+        Kontenbase allows you to easily create backend API, auth, and storage in
+        less than one minute without coding.
       </p>
     </header>
   );

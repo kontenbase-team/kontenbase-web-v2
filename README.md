@@ -1,20 +1,21 @@
-# ⏪ Rewinds — Remix Tailwind Starter Kit
+# Kontenbase Web v2
 
 ![tailwindcss v3](https://img.shields.io/badge/tailwindcss-v3-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)
 
-Rewinds is a Remix starter kit with Tailwind CSS v3 family of libraries. This is an example demo to combine the best Tailwind-related ecosystem such as Tailwind CSS, Headless UI, Radix UI, Reach UI, Vechai UI, and more.
+Kontenbase marketing website v2 based on [Rewinds](https://rewinds.mhaidarhanif.com), a Remix starter kit.
 
-Visit the live demo: [rewinds.mhaidarhanif.com](https://rewinds.mhaidarhanif.com)
+Visit the website:
 
-> Note that this repo is ongoing active development so thing might quickly change at the moment.
+- [kontenbase.com](https://kontenbase.com)
+- [v2.kontenbase.com](https://v2.kontenbase.com)
 
 ## Screenshots
 
 <div style="max-width: 720px;">
 
-[![Home Light](public/assets/screenshots/home-light.png)](https://rewinds.mhaidarhanif.com)
+[![Homepage](public/assets/screenshots/home-light.png)](https://kontenbase.com)
 
-[![Home Dark](public/assets/screenshots/home-dark.png)](https://rewinds.mhaidarhanif.com)
+[![Homepage](public/assets/screenshots/home-dark.png)](https://kontenbase.com)
 
 </div>
 
@@ -145,8 +146,6 @@ npm run start
 ### Project structure
 
 Keep in mind that the structure is designed for scalability for medium-large project. If your project scope is too simple or too small, Rewinds might be a bit too much to handle.
-
-> There are also some code you can customize with your own branding by editing all the things that commented with `EDITME` (Use Search in your editor) and other things like `site.webmanifest`.
 
 - `.vscode`
 - `api`
