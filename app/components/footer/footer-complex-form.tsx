@@ -1,4 +1,4 @@
-import { Anchor, Button, FormControl, FormLabel, Input } from "~/components";
+import { Button, FormControl, FormLabel, Input } from "~/components";
 import { configMeta, configStyle } from "~/configs";
 import { convertkitSubscribeClient } from "~/features";
 import { useEffect, useForm, useNotification, useState } from "~/hooks";
@@ -69,12 +69,7 @@ export const FooterComplexFormSubscribe = () => {
     <>
       <div className="col-span-2 space-y-2">
         <h2 className="m-0 text-2xl font-bold">Get some updates</h2>
-        <p className="max-w-[53ch]">
-          {configMeta.description} made by{" "}
-          <Anchor className="whitespace-nowrap" href={configMeta.author.url}>
-            {configMeta.author.name}
-          </Anchor>
-        </p>
+        <p className="max-w-[53ch]">{configMeta.description}</p>
       </div>
 
       <div className="col-span-2 sm:col-span-3 lg:flex lg:items-center">

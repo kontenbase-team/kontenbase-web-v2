@@ -14,38 +14,33 @@ import type { ExternalLinkItems } from "~/types";
 
 export const configExternalLinks: ExternalLinkItems = [
   {
+    slug: "github",
     name: "GitHub",
-    url: "https://a.mhaidarhanif.com/github",
+    url: "https://a.kontenbase.com/github",
     isEnabled: true,
   },
   {
+    slug: "twitter",
     name: "Twitter",
-    url: "https://a.mhaidarhanif.com/twitter",
+    url: "https://a.kontenbase.com/twitter",
     isEnabled: true,
   },
   {
+    slug: "youtube",
     name: "YouTube",
-    url: "https://a.mhaidarhanif.com/youtube",
+    url: "https://a.kontenbase.com/youtube",
     isEnabled: true,
   },
   {
-    name: "Dev",
-    url: "https://a.mhaidarhanif.com/devto",
-    isEnabled: true,
-  },
-  {
-    name: "Medium",
-    url: "https://a.mhaidarhanif.com/medium",
-    isEnabled: false,
-  },
-  {
+    slug: "discord",
     name: "Discord",
-    url: "https://a.mhaidarhanif.com/discord",
-    isEnabled: false,
+    url: "https://a.kontenbase.com/discord",
+    isEnabled: true,
   },
   {
-    name: "Telegram",
-    url: "https://a.mhaidarhanif.com/telegram",
-    isEnabled: false,
+    slug: "producthunt",
+    name: "Product Hunt",
+    url: "https://a.kontenbase.com/producthunt",
+    isEnabled: true,
   },
 ];

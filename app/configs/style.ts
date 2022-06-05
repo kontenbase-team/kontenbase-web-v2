@@ -7,7 +7,7 @@ import type { IToast, SpecifiedTheme } from "~/types";
 
 export const configStyle: ConfigStyle = {
   theme: {
-    colorScheme: "day",
+    colorScheme: "fire",
     density: "comfortable",
     radius: "0.375rem",
     cursorPointer: true,

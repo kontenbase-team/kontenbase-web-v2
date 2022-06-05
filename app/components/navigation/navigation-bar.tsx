@@ -9,7 +9,7 @@ import {
   NavigationBarDropdownMenu,
 } from "~/components";
 import { configStyle, configNavigationBarLinks } from "~/configs";
-import { classx, packageJson } from "~/utils";
+import { classx } from "~/utils";
 
 export const NavigationBar = () => {
   return (
@@ -49,7 +49,7 @@ export const NavigationBar = () => {
 };
 
 export const NavigationBarLogo = () => {
-  const badgeText = `v${packageJson.version}`;
+  const badgeText = `Alpha`;
 
   return (
     <div className="flex items-center gap-2">
@@ -59,7 +59,11 @@ export const NavigationBarLogo = () => {
       >
         <Logo />
       </RemixLink>
-      <Badge className="hidden xs:flex" color="primary" variant="solid">
+      <Badge
+        className="hidden font-bold uppercase tracking-wide xs:flex"
+        color="primary"
+        variant="solid"
+      >
         {badgeText}
       </Badge>
     </div>
@@ -88,18 +92,11 @@ export const NavigationBarAuth = () => {
   return (
     <div id="navigation-bar-auth" className="space-x-2">
       <RemixLink
-        to="/signin"
-        className="btn btn-md btn-light"
-        data-color="primary"
-      >
-        Sign in
-      </RemixLink>
-      <RemixLink
         to="/signup"
         className="btn-solid btn btn-md"
         data-color="primary"
       >
-        Sign up
+        Start for Free
       </RemixLink>
     </div>
   );

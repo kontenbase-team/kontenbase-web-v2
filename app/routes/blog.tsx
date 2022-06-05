@@ -34,7 +34,7 @@ export const loader: LoaderFunction = async () => {
 export const meta: MetaFunction = () => {
   return createMetaData({
     title: `Blog`,
-    description: `Articles from Rewinds around UI, UX, styling, CSS, design system, and more.`,
+    description: `Articles from Kontenbase around UI, UX, styling, CSS, design system, and more.`,
   });
 };
 

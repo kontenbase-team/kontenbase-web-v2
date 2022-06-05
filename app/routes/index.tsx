@@ -1,11 +1,4 @@
-import {
-  ExampleAlerts,
-  ExampleButtons,
-  ExampleForms,
-  ExampleNotifications,
-  ExampleToasts,
-  HomeIntro,
-} from "~/contents";
+import { HomeIntro } from "~/contents";
 import { Layout } from "~/layouts";
 
 import type { SEOHandle } from "~/types";
@@ -21,11 +14,6 @@ export default function Index() {
     <Layout>
       <article className="divide space-y-20 divide-y-2 divide-primary-100 dark:divide-primary-900">
         <HomeIntro />
-        <ExampleButtons />
-        <ExampleForms />
-        <ExampleAlerts />
-        <ExampleToasts />
-        <ExampleNotifications />
       </article>
     </Layout>
   );

@@ -7,7 +7,7 @@ type ButtonLinkProps = ButtonProps & LinkProps;
 
 export const ButtonLink = ({
   to,
-  size,
+  size = "md",
   children,
   color = "primary",
   variant = "solid",

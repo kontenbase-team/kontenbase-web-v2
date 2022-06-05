@@ -14,14 +14,7 @@ export type DateTime = string | number | Date | null | undefined | dayjs.Dayjs;
 
 export type Locale = string | "en" | "fr";
 
-export type CurrencySymbol =
-  | "USD"
-  | "EUR"
-  | "GBP"
-  | "CAD"
-  | "SGD"
-  | "MYR"
-  | "IDR";
+export type CurrencySymbol = "USD" | "EUR" | "SGD" | "MYR" | "IDR";
 
 export type Currency = {
   symbol: CurrencySymbol;
@@ -38,7 +31,14 @@ export type LinkItem = {
   isEnabled?: boolean;
 };
 
+export type AnchorItem = {
+  href: string;
+  text: string;
+  isEnabled?: boolean;
+};
+
 export type ExternalLinkItem = {
+  slug: string;
   name: string;
   url: string;
   isEnabled?: boolean;
@@ -84,5 +84,6 @@ export type Booleans = Array<boolean>;
 export type Currencies = Array<Currency>;
 export type TextItems = Array<TextItem>;
 export type LinkItems = Array<LinkItem>;
+export type AnchorItems = Array<AnchorItem>;
 export type ExternalLinkItems = Array<ExternalLinkItem>;
 export type Articles = Array<Article>;

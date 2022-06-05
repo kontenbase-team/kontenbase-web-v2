@@ -21,7 +21,7 @@ export const handle: SEOHandle = {
 export const meta: MetaFunction = () => {
   return createMetaData({
     title: `Subscribe`,
-    description: `Get some updates from Rewinds via email.`,
+    description: `Get some updates from Kontenbase via email.`,
   });
 };
 
@@ -29,7 +29,6 @@ export const loader: LoaderFunction = loaderSubscribe;
 
 export const action: ActionFunction = actionSubscribe;
 
-// EDITME
 export default function Subscribe() {
   const transition = useTransition();
   const actionData = useActionData();
@@ -39,8 +38,8 @@ export default function Subscribe() {
       <header className="header-center">
         <h1>Subscribe</h1>
         <h2>
-          <Anchor href="https://twitter.com/mhaidarhanif">
-            Follow the updates on <b>Rewinds</b>
+          <Anchor href="https://twitter.com/kontenbase">
+            Follow the updates on <b>Kontenbase</b>
           </Anchor>
         </h2>
       </header>

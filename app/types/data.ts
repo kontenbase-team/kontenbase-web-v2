@@ -1,11 +1,4 @@
-import type {
-  Article,
-  Articles,
-  LinkItems,
-  StackItems,
-  Strings,
-  TextItems,
-} from "~/types";
+import type { Article, Articles, Strings } from "~/types";
 import type { getEnv } from "~/utils";
 
 /**
@@ -22,13 +15,6 @@ export type LoaderDataSession = {
 
 export type LoaderDataAbout = {
   features: Strings;
-  mainStacks: StackItems;
-  referenceStacks: StackItems;
-};
-
-export type LoaderDataExamples = {
-  examples: LinkItems;
-  utilities: TextItems;
 };
 
 export type LoaderDataBlog = {

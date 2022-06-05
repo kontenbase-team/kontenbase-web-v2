@@ -1,28 +1,13 @@
-import { Layout } from "~/layouts";
-import { createMetaData } from "~/utils";
+import { redirect } from "@remix-run/node";
 
-import type { SEOHandle, MetaFunction } from "~/types";
+import type { SEOHandle, LoaderFunction } from "~/types";
 
 export const handle: SEOHandle = {
   getSitemapEntries: () => {
-    return [{ route: `/signup`, priority: 0.8 }];
+    return null;
   },
 };
 
-export const meta: MetaFunction = () => {
-  return createMetaData({
-    title: `Create your new Rewinds account`,
-    description: `Sign up to have a new Rewinds account.`,
-  });
+export const loader: LoaderFunction = async () => {
+  return redirect("https://app.kontenbase.com");
 };
-
-export default function SignUp() {
-  return (
-    <Layout>
-      <header className="header-center">
-        <h1>Create a new account</h1>
-        <p>The ultimate account for Rewinds</p>
-      </header>
-    </Layout>
-  );
-}

@@ -1,4 +1,9 @@
-import type { ConfigNavigation, LinkItem, LinkItems } from "~/types";
+import type {
+  AnchorItems,
+  ConfigNavigation,
+  LinkItem,
+  LinkItems,
+} from "~/types";
 
 /**
  * Config Navigation Links
@@ -12,68 +17,67 @@ export const configNavigationHome: LinkItem = { to: "/", text: "Home" };
 
 export const configNavigationPages: LinkItems = [
   { to: "/about", text: "About" },
-  { to: "/blog", text: "Blog" },
-  { to: "/search", text: "Search" },
-  { to: "/subscribe", text: "Subscribe" },
+  { to: "/contact", text: "Contact" },
   { to: "/pricing", text: "Pricing" },
-];
-
-export const configNavigationAuth: LinkItems = [
-  { to: "/signup", text: "Sign up" },
-  { to: "/signin", text: "Sign in" },
-  { to: "/signout", text: "Sign out" },
-];
-
-export const configNavigationEducation: LinkItems = [
-  { to: "/learn", text: "Learn" },
-  { to: "/tracks", text: "Tracks" },
-  { to: "/members", text: "Members" },
-  { to: "/projects", text: "Projects" },
-  { to: "/discussions", text: "Discussions" },
-];
-
-export const configNavigationCareer: LinkItems = [
-  { to: "/work", text: "Work" },
-  { to: "/companies", text: "Companies" },
+  { to: "/blog", text: "Blog" },
   { to: "/jobs", text: "Jobs" },
-  { to: "/freelance", text: "Freelance" },
+  // { to: "/subscribe", text: "Subscribe" },
 ];
 
-export const configNavigationExamples1: LinkItems = [
-  { to: "/examples", text: "Examples" },
-  { to: "/examples/alert", text: "Alert" },
-  { to: "/examples/badge", text: "Badge" },
-  { to: "/examples/button", text: "Button" },
-  { to: "/examples/code-highlight", text: "Code Highlight" },
-  { to: "/examples/dialog", text: "Dialog" },
-  { to: "/examples/menu", text: "Menu" },
-  { to: "/examples/dropdown-menu", text: "Dropdown Menu" },
-  { to: "/examples/footer", text: "Footer" },
-  { to: "/examples/form", text: "Form" },
-  { to: "/examples/navigation-menu", text: "Navigation Menu" },
-  { to: "/examples/notification", text: "Notification" },
-  { to: "/examples/toast", text: "Toast" },
-  { to: "/examples/tab", text: "Tab" },
+export const configNavigationAuth: AnchorItems = [
+  { href: "https://app.kontenbase.com", text: "Sign up" },
+  { href: "https://app.kontenbase.com", text: "Sign in" },
 ];
 
-export const configNavigationExamples2: LinkItems = [
-  { to: "/examples/graphql", text: "GraphQL" },
-  { to: "/examples/rest", text: "REST API" },
-  { to: "/examples/catch", text: "Catch" },
-  { to: "/examples/error", text: "Error" },
-  { to: "/examples/debug", text: "Debug" },
+export const configNavigationExamples: AnchorItems = [
+  {
+    href: "https://talk.ink",
+    text: "Talk.ink",
+  },
+  {
+    href: "https://writter.kontenbase.com",
+    text: "Writter",
+  },
+  {
+    href: "https://medeet.kontenbase.com",
+    text: "Medeet",
+  },
 ];
 
-export const configNavigationExamples: LinkItems = [
-  ...configNavigationExamples1,
-  ...configNavigationExamples2,
+export const configNavigationDocs: AnchorItems = [
+  {
+    href: "https://docs.kontenbase.com",
+    text: "Overview",
+  },
+  {
+    href: "https://docs.kontenbase.com/overview/getting-started",
+    text: "Getting Started",
+  },
+  {
+    href: "https://docs.kontenbase.com/overview/data-types",
+    text: "Data Types",
+  },
+  {
+    href: "https://docs.kontenbase.com/overview/sdk",
+    text: "SDK",
+  },
 ];
 
-export const configNavigationLayouts: LinkItems = [
-  { to: "/layouts/common", text: "Common" },
-  { to: "/layouts/full", text: "Full" },
-  { to: "/layouts/wide", text: "Wide" },
-  { to: "/layouts/boundary", text: "Boundary" },
+export const configNavigationFeatures1: LinkItems = [
+  { to: "/features/1", text: "1" },
+  { to: "/features/2", text: "2" },
+  { to: "/features/3", text: "3" },
+];
+
+export const configNavigationFeatures2: LinkItems = [
+  { to: "/features/4", text: "4" },
+  { to: "/features/5", text: "5" },
+  { to: "/features/6", text: "6" },
+];
+
+export const configNavigationFeatures: LinkItems = [
+  ...configNavigationFeatures1,
+  ...configNavigationFeatures2,
 ];
 
 /**
@@ -87,8 +91,8 @@ export const configNavigationLayouts: LinkItems = [
 export const configNavigationBarLinks: LinkItems = [
   configNavigationHome,
   ...configNavigationPages,
-  ...configNavigationExamples1,
-  ...configNavigationExamples2,
+  ...configNavigationFeatures1,
+  ...configNavigationFeatures2,
   // In large screen, the auth links are as buttons
 ];
 
@@ -124,19 +128,19 @@ export const configNavigationSitemap: ConfigNavigation = [
     links: [configNavigationHome, ...configNavigationPages],
   },
   {
-    name: "Account",
-    links: [...configNavigationAuth],
-  },
-  {
-    name: "Education",
-    links: [...configNavigationEducation],
-  },
-  {
-    name: "Career",
-    links: [...configNavigationCareer],
+    name: "Features",
+    links: [...configNavigationFeatures1, ...configNavigationFeatures2],
   },
   {
     name: "Examples",
-    links: [...configNavigationExamples1, ...configNavigationExamples2],
+    anchors: [...configNavigationExamples],
+  },
+  {
+    name: "Docs",
+    anchors: [...configNavigationDocs],
+  },
+  {
+    name: "Account",
+    anchors: [...configNavigationAuth],
   },
 ];

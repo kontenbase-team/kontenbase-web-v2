@@ -13,7 +13,6 @@ export const AllArticles = gql`
         url(
           transformation: {
             image: { resize: { width: 500, height: 300, fit: clip } }
-            document: { output: { format: jpg } }
             validateOptions: true
           }
         )
@@ -38,7 +37,6 @@ export const OneArticleBySlug = gql`
         url(
           transformation: {
             image: { resize: { width: 1200, height: 600, fit: clip } }
-            document: { output: { format: jpg } }
             validateOptions: true
           }
         )

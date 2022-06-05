@@ -12,7 +12,7 @@ import type {
 } from "~/types";
 
 const currentDate = Date.now();
-const expiryInDays = 30;
+const expiryInDays = 120;
 const expiryInSeconds = dateFns.daysToSeconds(expiryInDays);
 const expiryDate = dateFns.addDays(currentDate, expiryInDays);
 
@@ -24,7 +24,7 @@ export const { getSession, commitSession, destroySession } =
       name: "__session",
 
       // all of these are optional
-      // domain: "mhaidarhanif.com",
+      // domain: "kontenbase.com",
       maxAge: expiryInSeconds, // precede `expires`
       expires: expiryDate,
       httpOnly: true,

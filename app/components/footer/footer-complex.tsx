@@ -1,4 +1,5 @@
 import {
+  Anchor,
   ExternalLinks,
   FooterComplexFormSubscribe,
   FooterCopyrightText,
@@ -34,7 +35,7 @@ export const FooterComplex = () => {
             <FooterComplexSitemap />
           </div>
         </div>
-        <div className="mt-12 border-t border-primary-300 pt-8 dark:border-primary-900">
+        <div className="mt-12 pt-8">
           <FooterComplexBottomTexts />
         </div>
       </div>
@@ -47,19 +48,25 @@ export const FooterComplexSitemap = () => {
     <>
       {configNavigationSitemap.map((item) => {
         return (
-          <div
-            key={item.name}
-            className="col-span-1 border-t border-primary-300 pt-2 dark:border-primary-900 sm:col-span-1"
-          >
+          <div key={item.name} className="col-span-1 pt-2 sm:col-span-1">
             <h4 className="font-bold uppercase tracking-wider">{item.name}</h4>
             <nav className="text-md mt-6 flex flex-col space-y-2">
-              {item.links.map((subItem) => {
-                return (
-                  <RemixLink key={subItem.text} to={subItem.to}>
-                    {subItem.text}
-                  </RemixLink>
-                );
-              })}
+              {item.links &&
+                item.links.map((subItem) => {
+                  return (
+                    <RemixLink key={subItem.text} to={subItem.to}>
+                      {subItem.text}
+                    </RemixLink>
+                  );
+                })}
+              {item.anchors &&
+                item.anchors.map((subItem) => {
+                  return (
+                    <Anchor key={subItem.text} href={subItem.href}>
+                      {subItem.text}
+                    </Anchor>
+                  );
+                })}
             </nav>
           </div>
         );

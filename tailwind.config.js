@@ -5,25 +5,9 @@ module.exports = {
   content: ["./app/**/*.tsx", "./node_modules/@vechaiui/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
-    letterSpacing: {
-      tightest: "-.1em",
-      tighter: "-.05em",
-      tight: "-.025em",
-      normal: "0",
-      wide: ".025em",
-      wider: ".05em",
-      widest: ".1em",
-      widest: ".25em",
-    },
     extend: {
       screens: {
         xs: "425px",
-      },
-      colors: {
-        info: colors.blue,
-        success: colors.green,
-        warning: colors.yellow,
-        error: colors.red,
       },
       boxShadow: {
         slider: "0 0 0 5px rgba(0, 0, 0, 0.3)",
@@ -168,7 +152,6 @@ module.exports = {
     }),
     require("@vechaiui/core")({
       cssBase: true,
-      colors: ["info", "success", "warning", "error"],
     }),
   ],
 };

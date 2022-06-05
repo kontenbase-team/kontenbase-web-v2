@@ -5,8 +5,8 @@ import { CaretRightIcon, FileIcon } from "@radix-ui/react-icons";
 import { RemixLink, VechaiIcon } from "~/components";
 import {
   configNavigationDropdownMenuItems,
-  configNavigationExamples1,
-  configNavigationExamples2,
+  configNavigationFeatures1,
+  configNavigationFeatures2,
 } from "~/configs";
 import { IconMenu, IconSignIn, IconSignOut, IconSignUp } from "~/libs";
 import { classx } from "~/utils";
@@ -85,7 +85,7 @@ export const NavigationBarDropdownMenu = () => {
               <span className="flex-grow">Examples 1</span>
             </DropdownMenuTriggerItem>
             <DropdownMenuSubContent>
-              {configNavigationExamples1.map(({ to, text }) => {
+              {configNavigationFeatures1.map(({ to, text }) => {
                 return (
                   <RemixLink key={to} to={to as string}>
                     <DropdownMenuItem>{text}</DropdownMenuItem>
@@ -101,7 +101,7 @@ export const NavigationBarDropdownMenu = () => {
               <span className="flex-grow">Examples 2</span>
             </DropdownMenuTriggerItem>
             <DropdownMenuSubContent>
-              {configNavigationExamples2.map(({ to, text }) => {
+              {configNavigationFeatures2.map(({ to, text }) => {
                 return (
                   <RemixLink key={to} to={to as string}>
                     <DropdownMenuItem>{text}</DropdownMenuItem>

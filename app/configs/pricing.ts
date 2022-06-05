@@ -15,8 +15,6 @@ export const configPricingPlans = [
     price: {
       USD: "0",
       EUR: "0",
-      GBP: "0",
-      CAD: "0",
       SGD: "0",
       MYR: "0",
       IDR: "0",
@@ -44,8 +42,6 @@ export const configPricingPlans = [
     price: {
       USD: "5",
       EUR: "4.6",
-      GBP: "4",
-      CAD: "6.3",
       SGD: "7",
       MYR: "22",
       IDR: "75k",
@@ -72,8 +68,6 @@ export const configPricingPlans = [
     price: {
       USD: "25",
       EUR: "23",
-      GBP: "20",
-      CAD: "32",
       SGD: "34",
       MYR: "110",
       IDR: "360k",
@@ -109,7 +103,8 @@ export const configPricingPlans = [
     price: {
       USD: "",
       EUR: "",
-      GBP: "",
+      SGD: "",
+      MYR: "",
       IDR: "",
     },
     info: "For large-scale mission critical applications",

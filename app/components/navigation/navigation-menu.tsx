@@ -4,8 +4,8 @@ import { useResolvedPath, NavLink } from "@remix-run/react";
 import { useMatch } from "react-router-dom";
 
 import {
-  configNavigationExamples1,
-  configNavigationExamples2,
+  configNavigationFeatures1,
+  configNavigationFeatures2,
   configNavigationPages,
 } from "~/configs";
 import { IconCaretDown } from "~/libs";
@@ -24,32 +24,31 @@ import type { HTMLAnchorElementProps, HTMLElementProps } from "~/types";
 
 // EDITME
 export const NavigationBarNavMenu = () => {
-  const withIndicator = false;
-
   return (
     <NavigationMenuRoot>
       <NavigationMenuList>
-        <NavigationMenuItemPages />
-        <NavigationMenuItemExamples />
-
-        <NavigationMenuItem>
-          <NavigationMenuNavLink to="/subscribe">
-            Subscribe
-          </NavigationMenuNavLink>
-        </NavigationMenuItem>
+        <NavigationMenuItemFeatures />
 
         <NavigationMenuItem>
           <NavigationMenuNavLink to="/pricing">Pricing</NavigationMenuNavLink>
         </NavigationMenuItem>
-
         <NavigationMenuItem>
-          <NavigationMenuAnchor href="https://github.com/mhaidarhanif/rewinds">
-            GitHub
-          </NavigationMenuAnchor>
+          <NavigationMenuNavLink to="/blog">Blog</NavigationMenuNavLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuNavLink to="/about">About</NavigationMenuNavLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuNavLink to="/contact">Contact</NavigationMenuNavLink>
         </NavigationMenuItem>
 
-        {withIndicator && <NavigationMenuIndicator />}
+        <NavigationMenuItem>
+          <NavigationMenuAnchor href="https://docs.kontenbase.com">
+            Docs
+          </NavigationMenuAnchor>
+        </NavigationMenuItem>
       </NavigationMenuList>
+
       <NavigationMenuViewportPosition>
         <NavigationMenuViewport />
       </NavigationMenuViewportPosition>
@@ -100,24 +99,24 @@ export const NavigationMenuContentPages = () => {
   );
 };
 
-export const NavigationMenuItemExamples = () => {
+export const NavigationMenuItemFeatures = () => {
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger>Examples</NavigationMenuTrigger>
+      <NavigationMenuTrigger>Features</NavigationMenuTrigger>
       <NavigationMenuContent>
-        <NavigationMenuContentExamples />
+        <NavigationMenuContentFeatures />
       </NavigationMenuContent>
     </NavigationMenuItem>
   );
 };
 
 // Separated to reduce too much nesting
-export const NavigationMenuContentExamples = () => {
+export const NavigationMenuContentFeatures = () => {
   return (
     <div className="nav-menu-content-children">
       <div className="grid grid-cols-4 gap-2">
         <div className="col-span-2 flex w-full flex-col space-y-2">
-          {configNavigationExamples1.map((item) => {
+          {configNavigationFeatures1.map((item) => {
             return (
               <NavigationMenuNavLink key={item.text} to={item.to}>
                 {item.text}
@@ -126,7 +125,7 @@ export const NavigationMenuContentExamples = () => {
           })}
         </div>
         <div className="col-span-2 flex w-full flex-col space-y-2">
-          {configNavigationExamples2.map((item) => {
+          {configNavigationFeatures2.map((item) => {
             return (
               <NavigationMenuNavLink key={item.text} to={item.to}>
                 {item.text}

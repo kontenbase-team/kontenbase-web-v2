@@ -21,7 +21,7 @@ export const ExternalLinks = ({ className }: ExternalLinksProps) => {
               href={item.url}
               className="transition-colors hover:text-primary-500"
             >
-              <Icon name={item.name.toLowerCase()} />
+              <Icon name={item.slug} />
             </Anchor>
           );
         })}
