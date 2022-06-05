@@ -483,7 +483,11 @@
     @apply prose-img:m-0;
   }
 
-  .prose-config.extralarge {
+  .prose-config.smaller {
+    @apply prose-sm lg:prose-base;
+  }
+
+  .prose-config.larger {
     @apply lg:prose-xl;
   }
 

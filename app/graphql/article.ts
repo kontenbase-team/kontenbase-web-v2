@@ -31,7 +31,6 @@ export const OneArticleBySlug = gql`
       excerpt
       content {
         markdown
-        html
       }
       coverImage {
         url(

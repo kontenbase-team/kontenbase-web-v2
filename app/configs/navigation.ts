@@ -28,6 +28,12 @@ export const configNavigationAuth: AnchorItems = [
   { href: "https://app.kontenbase.com", text: "Sign in" },
 ];
 
+export const configNavigationMisc: LinkItems = [
+  { to: "/terms", text: "Terms & Conditions" },
+  { to: "/privacy", text: "Privacy Policy" },
+  { to: "/sla", text: "Service Level Agreement" },
+];
+
 export const configNavigationExamples: AnchorItems = [
   {
     href: "https://talk.ink",
@@ -128,13 +134,17 @@ export const configNavigationSitemap: ConfigNavigation = [
     name: "Features",
     links: [...configNavigationFeatures1, ...configNavigationFeatures2],
   },
-  {
-    name: "Examples",
-    anchors: [...configNavigationExamples],
-  },
+  // {
+  //   name: "Examples",
+  //   anchors: [...configNavigationExamples],
+  // },
   {
     name: "Docs",
     anchors: [...configNavigationDocs],
+  },
+  {
+    name: "Misc",
+    links: [...configNavigationMisc],
   },
   {
     name: "Account",
