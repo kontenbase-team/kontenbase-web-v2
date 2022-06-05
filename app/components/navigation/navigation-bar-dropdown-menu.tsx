@@ -2,13 +2,13 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { CaretRightIcon, FileIcon } from "@radix-ui/react-icons";
 
-import { RemixLink, VechaiIcon } from "~/components";
+import { Anchor, RemixLink, VechaiIcon } from "~/components";
 import {
   configNavigationDropdownMenuItems,
-  configNavigationFeatures1,
-  configNavigationFeatures2,
+  configNavigationExamples,
+  configNavigationFeatures,
 } from "~/configs";
-import { IconMenu, IconSignIn, IconSignOut, IconSignUp } from "~/libs";
+import { IconMenu, IconSignIn, IconSignUp } from "~/libs";
 import { classx } from "~/utils";
 
 import type { HTMLElementProps, HTMLSpanElementProps } from "~/types";
@@ -38,56 +38,46 @@ export const NavigationBarDropdownMenu = () => {
             "bg-panel border-panel",
           )}
         >
-          {configNavigationDropdownMenuItems.map(
-            ({ to, text, icon, shortcut }) => {
-              return (
-                <RemixLink key={to} to={to as string}>
-                  <DropdownMenuItem>
-                    {icon}
-                    <span className="flex-grow">{text}</span>
-                    {shortcut && <Shortcut>{shortcut}</Shortcut>}
-                  </DropdownMenuItem>
-                </RemixLink>
-              );
-            },
-          )}
+          {configNavigationDropdownMenuItems.map(({ to, text, icon }) => {
+            return (
+              <RemixLink key={to} to={to as string}>
+                <DropdownMenuItem>
+                  {icon}
+                  <span className="flex-grow">{text}</span>
+                  {/* {shortcut && <Shortcut>{shortcut}</Shortcut>} */}
+                </DropdownMenuItem>
+              </RemixLink>
+            );
+          })}
 
           <DropdownMenuSeparator />
 
-          <DropdownMenuLabel>Auth</DropdownMenuLabel>
-          <RemixLink to="/signup">
+          <Anchor href="https://app.kontenbase.com">
             <DropdownMenuItem>
               <IconSignUp className="dropdown-menu-icon" />
               <span className="flex-grow">Sign Up</span>
-              <Shortcut>⌘+⇧+U</Shortcut>
+              {/* <Shortcut>⌘+⇧+U</Shortcut> */}
             </DropdownMenuItem>
-          </RemixLink>
-          <RemixLink to="/signin">
+          </Anchor>
+          <Anchor href="https://app.kontenbase.com">
             <DropdownMenuItem>
               <IconSignIn className="dropdown-menu-icon" />
               <span className="flex-grow">Sign In</span>
-              <Shortcut>⌘+⇧+I</Shortcut>
+              {/* <Shortcut>⌘+⇧+I</Shortcut> */}
             </DropdownMenuItem>
-          </RemixLink>
-          <RemixLink to="/signout">
-            <DropdownMenuItem>
-              <IconSignOut className="dropdown-menu-icon" />
-              <span className="flex-grow">Sign Out</span>
-              <Shortcut>⌘+⇧+O</Shortcut>
-            </DropdownMenuItem>
-          </RemixLink>
+          </Anchor>
 
           <DropdownMenuSeparator />
 
           <DropdownMenu.Root>
             <DropdownMenuTriggerItem>
               <FileIcon className="dropdown-menu-icon" />
-              <span className="flex-grow">Examples 1</span>
+              <span className="flex-grow">Features</span>
             </DropdownMenuTriggerItem>
             <DropdownMenuSubContent>
-              {configNavigationFeatures1.map(({ to, text }) => {
+              {configNavigationFeatures.map(({ to, text }) => {
                 return (
-                  <RemixLink key={to} to={to as string}>
+                  <RemixLink key={to} to={to}>
                     <DropdownMenuItem>{text}</DropdownMenuItem>
                   </RemixLink>
                 );
@@ -98,14 +88,14 @@ export const NavigationBarDropdownMenu = () => {
           <DropdownMenu.Root>
             <DropdownMenuTriggerItem>
               <FileIcon className="dropdown-menu-icon" />
-              <span className="flex-grow">Examples 2</span>
+              <span className="flex-grow">Examples</span>
             </DropdownMenuTriggerItem>
             <DropdownMenuSubContent>
-              {configNavigationFeatures2.map(({ to, text }) => {
+              {configNavigationExamples.map(({ href, text }) => {
                 return (
-                  <RemixLink key={to} to={to as string}>
+                  <Anchor key={href} href={href}>
                     <DropdownMenuItem>{text}</DropdownMenuItem>
-                  </RemixLink>
+                  </Anchor>
                 );
               })}
             </DropdownMenuSubContent>
