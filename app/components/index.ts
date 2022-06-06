@@ -15,6 +15,8 @@ export * from "./external-links";
 export * from "./footer";
 export * from "./form";
 export * from "./icon";
+export * from "./icon-button";
+export * from "./icon-theme";
 export * from "./image";
 export * from "./logo";
 export * from "./navigation";

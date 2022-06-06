@@ -6,9 +6,9 @@ export const HomePartners = () => {
   // const mode = isLight ? "light" : "dark";
 
   return (
-    <section className="stack-v layout-padding items-center">
+    <section className="stack-v-center layout-padding">
       <h2 className="text-center">Powering tech enterprise and startups</h2>
-      <div className="stack-h flex-wrap items-center justify-center gap-5 sm:gap-10">
+      <div className="stack-h-center flex-wrap gap-5 sm:gap-10">
         {dataPartners.map((partner) => {
           return (
             <div key={partner.slug}>

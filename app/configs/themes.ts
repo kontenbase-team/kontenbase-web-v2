@@ -17,7 +17,7 @@ export const fire: ColorScheme = {
   colors: {
     primary: colors.red,
     neutral: colors.neutral,
-    bg: { base: colors.neutral["100"], fill: colors.neutral["200"] },
+    bg: { base: colors.white, fill: colors.neutral["100"] },
     text: { foreground: colors.neutral["900"], muted: colors.neutral["700"] },
   },
 };

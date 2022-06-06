@@ -270,8 +270,16 @@
     @apply stack flex-col;
   }
 
+  .stack-v-center {
+    @apply stack-v items-center gap-5;
+  }
+
   .stack-h {
     @apply stack flex-row;
+  }
+
+  .stack-h-center {
+    @apply stack-h items-center gap-5;
   }
 
   /**

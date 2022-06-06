@@ -44,5 +44,6 @@ export const dataFeaturesSimple = [
     title: "Message Queue",
     description:
       "Built in Message Queue using Kafka with low latency message processing with high availability and fault tolerance",
+    isBuiltIn: true,
   },
 ];
