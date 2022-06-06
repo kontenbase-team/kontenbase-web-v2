@@ -6,6 +6,7 @@ import {
   HomePartners,
   HomePowered,
   HomePreview,
+  HomeStacks,
 } from "~/contents";
 import { Layout } from "~/layouts";
 
@@ -32,8 +33,8 @@ export default function Index() {
         <HomeActionMiddle />
         <HomeExamples />
         {/* <HomeVersus /> */}
-        {/* <HomeActionLast /> */}
-        {/* <SocialSection /> */}
+        <HomeStacks />
+        {/* <SectionSocial /> */}
       </div>
     </Layout>
   );

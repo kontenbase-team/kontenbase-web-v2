@@ -1,4 +1,4 @@
-import { HomeExamples } from "~/contents";
+import { HomeStacks } from "~/contents";
 import { Layout } from "~/layouts";
 
 import type { SEOHandle } from "~/types";
@@ -13,7 +13,7 @@ export default function Debug() {
   return (
     <Layout variant="full">
       <div className="stack-v mt-20 items-center gap-20">
-        <HomeExamples />
+        <HomeStacks />
       </div>
     </Layout>
   );

@@ -50,7 +50,7 @@ export const FooterComplexSitemap = () => {
         return (
           <div key={item.name} className="col-span-1 pt-2 sm:col-span-1">
             <h4 className="font-bold uppercase tracking-wider">{item.name}</h4>
-            <nav className="text-md mt-6 flex flex-col space-y-2">
+            <nav className="text-md mt-3 flex flex-col space-y-2">
               {item.links &&
                 item.links.map((subItem) => {
                   return (

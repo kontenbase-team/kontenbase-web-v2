@@ -1,5 +1,5 @@
 import { Button, FormControl, FormLabel, Input } from "~/components";
-import { configMeta, configStyle } from "~/configs";
+import { configStyle } from "~/configs";
 import { convertkitSubscribeClient } from "~/features";
 import { useEffect, useForm, useNotification, useState } from "~/hooks";
 import { sleep } from "~/utils";
@@ -69,7 +69,11 @@ export const FooterComplexFormSubscribe = () => {
     <>
       <div className="col-span-2 space-y-2">
         <h2 className="m-0 text-2xl font-bold">Get some updates</h2>
-        <p className="max-w-[53ch]">{configMeta.description}</p>
+        <p className="max-w-[53ch]">
+          Subscribe to our newsletter to get the latest info on our backend as a
+          service. You can have a chance to get free credits too, by following
+          us on social media and joining our events.
+        </p>
       </div>
 
       <div className="col-span-2 sm:col-span-3 lg:flex lg:items-center">
