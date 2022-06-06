@@ -4,6 +4,8 @@ import { Fragment, useState } from "react";
 
 import { Button } from "~/components";
 
+export { Dialog };
+
 export const DialogExampleHeadless = () => {
   const [isOpen, setIsOpen] = useState(false);
 

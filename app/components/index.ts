@@ -27,3 +27,5 @@ export * from "./scroll-area";
 export * from "./span";
 export * from "./tab";
 export * from "./themes";
+export * from "./transition";
+export * from "./video";
