@@ -38,10 +38,6 @@
     @apply text-lg;
   }
 
-  header a {
-    @apply prose-a-styles;
-  }
-
   .h0 {
     @apply mb-10 text-6xl font-bold sm:text-8xl;
   }
@@ -117,23 +113,23 @@
     @apply flex flex-[1] justify-center;
   }
 
-  .layout-main {
-    @apply mt-10 w-full;
+  .layout-content {
+    @apply w-full;
   }
 
-  .layout-main.small {
+  .layout-content.small {
     @apply max-w-screen-sm;
   }
 
-  .layout-main.medium {
+  .layout-content.medium {
     @apply max-w-screen-lg;
   }
 
-  .layout-main.large {
+  .layout-content.large {
     @apply max-w-screen-xl;
   }
 
-  .layout-main.full {
+  .layout-content.full {
     @apply mt-0;
   }
 
