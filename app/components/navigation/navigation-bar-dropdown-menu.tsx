@@ -53,14 +53,14 @@ export const NavigationBarDropdownMenu = () => {
 
           <DropdownMenuSeparator />
 
-          <Anchor href="https://app.kontenbase.com">
+          <Anchor href="/signup">
             <DropdownMenuItem>
               <IconSignUp className="dropdown-menu-icon" />
               <span className="flex-grow">Sign Up</span>
               {/* <Shortcut>⌘+⇧+U</Shortcut> */}
             </DropdownMenuItem>
           </Anchor>
-          <Anchor href="https://app.kontenbase.com">
+          <Anchor href="/signin">
             <DropdownMenuItem>
               <IconSignIn className="dropdown-menu-icon" />
               <span className="flex-grow">Sign In</span>

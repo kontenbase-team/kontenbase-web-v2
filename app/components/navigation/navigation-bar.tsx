@@ -7,6 +7,7 @@ import {
   Badge,
   NavigationBarNavMenu,
   NavigationBarDropdownMenu,
+  ButtonAnchor,
 } from "~/components";
 import { configStyle, configNavigationBarLinks } from "~/configs";
 import { classx } from "~/utils";
@@ -91,13 +92,13 @@ export const NavigationBarLinks = () => {
 export const NavigationBarAuth = () => {
   return (
     <div id="navigation-bar-auth" className="space-x-2">
-      <RemixLink
-        to="/signup"
-        className="btn-solid btn btn-md"
-        data-color="primary"
+      <ButtonAnchor
+        href="/signup"
+        // className="btn-solid btn btn-md"
+        // data-color="primary"
       >
         Start for Free
-      </RemixLink>
+      </ButtonAnchor>
     </div>
   );
 };

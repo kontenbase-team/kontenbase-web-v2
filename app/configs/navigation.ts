@@ -24,8 +24,8 @@ export const configNavigationPages: LinkItems = [
 ];
 
 export const configNavigationAuth: AnchorItems = [
-  { href: "https://app.kontenbase.com", text: "Sign up" },
-  { href: "https://app.kontenbase.com", text: "Sign in" },
+  { href: "/signup", text: "Sign up" },
+  { href: "/signin", text: "Sign in" },
 ];
 
 export const configNavigationMisc: LinkItems = [

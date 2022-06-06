@@ -19,6 +19,8 @@ export const ButtonAnchor = ({
     <a
       href={href}
       data-color={color}
+      target="_blank"
+      rel="noreferrer"
       className={classx(`btn-${variant} btn btn-md rounded-base`, className)}
     >
       {children}
