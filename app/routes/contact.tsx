@@ -1,11 +1,10 @@
 import { json } from "@remix-run/node";
 
-import { dataFeatures } from "~/data";
 import { Layout } from "~/layouts";
 import { createMetaData } from "~/utils";
 
 import type { LoaderFunction } from "@remix-run/node";
-import type { LoaderDataAbout, SEOHandle, MetaFunction } from "~/types";
+import type { SEOHandle, MetaFunction } from "~/types";
 
 export const handle: SEOHandle = {
   getSitemapEntries: () => {
@@ -21,9 +20,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader: LoaderFunction = async () => {
-  return json<LoaderDataAbout>({
-    features: dataFeatures,
-  });
+  return json({});
 };
 
 export default function Contact() {

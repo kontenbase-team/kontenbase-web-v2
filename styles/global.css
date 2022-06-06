@@ -537,6 +537,10 @@
     @apply list-disc space-y-2 pl-3 marker:text-primary-500;
   }
 
+  .filter-gray {
+    @apply grayscale hover:contrast-100 hover:grayscale-0;
+  }
+
   /* https://css-tricks.com/custom-tailwind-css/#aa-envsafe-area-inset-bottom */
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
