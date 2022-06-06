@@ -3,11 +3,11 @@ export const examplesData = [
     name: "Talk.ink",
     description:
       "Talk.ink is a Slack or Twist clone using Kontenbase as the backend, React.js as frontend, and Tailwind CSS as styling library.",
-    imageUrl: "/images/tree/main/examples/talkink.png",
+    imageUrl: "/assets/images/tree/main/examples/talkink.png",
     demoUrl: "https://talk.ink",
     githubUrl: "https://github.com/talk-ink/talk-ink",
     creatorName: "Talk.ink",
-    creatorAvatarUrl: "/images/avatars/talk-ink.png",
+    creatorAvatarUrl: "/assets/images/avatars/talk-ink.png",
   },
   {
     name: "Writter",
@@ -16,7 +16,7 @@ export const examplesData = [
     demoUrl: "https://writter.kontenbase.com",
     githubUrl: "https://github.com/kontenbase-team/writter",
     creatorName: "Kontenbase",
-    creatorAvatarUrl: "/images/avatars/kontenbase.png",
+    creatorAvatarUrl: "/assets/images/avatars/kontenbase.png",
   },
   {
     name: "HTML Form",
@@ -25,7 +25,7 @@ export const examplesData = [
     githubUrl:
       "https://github.com/kontenbase/kontenbase/tree/main/examples/form-html",
     creatorName: "Kontenbase",
-    creatorAvatarUrl: "/images/avatars/kontenbase.png",
+    creatorAvatarUrl: "/assets/images/avatars/kontenbase.png",
   },
   {
     name: "Next.js Blog",
@@ -35,7 +35,7 @@ export const examplesData = [
     githubUrl:
       "https://github.com/kontenbase/kontenbase/tree/main/examples/nextjs-blog",
     creatorName: "Kontenbase",
-    creatorAvatarUrl: "/images/avatars/kontenbase.png",
+    creatorAvatarUrl: "/assets/images/avatars/kontenbase.png",
   },
   {
     name: "Next.js Todo",
@@ -45,7 +45,7 @@ export const examplesData = [
     githubUrl:
       "https://github.com/kontenbase/kontenbase/tree/main/examples/nextjs-todo",
     creatorName: "Kontenbase",
-    creatorAvatarUrl: "/images/avatars/kontenbase.png",
+    creatorAvatarUrl: "/assets/images/avatars/kontenbase.png",
   },
   {
     name: "React.js Chat",
@@ -55,6 +55,6 @@ export const examplesData = [
     githubUrl:
       "https://github.com/kontenbase/kontenbase/tree/main/examples/reactjs-chat",
     creatorName: "Kontenbase",
-    creatorAvatarUrl: "/images/avatars/kontenbase.png",
+    creatorAvatarUrl: "/assets/images/avatars/kontenbase.png",
   },
 ];

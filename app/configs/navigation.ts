@@ -75,7 +75,7 @@ export const configNavigationFeatures1: LinkItems = [
 
 export const configNavigationFeatures2: LinkItems = [
   { to: "/features/storage", text: "Object Storage" },
-  { to: "/features/real-time", text: "Real-Time" },
+  { to: "/features/realtime", text: "Real-Time" },
 ];
 
 export const configNavigationFeatures: LinkItems = [

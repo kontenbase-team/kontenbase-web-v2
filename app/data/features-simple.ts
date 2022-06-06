@@ -24,11 +24,11 @@ export const dataFeaturesSimple = [
     isAvailable: true,
   },
   {
-    icon: "feature-real-time",
+    icon: "feature-realtime",
     title: "Real-Time",
     description:
       "Built in real-time support via WebSocket with battle tested performance!",
-    to: "/features/real-time",
+    to: "/features/realtime",
     isAvailable: true,
   },
   {

@@ -1,4 +1,4 @@
-export const explainAPILinksData = [
+export const dataExplainAPILinks = [
   {
     name: "REST API",
     description:

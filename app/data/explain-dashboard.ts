@@ -1,7 +1,7 @@
 export const explainDashboardData = [
   {
     label: "REST API",
-    imageUrl: "/images/features/rest-api.png",
+    imageUrl: "/assets/images/features/rest-api.png",
     videoYouTubeId: "S0miMA7ix6Q",
     title: "Create database with automatic REST API generation",
     description:
@@ -13,7 +13,7 @@ export const explainDashboardData = [
   },
   {
     label: "Data Table",
-    imageUrl: "/images/features/data-table.png",
+    imageUrl: "/assets/images/features/data-table.png",
     videoYouTubeId: "_LhAyRkxxls",
     title: "Manage schema then manage data as simple as using spreadsheet",
     description:
@@ -24,7 +24,7 @@ export const explainDashboardData = [
   },
   {
     label: "Auth",
-    imageUrl: "/images/features/auth.png",
+    imageUrl: "/assets/images/features/auth.png",
     videoYouTubeId: "DJdCqmUgwwE",
     title: "Authentication & Authorization",
     description:
@@ -35,7 +35,7 @@ export const explainDashboardData = [
   },
   {
     label: "Storage",
-    imageUrl: "/images/features/storage.png",
+    imageUrl: "/assets/images/features/storage.png",
     videoYouTubeId: "c0PgiMZUoxo",
     title: "Files and Assets Storage",
     description:
@@ -46,7 +46,7 @@ export const explainDashboardData = [
   },
   {
     label: "Real-Time",
-    imageUrl: "/images/features/real-time.png",
+    imageUrl: "/assets/images/features/realtime.png",
     videoYouTubeId: "WW2HkwoZfVk",
     title: "Real-Time with WebSocket",
     description:
@@ -57,7 +57,7 @@ export const explainDashboardData = [
   },
   {
     label: "Functions",
-    imageUrl: "/images/features/functions.png",
+    imageUrl: "/assets/images/features/functions.png",
     title: "Functions",
     description:
       "Write custom code, to trigger event using pub sub, creating hook, and cron jobs without deploying or scaling servers.",

@@ -61,7 +61,7 @@ export const iconMaps = {
   "feature-auth": <IconAuth />,
   "feature-functions": <IconFunction />,
   "feature-message-queue": <IconMessageQueue />,
-  "feature-real-time": <IconRealTime />,
+  "feature-realtime": <IconRealTime />,
   "feature-rest": <IconDatabase />,
   "feature-storage": <IconStorage />,
   // facebook: <IconFacebook />,

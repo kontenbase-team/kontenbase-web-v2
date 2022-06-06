@@ -1,13 +1,13 @@
 const id = "abcdefghijk123456789";
 
-export const featureRESTAPISDKData = {
+export const dataFeatureAPISDK = {
   icon: "feature-rest",
   name: "REST API",
   title: "Database to REST API & SDK",
   description:
     "Auto generated REST API & SDK from database schema. Change schema on the fly! SDK for better developer experience.",
   docsUrl: "https://docs.kontenbase.com/overview/sdk",
-  imageUrl: "/images/features/rest-api.png",
+  imageUrl: "/assets/images/features/rest-api.png",
   subTitle: "Never write basic API again",
   subDescription:
     "We introspect your database schema within Kontenbase and provide the APIs & SDK instantly. So you can focus on building your product. Let Kontenbase handle the CRUD!",

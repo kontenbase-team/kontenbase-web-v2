@@ -8,7 +8,7 @@ export const LayoutFull = ({ children }: HTMLElementProps) => {
       <NavigationBar />
 
       <div className="layout-center">
-        <main className="layout-content full">{children}</main>
+        <main className="layout-content">{children}</main>
       </div>
 
       <Footer />

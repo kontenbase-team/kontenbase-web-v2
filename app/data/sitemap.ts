@@ -5,7 +5,7 @@ export const sitemapData = [
       { to: "/features/rest-api-sdk", text: "REST API & SDK" },
       { to: "/features/auth", text: "Auth" },
       { to: "/features/storage", text: "Storage" },
-      { to: "/features/real-time", text: "Real-Time" },
+      { to: "/features/realtime", text: "Real-Time" },
     ],
   },
   {

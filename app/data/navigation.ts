@@ -22,6 +22,6 @@ export const navigationFeaturesData = [
   },
   {
     text: "Real-Time",
-    to: "/features/real-time",
+    to: "/features/realtime",
   },
 ];
