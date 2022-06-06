@@ -1,4 +1,4 @@
-import type { Article, Articles, Strings } from "~/types";
+import type { Article, Articles } from "~/types";
 import type { getEnv } from "~/utils";
 
 /**
@@ -11,10 +11,6 @@ export type LoaderDataSession = {
   theme: any;
   error: any;
   ENV: ReturnType<typeof getEnv>;
-};
-
-export type LoaderDataAbout = {
-  features: Strings;
 };
 
 export type LoaderDataBlog = {

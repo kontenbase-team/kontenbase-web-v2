@@ -1,4 +1,4 @@
-import { HomeIntro, HomePreview } from "~/contents";
+import { HomeIntro, HomePowered, HomePreview } from "~/contents";
 import { Layout } from "~/layouts";
 
 import type { SEOHandle } from "~/types";
@@ -15,15 +15,15 @@ export default function Index() {
       <div className="stack-v mt-20 items-center gap-20">
         <HomeIntro />
         <HomePreview />
-        {/* <HomePowered />
-        <HomePartners />
-        <HomeFeatures />
-        <HomeDashboardAPI />
-        <HomeActionMiddle />
-        <HomeExamples />
-        <HomeVersus />
-        <HomeActionLast />
-        <SocialSection /> */}
+        <HomePowered />
+        {/* <HomePartners /> */}
+        {/* <HomeFeatures /> */}
+        {/* <HomeDashboardAPI /> */}
+        {/* <HomeActionMiddle /> */}
+        {/* <HomeExamples /> */}
+        {/* <HomeVersus /> */}
+        {/* <HomeActionLast /> */}
+        {/* <SocialSection /> */}
       </div>
     </Layout>
   );
