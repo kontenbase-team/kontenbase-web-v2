@@ -1,5 +1,6 @@
 import {
   HomeActionMiddle,
+  HomeExamples,
   HomeFeatures,
   HomeIntro,
   HomePartners,
@@ -29,7 +30,7 @@ export default function Index() {
         <HomeFeatures />
         {/* <HomeDashboardAPI /> */}
         <HomeActionMiddle />
-        {/* <HomeExamples /> */}
+        <HomeExamples />
         {/* <HomeVersus /> */}
         {/* <HomeActionLast /> */}
         {/* <SocialSection /> */}

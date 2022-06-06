@@ -1,5 +1,6 @@
 export * from "./alert";
 export * from "./anchor";
+export * from "./avatar";
 export * from "./badge";
 export * from "./breadcrumb";
 export * from "./button-anchor";
@@ -14,9 +15,9 @@ export * from "./dropdown-menu";
 export * from "./external-links";
 export * from "./footer";
 export * from "./form";
-export * from "./icon";
 export * from "./icon-button";
 export * from "./icon-theme";
+export * from "./icon";
 export * from "./image";
 export * from "./logo";
 export * from "./navigation";

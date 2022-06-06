@@ -4,6 +4,7 @@ export * from "./env.client";
 export * from "./env.server";
 export * from "./json";
 export * from "./meta";
+export * from "./name";
 export * from "./package";
 export * from "./seo";
 export * from "./sleep";

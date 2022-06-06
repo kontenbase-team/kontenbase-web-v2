@@ -8,7 +8,7 @@ export const HomeActionMiddle = () => {
         <span className="text-primary-500">no code</span>?
       </h1>
 
-      <p className="max-w-xl text-lg sm:text-2xl">
+      <p className="text-dim max-w-2xl text-lg sm:text-2xl">
         Speed up development time by up to 90% then launch within days. Focus on
         product and let us do the scale!
       </p>

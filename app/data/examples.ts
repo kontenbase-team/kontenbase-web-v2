@@ -1,4 +1,4 @@
-export const examplesData = [
+export const dataExamples = [
   {
     name: "Talk.ink",
     description:
