@@ -1,4 +1,4 @@
-export const partnersData = [
+export const dataPartners = [
   { slug: "dumbways", name: "Dumb Ways Bootcamp" },
   { slug: "kelasq", name: "KelasQ" },
   { slug: "codeclazz", name: "Code Clazz" },

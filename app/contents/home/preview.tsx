@@ -14,7 +14,7 @@ export const HomePreview = () => {
   }
 
   return (
-    <section>
+    <section className="mb-10">
       <div className="flex items-center justify-center">
         <img
           src="/assets/images/kontenbase-home-hero.png"

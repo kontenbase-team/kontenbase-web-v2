@@ -105,8 +105,12 @@
     @apply flex min-h-screen flex-col;
   }
 
+  .layout-padding {
+    @apply px-4;
+  }
+
   .layout-container {
-    @apply mx-auto min-h-[420px] w-full flex-[1] px-4;
+    @apply layout-padding mx-auto min-h-[420px] w-full flex-[1];
   }
 
   .layout-center {
@@ -538,7 +542,7 @@
   }
 
   .filter-gray {
-    @apply grayscale hover:contrast-100 hover:grayscale-0;
+    @apply contrast-50 grayscale hover:contrast-100 hover:grayscale-0;
   }
 
   /* https://css-tricks.com/custom-tailwind-css/#aa-envsafe-area-inset-bottom */

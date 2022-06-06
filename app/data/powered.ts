@@ -1,1 +1,1 @@
-export const poweredData = [{ slug: "idcloudhost", name: "IDCloudHost" }];
+export const dataPowered = [{ slug: "idcloudhost", name: "IDCloudHost" }];
