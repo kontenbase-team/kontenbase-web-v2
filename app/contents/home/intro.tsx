@@ -1,4 +1,4 @@
-import { ButtonAnchor, ButtonGroup } from "~/components";
+import { ButtonGroupCTA } from "~/contents";
 
 export const HomeIntro = () => {
   return (
@@ -20,12 +20,7 @@ export const HomeIntro = () => {
         </p>
       </div>
 
-      <ButtonGroup size="lg">
-        <ButtonAnchor href="/signup">Sign Up for Free</ButtonAnchor>
-        <ButtonAnchor variant="outline" href="/demo">
-          Schedule Demo
-        </ButtonAnchor>
-      </ButtonGroup>
+      <ButtonGroupCTA />
     </section>
   );
 };

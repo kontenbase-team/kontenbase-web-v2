@@ -12,6 +12,8 @@ export const ButtonAnchor = ({
   color = "primary",
   variant = "solid",
   size = "md",
+  leftIcon,
+  rightIcon,
   className,
 }: ButtonAnchorProps) => {
   return (
@@ -25,7 +27,9 @@ export const ButtonAnchor = ({
         className,
       )}
     >
+      {leftIcon}
       {children}
+      {rightIcon}
     </a>
   );
 };

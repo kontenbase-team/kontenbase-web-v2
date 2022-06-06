@@ -133,10 +133,6 @@
     @apply max-w-screen-xl;
   }
 
-  .layout-content.full {
-    @apply mt-0;
-  }
-
   /**
    * Example
    */
@@ -444,6 +440,10 @@
   .bg-secondary-blur {
     @apply bg-neutral-50/90 dark:bg-neutral-800/90;
     @apply backdrop-blur;
+  }
+
+  .bg-tertiary {
+    @apply bg-neutral-200/50 dark:bg-neutral-800/30;
   }
 
   .bg-separator {

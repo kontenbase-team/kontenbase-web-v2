@@ -1,4 +1,5 @@
 import {
+  HomeActionMiddle,
   HomeFeatures,
   HomeIntro,
   HomePartners,
@@ -27,7 +28,7 @@ export default function Index() {
         </div>
         <HomeFeatures />
         {/* <HomeDashboardAPI /> */}
-        {/* <HomeActionMiddle /> */}
+        <HomeActionMiddle />
         {/* <HomeExamples /> */}
         {/* <HomeVersus /> */}
         {/* <HomeActionLast /> */}
