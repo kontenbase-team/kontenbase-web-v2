@@ -5,7 +5,7 @@ import { classx } from "~/utils";
 import type { HTMLElementProps } from "~/types";
 
 interface ExternalLinksProps extends HTMLElementProps {
-  links: Array<any>;
+  links?: Array<any>;
 }
 
 export const ExternalLinks = ({

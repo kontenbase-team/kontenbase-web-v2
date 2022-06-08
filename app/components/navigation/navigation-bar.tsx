@@ -56,7 +56,7 @@ export const NavigationBarLogo = () => {
     <div className="flex items-center gap-2">
       <RemixLink
         to="/"
-        className="text-2xl tracking-wide hover:text-primary-500"
+        className="transition-logo text-2xl tracking-wide hover:text-primary-500"
       >
         <Logo />
       </RemixLink>

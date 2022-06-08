@@ -4,7 +4,7 @@ export const HomeIntro = () => {
   return (
     <section className="stack-v layout-padding items-center gap-10">
       <div className="layout-content small md:medium">
-        <h1 className="h0 m-0 flex flex-wrap justify-center text-center text-3xl sm:text-4xl md:text-6xl md:leading-normal">
+        <h1 className="h0 special">
           <span>
             <span className="text-primary-500">No Code</span>
             <span> Backend API,</span>

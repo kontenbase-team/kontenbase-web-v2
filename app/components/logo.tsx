@@ -11,12 +11,7 @@ export const Logo = ({ className }: HTMLElementProps) => {
     : "/assets/images/kontenbase-on-dark.png";
 
   return (
-    <div
-      className={classx(
-        "flex items-center transition-[opacity] duration-300 hover:opacity-80",
-        className,
-      )}
-    >
+    <div className={classx("flex items-center", className)}>
       <img
         className="h-[30px] sm:h-[40px]"
         src={logoImageUrl}

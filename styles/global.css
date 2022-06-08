@@ -42,9 +42,13 @@
     @apply mb-10 text-6xl font-bold sm:text-8xl;
   }
 
+  .h0.special {
+    @apply m-0 flex flex-wrap justify-center text-center text-3xl xs:text-4xl sm:text-5xl md:text-6xl md:leading-normal;
+  }
+
   h1,
   .h1 {
-    @apply mt-3 mb-6 text-3xl font-bold sm:text-4xl md:text-5xl;
+    @apply mb-6 text-3xl font-bold sm:text-4xl md:text-5xl;
   }
 
   h2,
@@ -517,6 +521,12 @@
     @apply border border-neutral-300 dark:border-neutral-700;
   }
 
+  /* Logo */
+
+  .transition-logo {
+    @apply transition-[opacity] duration-300 hover:opacity-80;
+  }
+
   /* Prose */
 
   .prose-config {
@@ -528,6 +538,7 @@
 
   .prose-config.smaller {
     @apply prose-sm lg:prose-base;
+    @apply prose-h1:mt-10;
   }
 
   .prose-config.larger {
