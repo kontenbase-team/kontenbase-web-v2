@@ -69,8 +69,8 @@ export const configNavigationDocs: AnchorItems = [
 ];
 
 export const configNavigationFeatures1: LinkItems = [
-  { to: "/features/api-sdk", text: "Database to API & SDK" },
-  { to: "/features/auth", text: "Authentication & Authorization" },
+  { to: "/features/api-sdk", text: "Database to API" },
+  { to: "/features/auth", text: "Authentication" },
 ];
 
 export const configNavigationFeatures2: LinkItems = [

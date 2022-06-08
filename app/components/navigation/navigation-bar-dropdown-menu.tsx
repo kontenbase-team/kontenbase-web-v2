@@ -35,7 +35,7 @@ export const NavigationBarDropdownMenu = () => {
           className={classx(
             "radix-side-top:animate-slide-up",
             "radix-side-bottom:animate-slide-down",
-            "shadow-panel w-48 rounded-md px-1 py-1 md:w-56",
+            "shadow-panel w-36 rounded-md px-1 py-1 md:w-48",
             "bg-panel border-panel",
           )}
         >
@@ -155,14 +155,19 @@ export const DropdownMenuTriggerItem = ({ children }: HTMLElementProps) => {
   );
 };
 
-export const DropdownMenuSubContent = ({ children }: HTMLElementProps) => {
+export const DropdownMenuSubContent = ({
+  children,
+  className,
+}: HTMLElementProps) => {
   return (
     <DropdownMenu.Content
+      side="left"
       className={classx(
         "origin-radix-dropdown-menu",
         "radix-side-right:animate-slide-right-fade",
         "radix-side-left:animate-slide-left-fade",
-        "bg-panel shadow-panel border-panel w-full rounded-md px-1 py-1 text-sm",
+        "bg-panel shadow-panel border-panel w-full rounded-md px-1 py-1",
+        className,
       )}
     >
       {children}
@@ -170,12 +175,13 @@ export const DropdownMenuSubContent = ({ children }: HTMLElementProps) => {
   );
 };
 
-export const DropdownMenuItem = ({ children }: HTMLElementProps) => {
+export const DropdownMenuItem = ({ children, className }: HTMLElementProps) => {
   return (
     <DropdownMenu.Item
       className={classx(
         "dropdown-menu-item",
         "flex select-none items-center rounded-md text-sm outline-none",
+        className,
       )}
     >
       {children}

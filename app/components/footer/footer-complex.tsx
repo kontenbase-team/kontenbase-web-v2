@@ -27,7 +27,7 @@ export const FooterComplex = () => {
         <div className="lg:flex lg:gap-8">
           <div className="space-y-4 text-neutral-900 dark:text-neutral-100">
             <RemixLink to="/" className="flex">
-              <Logo />
+              <Logo className="filter-dim" />
             </RemixLink>
             <ExternalLinks />
             <BadgeProductHunt />

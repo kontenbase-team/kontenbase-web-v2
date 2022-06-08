@@ -1,7 +1,9 @@
 import { useTheme } from "~/components";
 import { classx } from "~/utils";
 
-export const Logo = () => {
+import type { HTMLElementProps } from "~/types";
+
+export const Logo = ({ className }: HTMLElementProps) => {
   const { isLight } = useTheme();
 
   const logoImageUrl = isLight
@@ -12,6 +14,7 @@ export const Logo = () => {
     <div
       className={classx(
         "flex items-center transition-[opacity] duration-300 hover:opacity-80",
+        className,
       )}
     >
       <img

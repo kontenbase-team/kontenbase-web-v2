@@ -14,10 +14,6 @@ export const HomeDashboardAPI: FunctionComponent = () => {
     //   padding: `5rem ${theme.spacing.lg}px`,
     // })}
     >
-      <h2 style={{ maxWidth: "20ch", textAlign: "center" }}>
-        Easy to use Dashboard & Instant API Creation
-      </h2>
-
       <div className="stack-v" style={{ gap: "5rem", width: "100%" }}>
         <ExplainDashboard />
         <ExplainAPI />

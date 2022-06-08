@@ -6,7 +6,7 @@ interface VideoYouTubeProps {
 export const VideoYouTube = ({ title, embedId }: VideoYouTubeProps) => {
   return (
     <iframe
-      className="aspect-video w-full rounded-lg shadow-lg"
+      className="border-panel aspect-video w-full rounded-lg shadow-lg"
       title={title}
       src={`https://www.youtube.com/embed/${embedId}?playlist=${embedId}&controls=1&modestbranding=1&rel=0&disablekb=1`}
       frameBorder="0"
