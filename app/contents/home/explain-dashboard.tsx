@@ -65,7 +65,7 @@ export const TabsExplainDashboard = ({ tabs }: TabsProps) => {
                 <h3 className="m-0">{tab.title}</h3>
                 <p>{tab.description}</p>
                 {tab.extraInfo && (
-                  <p className="bg-tertiary rounded-base p-5">
+                  <p className="bg-tertiary rounded-base p-5 text-sm">
                     {tab.extraInfo}
                   </p>
                 )}

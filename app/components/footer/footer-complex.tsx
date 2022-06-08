@@ -1,5 +1,6 @@
 import {
   Anchor,
+  BadgeProductHunt,
   ExternalLinks,
   FooterComplexFormSubscribe,
   FooterCopyrightText,
@@ -29,6 +30,7 @@ export const FooterComplex = () => {
               <Logo />
             </RemixLink>
             <ExternalLinks />
+            <BadgeProductHunt />
           </div>
           <div className="container-low mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
             <FooterComplexFormSubscribe />
