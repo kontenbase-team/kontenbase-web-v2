@@ -20,7 +20,7 @@ export const HomeIntro = () => {
         </p>
       </div>
 
-      <ButtonGroupCTA />
+      <ButtonGroupCTA className="justify-center" />
     </section>
   );
 };

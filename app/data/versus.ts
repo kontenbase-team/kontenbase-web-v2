@@ -7,12 +7,12 @@ export const dataVersusStacks = [
   {
     icon: "mongodb",
     name: "MongoDB Atlas: Database",
-    price: "$57/month for 10GB Storage",
+    price: "$57/month for 10 GB Storage",
   },
   {
     icon: "amazon-s3",
     name: "Amazon S3: Object Storage",
-    price: "$5 for 100 GB Storage & 200GB Transfer Limit",
+    price: "$5 for 100 GB Storage & 200 GB Transfer Limit",
   },
   {
     icon: "kafka",
@@ -22,6 +22,6 @@ export const dataVersusStacks = [
   {
     icon: "colyseus",
     name: "Colyseus: Real-time/Multiplayer Server",
-    price: "$10 for 1GB Memory",
+    price: "$10 for 1 GB Memory",
   },
 ];

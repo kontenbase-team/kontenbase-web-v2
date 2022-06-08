@@ -1,17 +1,21 @@
 import { ButtonAnchor, ButtonGroup, IconVechai } from "~/components";
 import { IconCalendar } from "~/libs";
+import { classx } from "~/utils";
 
-interface ButtonGroupCTAProps {
+import type { HTMLElementProps } from "~/types";
+
+interface ButtonGroupCTAProps extends HTMLElementProps {
   primaryCTA?: React.ReactNode;
   secondaryCTA?: React.ReactNode;
 }
 
 export const ButtonGroupCTA = ({
+  className,
   primaryCTA,
   secondaryCTA,
 }: ButtonGroupCTAProps) => {
   return (
-    <ButtonGroup size="lg" className="flex justify-center">
+    <ButtonGroup size="lg" className={classx("flex", className)}>
       {primaryCTA || (
         <ButtonAnchor href="/signup">Sign Up for Free</ButtonAnchor>
       )}

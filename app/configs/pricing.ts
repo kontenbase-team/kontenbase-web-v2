@@ -13,11 +13,12 @@ export const configPricingPlans = [
   {
     name: "Free",
     price: {
-      USD: "0",
       EUR: "0",
-      SGD: "0",
-      MYR: "0",
       IDR: "0",
+      MYR: "0",
+      PHP: "0",
+      SGD: "0",
+      USD: "0",
     },
     info: "For experiments and simple applications",
     button: {
@@ -40,11 +41,12 @@ export const configPricingPlans = [
   {
     name: "Hobby",
     price: {
-      USD: "5",
       EUR: "4.6",
-      SGD: "7",
-      MYR: "22",
       IDR: "75k",
+      MYR: "22",
+      PHP: "264",
+      SGD: "7",
+      USD: "5",
     },
     info: "For production and more complex applications",
     button: {
@@ -66,11 +68,12 @@ export const configPricingPlans = [
   {
     name: "Pro",
     price: {
-      USD: "25",
       EUR: "23",
-      SGD: "34",
-      MYR: "110",
       IDR: "360k",
+      MYR: "110",
+      PHP: "1325",
+      SGD: "34",
+      USD: "25",
     },
     info: "For advanced production, with pay per usage",
     button: {
@@ -101,11 +104,12 @@ export const configPricingPlans = [
   {
     name: "Enterprise",
     price: {
-      USD: "",
       EUR: "",
-      SGD: "",
-      MYR: "",
       IDR: "",
+      MYR: "",
+      PHP: "",
+      SGD: "",
+      USD: "",
     },
     info: "For large-scale mission critical applications",
     button: {

@@ -2,7 +2,7 @@ import { gql } from "~/libs";
 
 export const AllArticles = gql`
   query AllArticles {
-    articles {
+    articles(orderBy: date_DESC) {
       id
       slug
       title

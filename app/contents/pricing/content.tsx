@@ -16,6 +16,7 @@ export const PricingContent = () => {
     { symbol: "IDR", name: "Rp IDR" },
     { symbol: "MYR", name: "RM MYR" },
     { symbol: "SGD", name: "$ SGD" },
+    { symbol: "PHP", name: "₱ PHP" },
   ];
 
   const changeCurrency = (currencySymbol: CurrencySymbol) => {
