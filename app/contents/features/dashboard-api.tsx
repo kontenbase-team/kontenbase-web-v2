@@ -32,7 +32,7 @@ export const ExplainDashboard: FunctionComponent = () => {
   return (
     <div style={{ minHeight: 400, width: "100%" }}>
       {/* <Tabs>
-        {explainDashboardData
+        {dataExplainDashboard
           .filter((item) => {
             return item.isAvailable;
           })
@@ -68,7 +68,7 @@ export const ExplainDashboard: FunctionComponent = () => {
                       </div>
                     )}
                   </div>
-                  {item.videoYouTubeId ? (
+                  {item.youtubeEmbedId ? (
                     <div
                     // style={(theme) => {
                     //   return {
@@ -81,7 +81,7 @@ export const ExplainDashboard: FunctionComponent = () => {
                     >
                       <VideoYouTube
                         title={item.label}
-                        embedId={item.videoYouTubeId}
+                        embedId={item.youtubeEmbedId}
                       />
                     </div>
                   ) : (

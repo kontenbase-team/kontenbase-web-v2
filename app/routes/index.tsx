@@ -1,6 +1,7 @@
 import {
   HomeActionMiddle,
   HomeExamples,
+  HomeExplainDashboard,
   HomeFeatures,
   HomeIntro,
   HomePartners,
@@ -24,15 +25,21 @@ export default function Index() {
       <div className="stack-v mt-20 items-center gap-24">
         <HomeIntro />
         <HomePreview />
+
         <div className="stack-v items-center">
           <HomePowered />
           <HomePartners />
         </div>
+
         <HomeFeatures />
-        {/* <HomeDashboardAPI /> */}
+        <HomeExplainDashboard />
+        {/* <HomeExplainSDK /> */}
+
         <HomeActionMiddle />
+
         <HomeExamples />
         {/* <HomeVersus /> */}
+
         <HomeStacks />
         {/* <SectionSocial /> */}
       </div>

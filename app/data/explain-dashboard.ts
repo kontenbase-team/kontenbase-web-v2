@@ -1,20 +1,22 @@
-export const explainDashboardData = [
+export const dataExplainDashboard = [
   {
-    label: "REST API",
+    slug: "explain-dashboard-rest-api",
+    name: "REST API",
     imageUrl: "/assets/images/features/rest-api.png",
-    videoYouTubeId: "S0miMA7ix6Q",
+    youtubeEmbedId: "S0miMA7ix6Q",
     title: "Create database with automatic REST API generation",
     description:
-      "Database is accessible instantly through REST API and SDK. ALl essential HTTP methods are provided out of the box.",
+      "Database is accessible instantly through REST API and SDK. All essential HTTP methods are provided out of the box.",
     docsUrl: "https://docs.kontenbase.com",
     extraInfo:
       "We also support auto data migration. So you don't need to worry to switching data type anytime without losing your data.",
     isAvailable: true,
   },
   {
-    label: "Data Table",
+    slug: "explain-dashboard-data-table",
+    name: "Data Table",
     imageUrl: "/assets/images/features/data-table.png",
-    videoYouTubeId: "_LhAyRkxxls",
+    youtubeEmbedId: "_LhAyRkxxls",
     title: "Manage schema then manage data as simple as using spreadsheet",
     description:
       "Our schema editor is friendly even for non-technical users. Fill your data with the familiarity of spreadsheet.",
@@ -23,9 +25,10 @@ export const explainDashboardData = [
     isAvailable: true,
   },
   {
-    label: "Auth",
+    slug: "explain-dashboard-auth",
+    name: "Auth",
     imageUrl: "/assets/images/features/auth.png",
-    videoYouTubeId: "DJdCqmUgwwE",
+    youtubeEmbedId: "DJdCqmUgwwE",
     title: "Authentication & Authorization",
     description:
       "Built in basic authentication, 3rd party auth, and authorization like role management without coding. Fast and secure!",
@@ -34,9 +37,10 @@ export const explainDashboardData = [
     isAvailable: true,
   },
   {
-    label: "Storage",
+    slug: "explain-dashboard-storage",
+    name: "Storage",
     imageUrl: "/assets/images/features/storage.png",
-    videoYouTubeId: "c0PgiMZUoxo",
+    youtubeEmbedId: "c0PgiMZUoxo",
     title: "Files and Assets Storage",
     description:
       "Organize files and assets with storage API. Attach, upload, and download them through the services.",
@@ -45,9 +49,10 @@ export const explainDashboardData = [
     isAvailable: true,
   },
   {
-    label: "Real-Time",
+    slug: "explain-dashboard-realtime",
+    name: "Real-Time",
     imageUrl: "/assets/images/features/realtime.png",
-    videoYouTubeId: "WW2HkwoZfVk",
+    youtubeEmbedId: "WW2HkwoZfVk",
     title: "Real-Time with WebSocket",
     description:
       "Built in real-time support via WebSocket with battle tested performance!",
@@ -56,7 +61,8 @@ export const explainDashboardData = [
     isAvailable: true,
   },
   {
-    label: "Functions",
+    slug: "explain-dashboard-functions",
+    name: "Functions",
     imageUrl: "/assets/images/features/functions.png",
     title: "Functions",
     description:

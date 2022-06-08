@@ -1,4 +1,5 @@
-import { HomeStacks } from "~/contents";
+import { TabsExample } from "~/components";
+import { dataExplainDashboard } from "~/data";
 import { Layout } from "~/layouts";
 
 import type { SEOHandle } from "~/types";
@@ -11,9 +12,9 @@ export const handle: SEOHandle = {
 
 export default function Debug() {
   return (
-    <Layout variant="full">
+    <Layout variant="medium">
       <div className="stack-v mt-20 items-center gap-20">
-        <HomeStacks />
+        <TabsExample tabs={dataExplainDashboard} />
       </div>
     </Layout>
   );

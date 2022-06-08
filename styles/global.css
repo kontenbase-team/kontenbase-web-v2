@@ -362,6 +362,25 @@
   }
 
   /**
+   * Radix UI - Tabs
+   */
+
+  .tabs-radix-trigger {
+    @apply inline-block flex flex-shrink-0 items-center justify-center rounded-base;
+    @apply focus-ring -mb-px h-10 cursor-base whitespace-nowrap px-4 py-2 text-center font-bold;
+    @apply bg-transparent text-neutral-600;
+    @apply hover:text-primary-900;
+    @apply selected:bg-primary-500 selected:text-primary-50;
+    @apply dark:bg-transparent dark:text-neutral-400;
+    @apply dark:hover:text-primary-100;
+    @apply dark:selected:bg-primary-700 dark:selected:text-primary-100;
+  }
+
+  .tabs-radix-content {
+    @apply focus-ring w-full py-5;
+  }
+
+  /**
    * PrismJS Code Highlight
    */
 
