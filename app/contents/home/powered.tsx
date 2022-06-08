@@ -1,4 +1,4 @@
-import { useTheme } from "~/components";
+import { Anchor, useTheme } from "~/components";
 
 export const HomePowered = () => {
   const { isLight } = useTheme();
@@ -8,11 +8,13 @@ export const HomePowered = () => {
     <section className="stack-v items-center">
       <h2 className="m-0">Powered by</h2>
       <div>
-        <img
-          src={`/assets/images/partners/idcloudhost/idcloudhost-h-${mode}.png`}
-          alt="IdCloudHost"
-          className="filter-gray max-h-[156px] max-w-[450px] sm:max-h-[210px] sm:max-w-[600px]"
-        />
+        <Anchor className="filter-dim block" href="https://idcloudhost.com/en">
+          <img
+            src={`/assets/images/partners/idcloudhost/idcloudhost-h-${mode}.png`}
+            alt="IdCloudHost"
+            className="max-h-[156px] max-w-[450px] sm:max-h-[210px] sm:max-w-[600px]"
+          />
+        </Anchor>
       </div>
     </section>
   );

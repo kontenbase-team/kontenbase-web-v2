@@ -30,8 +30,6 @@ export const FooterCopyrightText = ({ className }: HTMLElementProps) => {
       <span>&copy;</span>
       <span>{getCurrentYear()}</span>
       <Anchor href={configMeta.url}>{configMeta.name}</Anchor>
-      <span>by</span>
-      <Anchor href={configMeta.author.url}>{configMeta.author.name}</Anchor>
     </p>
   );
 };

@@ -15,7 +15,7 @@ export const HomePartners = () => {
               <img
                 src={`/assets/images/partners/${partner.slug}-light.png`}
                 alt={partner.name}
-                className="filter-gray max-h-[52px] max-w-[150px] object-contain sm:max-h-[70px] sm:max-w-[200px]"
+                className="filter-dim max-h-[52px] max-w-[150px] object-contain sm:max-h-[70px] sm:max-w-[200px]"
               />
             </div>
           );

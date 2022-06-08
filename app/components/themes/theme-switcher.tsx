@@ -33,7 +33,7 @@ export const ThemeSwitcher = () => {
               as={IconButton}
               size="md"
               color="primary"
-              variant="ghost"
+              variant="light"
             >
               <IconGear
                 aria-label="Settings"
