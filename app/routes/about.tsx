@@ -1,5 +1,6 @@
 import { json } from "@remix-run/node";
 
+import { ButtonGroupCTA } from "~/contents";
 import { dataFeaturesSimple } from "~/data";
 import { Layout } from "~/layouts";
 import { createMetaData } from "~/utils";
@@ -45,6 +46,8 @@ export default function About() {
         </p>
         <p>Kontenbase solve those problems!</p>
       </article>
+
+      <ButtonGroupCTA />
     </Layout>
   );
 }

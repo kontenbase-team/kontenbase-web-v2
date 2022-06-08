@@ -35,7 +35,7 @@ export const VersusPanel = () => {
   return (
     <div className="flex w-full flex-col flex-wrap items-center justify-center gap-5 lg:flex-row lg:flex-nowrap">
       <div className="space-y-5">
-        <div className="card">
+        <div className="card-shadow">
           <Logo />
           <div>
             <h4>Kontenbase Managed Service</h4>
@@ -65,7 +65,7 @@ export const VersusPanel = () => {
       </div>
 
       <div className="space-y-5">
-        <div className="card">
+        <div className="card-shadow">
           <div className="space-y-5">
             {dataVersusStacks.map((item) => {
               return (

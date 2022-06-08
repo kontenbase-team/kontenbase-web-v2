@@ -215,6 +215,10 @@
    */
 
   .card {
+    @apply bg-panel border-panel w-full rounded-base p-5;
+  }
+
+  .card-shadow {
     @apply bg-panel border-panel shadow-panel w-full flex-[1] space-y-5 rounded-base p-5;
   }
 

@@ -55,7 +55,7 @@ export const createMetaData = ({
       ? `${configMeta.url}/${ogImageUrl}`
       : `${configMeta.url}/${configMeta.ogImageUrl}`,
 
-    "twitter:card": "summary_large_image",
+    "twitter:card-shadow": "summary_large_image",
     "twitter:site": "@poinswap",
     "twitter:creator": "@poinswap",
     "twitter:title": title || name || configMeta.title,
