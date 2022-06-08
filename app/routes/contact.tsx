@@ -34,16 +34,13 @@ export default function Contact() {
         <p>Support links, social channel, and team members</p>
       </header>
 
-      <div className="stack-v gap-10">
-        <article className="prose-config">
-          <h2>Support</h2>
-          <p>
-            Thank you for being interested in Kontenbase! If you have any
-            feedback, issue, or problem on learning and using Kontenbase, you
-            can reach to us and the community through our main support channels:
-          </p>
-        </article>
-
+      <article className="stack-v layout-content small gap-5">
+        <h2>Support</h2>
+        <p>
+          Thank you for being interested in Kontenbase! If you have any
+          feedback, issue, or problem on learning and using Kontenbase, you can
+          reach to us and the community through our main support channels:
+        </p>
         <ButtonGroup>
           <ButtonAnchor href="https://github.com/kontenbase/feedback">
             GitHub
@@ -51,17 +48,17 @@ export default function Contact() {
           <ButtonAnchor href="/discord">Discord</ButtonAnchor>
           <ButtonAnchor href="/twitter">Twitter</ButtonAnchor>
         </ButtonGroup>
+      </article>
 
-        <article className="prose-config">
-          <h2>Team</h2>
-          <p>
-            Kontenbase team is a collaboration between internal developers and
-            various contributors.
-          </p>
-        </article>
+      <article className="stack-v layout-content small mt-10 mb-5">
+        <h2>Team</h2>
+        <p>
+          Kontenbase team is a collaboration between internal developers and
+          various contributors.
+        </p>
+      </article>
 
-        <TeamMembers data={dataTeamMembers} />
-      </div>
+      <TeamMembers data={dataTeamMembers} />
     </Layout>
   );
 }

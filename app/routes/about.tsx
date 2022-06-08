@@ -1,5 +1,6 @@
 import { json } from "@remix-run/node";
 
+import { Anchor } from "~/components";
 import { ButtonGroupCTA } from "~/contents";
 import { dataFeaturesSimple } from "~/data";
 import { Layout } from "~/layouts";
@@ -47,7 +48,42 @@ export default function About() {
         <p>Kontenbase solve those problems!</p>
       </article>
 
-      <ButtonGroupCTA />
+      <div className="mt-5">
+        <ButtonGroupCTA />
+      </div>
+
+      <div className="mt-10">
+        <h3>FAQ</h3>
+        <article className="prose-config">
+          <div>
+            <h4>Is it free or paid?</h4>
+            <p>
+              You can start to use Kontenbase for free. Then upgrade if needed
+              to paid plans such as Hobby ($5) or Pro ($25).
+            </p>
+          </div>
+          <div>
+            <h4>Where is the database located, in what region?</h4>
+            <p>
+              Currently the data is in{" "}
+              <Anchor href="https://vultr.com">Vultr</Anchor> (Singapore
+              region), but we're in the process of migration to{" "}
+              <Anchor href="https://idcloudhost.com/en">IdCloudHost</Anchor>{" "}
+              (Singapore region).
+            </p>
+          </div>
+          <div>
+            <h4>
+              I need somebody who can help to implement Kontenbase in my team
+            </h4>
+            <p>
+              Let's have a <Anchor href="/demo">Personalized Demo</Anchor> or
+              you can also request a meeting for{" "}
+              <Anchor href="/expert">Kontenbase Tech Expert</Anchor>.
+            </p>
+          </div>
+        </article>
+      </div>
     </Layout>
   );
 }
