@@ -1,5 +1,4 @@
-import { TabsExample } from "~/components";
-import { dataExplainDashboard } from "~/data";
+import { HomeVersus } from "~/contents";
 import { Layout } from "~/layouts";
 
 import type { SEOHandle } from "~/types";
@@ -12,9 +11,9 @@ export const handle: SEOHandle = {
 
 export default function Debug() {
   return (
-    <Layout variant="medium">
+    <Layout variant="full">
       <div className="stack-v mt-20 items-center gap-20">
-        <TabsExample tabs={dataExplainDashboard} />
+        <HomeVersus />
       </div>
     </Layout>
   );

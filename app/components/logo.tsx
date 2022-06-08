@@ -14,7 +14,11 @@ export const Logo = () => {
         "flex items-center transition-[opacity] duration-300 hover:opacity-80",
       )}
     >
-      <img className="h-[40px]" src={logoImageUrl} alt="Kontenbase" />
+      <img
+        className="h-[30px] sm:h-[40px]"
+        src={logoImageUrl}
+        alt="Kontenbase"
+      />
     </div>
   );
 };

@@ -35,7 +35,7 @@
   }
 
   header p {
-    @apply text-lg;
+    @apply text-base sm:text-lg;
   }
 
   .h0 {
@@ -44,22 +44,22 @@
 
   h1,
   .h1 {
-    @apply mb-8 text-4xl font-bold sm:text-5xl;
+    @apply mb-6 text-4xl font-bold sm:text-5xl;
   }
 
   h2,
   .h2 {
-    @apply my-6 text-2xl font-bold sm:text-3xl;
+    @apply my-4 text-2xl font-bold sm:text-3xl;
   }
 
   h3,
   .h3 {
-    @apply my-3 text-xl font-semibold sm:text-2xl;
+    @apply my-2 text-xl font-semibold sm:text-2xl;
   }
 
   h4,
   .h4 {
-    @apply my-2 font-semibold sm:text-lg;
+    @apply my-1 font-semibold sm:text-lg;
   }
 
   h1,
@@ -208,6 +208,14 @@
 
   .button.solid {
     @apply bg-white text-black;
+  }
+
+  /**
+   * Card
+   */
+
+  .card {
+    @apply bg-panel border-panel shadow-panel w-full flex-[1] space-y-5 rounded-base p-5;
   }
 
   /**

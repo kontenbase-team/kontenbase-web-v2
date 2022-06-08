@@ -8,6 +8,7 @@ import {
   HomePowered,
   HomePreview,
   HomeStacks,
+  HomeVersus,
 } from "~/contents";
 import { Layout } from "~/layouts";
 
@@ -21,12 +22,12 @@ export const handle: SEOHandle = {
 
 export default function Index() {
   return (
-    <Layout variant="full">
-      <div className="stack-v mt-20 items-center gap-24">
+    <Layout id="route-index" variant="full">
+      <div className="stack-v mt-20 items-center gap-16 sm:gap-28">
         <HomeIntro />
         <HomePreview />
 
-        <div className="stack-v items-center">
+        <div className="stack-v layout-padding items-center">
           <HomePowered />
           <HomePartners />
         </div>
@@ -38,7 +39,7 @@ export default function Index() {
         <HomeActionMiddle />
 
         <HomeExamples />
-        {/* <HomeVersus /> */}
+        <HomeVersus />
 
         <HomeStacks />
         {/* <SectionSocial /> */}

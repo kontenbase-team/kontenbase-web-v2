@@ -1,4 +1,4 @@
-export const versusStacksData = [
+export const dataVersusStacks = [
   {
     icon: "amazon-ec2",
     name: "Amazon EC2: VPS",

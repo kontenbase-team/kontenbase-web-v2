@@ -11,7 +11,7 @@ export const ButtonGroupCTA = ({
   secondaryCTA,
 }: ButtonGroupCTAProps) => {
   return (
-    <ButtonGroup size="lg">
+    <ButtonGroup size="lg" className="flex justify-center">
       {primaryCTA || (
         <ButtonAnchor href="/signup">Sign Up for Free</ButtonAnchor>
       )}
