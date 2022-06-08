@@ -4,9 +4,9 @@ import { dataStacks } from "~/data";
 export const HomeStacks = () => {
   return (
     <section className="stack-v-center layout-padding">
-      <h2 className="text-center">
+      <h1 className="max-w-3xl text-center">
         Try our managed service with battle tested technology stack
-      </h2>
+      </h1>
       <div className="stack-h-center max-w-4xl flex-wrap justify-center gap-5 sm:gap-10">
         {dataStacks.map((stack) => {
           return (

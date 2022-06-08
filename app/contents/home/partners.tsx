@@ -7,8 +7,10 @@ export const HomePartners = () => {
 
   return (
     <section className="stack-v-center layout-padding">
-      <h2 className="text-center">Powering tech enterprise and startups</h2>
-      <div className="stack-h-center flex-wrap gap-5 sm:gap-10">
+      <h2 className="mt-0 text-center">
+        Powering tech enterprise and startups
+      </h2>
+      <div className="stack-h-center flex-wrap justify-center gap-5 sm:gap-10">
         {dataPartners.map((partner) => {
           return (
             <div key={partner.slug}>

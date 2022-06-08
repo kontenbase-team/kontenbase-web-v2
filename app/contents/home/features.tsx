@@ -4,7 +4,7 @@ import { IconArrowRight } from "~/libs";
 
 export const HomeFeatures = () => {
   return (
-    <section className="stack-v-center layout-padding layout-content large">
+    <section className="stack-v-center layout-padding layout-content large pt-10">
       <h1 className="max-w-2xl text-center">
         Focus on your products, don’t reinvent the wheel!
       </h1>

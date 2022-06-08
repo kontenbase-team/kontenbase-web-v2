@@ -174,7 +174,7 @@
    */
 
   .header {
-    @apply mt-10 mb-20;
+    @apply mt-10 mb-10;
   }
 
   .header-center {
@@ -541,12 +541,12 @@
     @apply text-neutral-600 dark:text-neutral-400;
   }
 
-  .container-low a {
-    @apply text-underline-left-right;
-  }
-
   .container-high a {
     @apply prose-a-styles;
+  }
+
+  .container-low a {
+    @apply text-underline-left-right;
   }
 
   .ul-checklist {

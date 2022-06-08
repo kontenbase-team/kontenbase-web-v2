@@ -10,7 +10,7 @@ export const navigationData = [
 export const navigationFeaturesData = [
   {
     text: "Database to REST API & SDK",
-    to: "/features/rest-api-sdk",
+    to: "/features/api-sdk",
   },
   {
     text: "Authentication & Authorization",

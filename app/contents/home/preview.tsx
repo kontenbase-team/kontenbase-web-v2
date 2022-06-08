@@ -14,12 +14,12 @@ export const HomePreview = () => {
   }
 
   return (
-    <section>
+    <section className="layout-padding">
       <div className="flex items-center justify-center">
         <img
           src="/assets/images/kontenbase-home-hero.png"
           alt="Kontenbase Dashboard"
-          className="border-panel shadow-primary max-w-5xl rounded-base"
+          className="border-panel shadow-primary w-full max-w-5xl rounded-base"
         />
         <div
           role="button"
@@ -29,10 +29,10 @@ export const HomePreview = () => {
           className="pointer group absolute flex items-center"
         >
           <img
-            className="transition duration-100 ease-in-out group-hover:scale-110"
             src="/assets/images/play-button.svg"
             alt="Play Introduction Video"
             width={100}
+            className="transition duration-100 ease-in-out group-hover:scale-110"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ export const HomePreview = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="bg-panel shadow-primary stack-v w-full max-w-2xl transform gap-4 overflow-hidden rounded-base p-2 transition-all">
+                <Dialog.Panel className="bg-panel shadow-primary stack-v w-full max-w-4xl transform gap-4 overflow-hidden rounded-base p-2 transition-all">
                   <div className="relative overflow-auto rounded-base">
                     <VideoYouTube
                       title="Kontenbase Alpha - Product Demo"

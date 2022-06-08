@@ -1,18 +1,28 @@
-import { Avatar, ButtonAnchor, ButtonGroup, IconSpan } from "~/components";
+import {
+  Anchor,
+  Avatar,
+  ButtonAnchor,
+  ButtonGroup,
+  IconSpan,
+} from "~/components";
 import { dataExamples } from "~/data";
 
 export const HomeExamples = () => {
   return (
     <section className="stack-v-center layout-padding gap-10">
-      <div className="stack-v-center text-center">
-        <h1>
+      <div className="stack-v-center container-low text-center">
+        <h1 className="max-w-2xl">
           What can you build with{" "}
           <span className="text-primary-500">Kontenbase</span>?
         </h1>
 
         <p className="text-dim max-w-3xl text-xl">
-          Kontenbase can be used to build any app! Seriously, anything! Here
-          some example that you can clone and try.
+          Kontenbase can be used to build any app! Seriously, anything! Here are
+          some examples that you can clone and try.{" "}
+          <Anchor href="https://github.com/kontenbase/kontenbase/tree/main/examples">
+            Check out more on our GitHub
+          </Anchor>
+          .
         </p>
       </div>
 

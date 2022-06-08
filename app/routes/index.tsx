@@ -21,7 +21,7 @@ export const handle: SEOHandle = {
 export default function Index() {
   return (
     <Layout variant="full">
-      <div className="stack-v mt-20 items-center gap-20">
+      <div className="stack-v mt-20 items-center gap-24">
         <HomeIntro />
         <HomePreview />
         <div className="stack-v items-center">

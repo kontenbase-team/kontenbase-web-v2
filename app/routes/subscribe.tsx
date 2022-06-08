@@ -39,7 +39,7 @@ export default function Subscribe() {
         <h1>Subscribe</h1>
         <h2>
           <Anchor href="https://twitter.com/kontenbase">
-            Follow the updates on <b>Kontenbase</b>
+            Get updates to your inbox
           </Anchor>
         </h2>
       </header>

@@ -4,7 +4,7 @@ export const dataFeaturesSimple = [
     title: "Database to REST API & SDK",
     description:
       "Auto generated REST API & SDK from database schema. Change schema on the fly! SDK for better developer experience.",
-    to: "/features/rest-api-sdk",
+    to: "/features/api-sdk",
     isAvailable: true,
   },
   {

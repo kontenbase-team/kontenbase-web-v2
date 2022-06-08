@@ -2,7 +2,7 @@ export const sitemapData = [
   {
     text: "Features",
     links: [
-      { to: "/features/rest-api-sdk", text: "REST API & SDK" },
+      { to: "/features/api-sdk", text: "REST API & SDK" },
       { to: "/features/auth", text: "Auth" },
       { to: "/features/storage", text: "Storage" },
       { to: "/features/realtime", text: "Real-Time" },
