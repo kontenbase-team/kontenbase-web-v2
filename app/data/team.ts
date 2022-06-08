@@ -7,7 +7,7 @@ export const dataTeamMembers = [
         role: "Founder",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
+          { name: "website", url: "https://kontenbase.com" },
           { name: "github", url: "https://github.com/radiegtya" },
           { name: "linkedin", url: "https://linkedin.com/in/radiegtya" },
         ],
@@ -28,6 +28,7 @@ export const dataTeamMembers = [
         role: "Tech Expert Representative",
         avatarUrl: "",
         links: [
+          { name: "github", url: "https://github.com/radifanmp" },
           {
             name: "linkedin",
             url: "https://linkedin.com/in/radifanmp",
@@ -39,9 +40,9 @@ export const dataTeamMembers = [
         role: "Development Team Lead",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/exneval" },
+          { name: "linkedin", url: "https://linkedin.com/in/exneval" },
         ],
       },
       {
@@ -64,9 +65,12 @@ export const dataTeamMembers = [
         role: "Senior Frontend Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/habrhm" },
+          {
+            name: "linkedin",
+            url: "https://linkedin.com/in/muhammad-haris-abdurrahman",
+          },
         ],
       },
       {
@@ -74,19 +78,22 @@ export const dataTeamMembers = [
         role: "Senior Frontend Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/chazi13" },
+          {
+            name: "linkedin",
+            url: "https://linkedin.com/in/muhamad-chairul-aziz",
+          },
         ],
       },
       {
-        name: "Yosep Alexander",
+        name: "Yosep Alexsander",
         role: "Mid-Level Frontend Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/yosepalexsander" },
+          { name: "linkedin", url: "https://linkedin.com/in/yosep-alexsander" },
         ],
       },
       {
@@ -94,19 +101,22 @@ export const dataTeamMembers = [
         role: "Senior Backend Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/aswara" },
+          { name: "linkedin", url: "https://linkedin.com/in/adi-aswara" },
         ],
       },
       {
-        name: "Rizky Tanjung",
+        name: "Rizky Adil Hakim Tanjung",
         role: "Senior Backend Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/kimsohyuncans" },
+          {
+            name: "linkedin",
+            url: "https://linkedin.com/in/rizky-tanjung-5b50a5192",
+          },
         ],
       },
       {
@@ -114,19 +124,19 @@ export const dataTeamMembers = [
         role: "Mid-Level Backend Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/nuraskiah" },
+          { name: "linkedin", url: "https://linkedin.com/in/nuraskiah" },
         ],
       },
       {
-        name: "Elga",
+        name: "Elga Asfa Erwanto",
         role: "DevOps Engineer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/frostmarry" },
+          { name: "linkedin", url: "https://linkedin.com/in/elga-ae" },
         ],
       },
       {
@@ -134,9 +144,9 @@ export const dataTeamMembers = [
         role: "UI/UX Designer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/afridachoni" },
+          { name: "linkedin", url: "https://www.linkedin.com/in/afridachoni" },
         ],
       },
       {
@@ -144,9 +154,12 @@ export const dataTeamMembers = [
         role: "QA/Tester",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/vebiolavanessa" },
+          {
+            name: "linkedin",
+            url: "https://linkedin.com/in/vebiola-vanessa-17993721b",
+          },
         ],
       },
     ],
@@ -159,14 +172,53 @@ export const dataTeamMembers = [
         role: "Content Developer",
         avatarUrl: "",
         links: [
-          { name: "website", url: "https://dumbways.id" },
-          { name: "github", url: "https://github.com" },
-          { name: "linkedin", url: "https://linkedin.com/in/" },
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/auliaromadon" },
+          { name: "linkedin", url: "https://linkedin.com/in/auliaromadon" },
         ],
       },
       {
         name: "You?",
         role: "Developer Advocate",
+        avatarUrl: "",
+      },
+    ],
+  },
+  {
+    type: "Other Contributors",
+    members: [
+      {
+        name: "Fadhil Darma Putera Zagoto",
+        role: "Frontend Developer",
+        avatarUrl: "",
+        links: [
+          { name: "website", url: "https://kontenbase.com" },
+          { name: "github", url: "https://github.com/crusherblack" },
+          {
+            name: "linkedin",
+            url: "https://linkedin.com/in/fadhildarmaputeraz",
+          },
+        ],
+      },
+      {
+        name: "Ilham Adiputra",
+        role: "Frontend Developer",
+        avatarUrl: "",
+        links: [
+          {
+            name: "youtube",
+            url: "https://www.youtube.com/channel/UCXFdc68srZQ-ok4I1-pHs2g",
+          },
+          { name: "github", url: "https://github.com/ilham25" },
+          {
+            name: "linkedin",
+            url: "https://www.linkedin.com/in/ilham-adiputra",
+          },
+        ],
+      },
+      {
+        name: "You?",
+        role: "Developer",
         avatarUrl: "",
       },
     ],

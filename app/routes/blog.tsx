@@ -34,7 +34,7 @@ export const loader: LoaderFunction = async () => {
 export const meta: MetaFunction = () => {
   return createMetaData({
     title: `Blog`,
-    description: `Articles from Kontenbase around UI, UX, styling, CSS, design system, and more.`,
+    description: `Articles from Kontenbase around web development, backend, REST API, and more.`,
   });
 };
 
@@ -45,10 +45,9 @@ export default function Blog() {
     <Layout variant="medium">
       <header>
         <h1>Blog</h1>
-        <h2>All available articles</h2>
         <p>
-          Discussing around UI, UX, styling, CSS, design system, and more
-          beyond.
+          Articles from Kontenbase around web development, backend, REST API,
+          and more.
         </p>
       </header>
 

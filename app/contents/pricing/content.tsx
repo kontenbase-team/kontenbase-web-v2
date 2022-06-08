@@ -25,7 +25,7 @@ export const PricingContent = () => {
 
   return (
     <div className="stack-v items-center gap-10">
-      <ButtonGroup attached className="justify-center">
+      <ButtonGroup className="justify-center">
         {currencies.map((item) => {
           return (
             <Button

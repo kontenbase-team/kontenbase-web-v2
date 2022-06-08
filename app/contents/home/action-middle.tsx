@@ -13,7 +13,7 @@ export const HomeActionMiddle = () => {
         product and let us do the scale!
       </p>
 
-      <ButtonGroupCTA />
+      <ButtonGroupCTA className="justify-center" />
     </section>
   );
 };
