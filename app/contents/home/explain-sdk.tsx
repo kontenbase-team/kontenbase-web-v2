@@ -1,10 +1,10 @@
-import { ButtonAnchor, IconVechai, Tabs } from "~/components";
-import { dataExplainSDKLinks } from "~/data";
+import { ButtonAnchor, CodeHighlight, IconVechai, Tabs } from "~/components";
+import { dataExplainSDKCodes, dataExplainSDKLinks } from "~/data";
 import { IconArrowRight } from "~/libs";
 
 export const HomeExplainSDK = () => {
   return (
-    <section className="stack-v-center layout-padding layout-content medium">
+    <section className="stack-v-center layout-padding layout-content medium gap-10">
       <div className="stack-h flex-wrap justify-between gap-10 sm:flex-nowrap">
         <div className="max-w-sm">
           <h2 className="mt-0 max-w-2xl">
@@ -42,20 +42,17 @@ export const HomeExplainSDK = () => {
         </div>
       </div>
 
-      {/* <TabsExplainSDK tabs={dataExplainDashboard} /> */}
+      <div className="w-full">
+        <h3 className="mt-0 max-w-xl">Some SDK code examples</h3>
+        <TabsExplainSDK tabs={dataExplainSDKCodes} />
+      </div>
     </section>
   );
 };
 
 type TabExplainSDKItem = {
-  slug: string;
-  name: string;
-  imageUrl: string;
-  title: string;
-  description: string;
-  docsUrl: string;
-  extraInfo: string;
-  isAvailable: boolean;
+  label: string;
+  code: string;
 };
 
 interface TabsProps {
@@ -64,10 +61,7 @@ interface TabsProps {
 
 export const TabsExplainSDK = ({ tabs }: TabsProps) => {
   return (
-    <Tabs.Root
-      className="flex w-full flex-col"
-      defaultValue="explain-dashboard-rest-api"
-    >
+    <Tabs.Root className="flex w-full flex-col" defaultValue="Read">
       <Tabs.List
         aria-label="Tabs Explain Dashboard"
         className="stack-h flex-wrap justify-start"
@@ -75,11 +69,11 @@ export const TabsExplainSDK = ({ tabs }: TabsProps) => {
         {tabs.map((tab) => {
           return (
             <Tabs.Trigger
-              key={tab.slug}
-              value={tab.slug}
+              key={tab.label}
+              value={tab.label}
               className="tabs-radix-trigger"
             >
-              {tab.name}
+              {tab.label}
             </Tabs.Trigger>
           );
         })}
@@ -88,20 +82,14 @@ export const TabsExplainSDK = ({ tabs }: TabsProps) => {
       {tabs.map((tab) => {
         return (
           <Tabs.Content
-            key={tab.slug}
-            value={tab.slug}
+            key={tab.label}
+            value={tab.label}
             tabIndex={-1}
             className="tabs-radix-content"
           >
             <div className="stack-h flex-wrap justify-start gap-5 md:flex-nowrap">
-              <div className="w-full max-w-md space-y-3">
-                <h3 className="m-0">{tab.title}</h3>
-                <p>{tab.description}</p>
-                {tab.extraInfo && (
-                  <p className="bg-tertiary rounded-base p-5 text-sm">
-                    {tab.extraInfo}
-                  </p>
-                )}
+              <div className="w-full">
+                <CodeHighlight code={tab.code} />
               </div>
             </div>
           </Tabs.Content>

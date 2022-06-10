@@ -35,7 +35,7 @@ export default function Index() {
 
         <HomeFeatures />
 
-        <div className="stack-v items-center">
+        <div className="stack-v layout-content items-center">
           <HomeExplainDashboard />
           <HomeExplainSDK />
         </div>

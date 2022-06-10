@@ -150,7 +150,7 @@ export const ExplainSDK: FunctionComponent = () => {
       </div>
 
       {/* <Tabs style={{ width: "100%", minHeight: 330 }}>
-        {explainAPIData.map((item) => {
+        {dataExplainSDKCodes.map((item) => {
           return (
             <Tabs.Tab key={item.label} label={item.label}>
               <CodeHighlight
