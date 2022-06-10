@@ -87,14 +87,17 @@ export const MessageErrorNotFoundGoogle = () => {
   const pathName = params["*"];
 
   return (
-    <article className="prose-config">
-      <h1 className="text-info-500">404 Not Found</h1>
-      <h2>Sorry, page is not exist or already gone</h2>
-      <h3>
-        The requested URL <b>"/{pathName}"</b> was not found
-      </h3>
+    <div className="mb-10">
+      <header>
+        <h1 className="text-info-500">404 Not Found</h1>
+        <h2>Sorry, page is not exist or already gone</h2>
+        <h3>
+          The requested URL <b>"/{pathName}"</b> was not found
+        </h3>
+      </header>
+
       <p>That’s all we know folks. :)</p>
-    </article>
+    </div>
   );
 };
 
@@ -132,8 +135,12 @@ export const MessageBackReloadButtons = ({
         <ButtonLink variant="solid" to="/">
           Back to home
         </ButtonLink>
-        <Button onClick={handleBackToPrevious}>Back to previous page</Button>
-        <Button onClick={handleReload}>Reload page</Button>
+        <Button color="primary" variant="light" onClick={handleBackToPrevious}>
+          Back to previous page
+        </Button>
+        <Button variant="ghost" onClick={handleReload}>
+          Reload page
+        </Button>
       </ButtonGroup>
     );
   }

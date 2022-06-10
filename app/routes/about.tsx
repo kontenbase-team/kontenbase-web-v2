@@ -74,11 +74,13 @@ export default function About() {
           </div>
           <div>
             <h4>
-              I need somebody who can help to implement Kontenbase in my team
+              Can I request for somebody who can help to implement Kontenbase
+              with my team?
             </h4>
             <p>
-              Let's have a <Anchor href="/demo">Personalized Demo</Anchor> or
-              you can also request a meeting for{" "}
+              Yes you can. Let's have a{" "}
+              <Anchor href="/demo">Personalized Demo</Anchor> or you can also
+              request a meeting for{" "}
               <Anchor href="/expert">Kontenbase Tech Expert</Anchor>.
             </p>
           </div>
