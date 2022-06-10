@@ -1,4 +1,4 @@
-export const dataExplainAPILinks = [
+export const dataExplainSDKLinks = [
   {
     name: "REST API",
     description:

@@ -1,5 +1,5 @@
 import { Icon, ButtonAnchor } from "~/components";
-import { dataExplainAPILinks } from "~/data";
+import { dataExplainSDKLinks } from "~/data";
 
 import type { FunctionComponent } from "react";
 
@@ -16,7 +16,7 @@ export const HomeDashboardAPI: FunctionComponent = () => {
     >
       <div className="stack-v" style={{ gap: "5rem", width: "100%" }}>
         <ExplainDashboard />
-        <ExplainAPI />
+        <ExplainSDK />
       </div>
     </div>
   );
@@ -109,10 +109,10 @@ export const ExplainDashboard: FunctionComponent = () => {
   );
 };
 
-export const ExplainAPI: FunctionComponent = () => {
+export const ExplainSDK: FunctionComponent = () => {
   return (
     <div
-      id="ExplainAPI"
+      id="ExplainSDK"
       style={{
         width: "100%",
         flexWrap: "wrap",
@@ -129,7 +129,7 @@ export const ExplainAPI: FunctionComponent = () => {
         </div>
 
         <div className="flex-wrap justify-start">
-          {dataExplainAPILinks.map((item) => {
+          {dataExplainSDKLinks.map((item) => {
             return (
               <div key={item.name} style={{ maxWidth: "170px" }}>
                 <div className="stack-v">

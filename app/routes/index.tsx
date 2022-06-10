@@ -2,6 +2,7 @@ import {
   HomeActionMiddle,
   HomeExamples,
   HomeExplainDashboard,
+  HomeExplainSDK,
   HomeFeatures,
   HomeIntro,
   HomePartners,
@@ -33,8 +34,11 @@ export default function Index() {
         </div>
 
         <HomeFeatures />
-        <HomeExplainDashboard />
-        {/* <HomeExplainSDK /> */}
+
+        <div className="stack-v items-center">
+          <HomeExplainDashboard />
+          <HomeExplainSDK />
+        </div>
 
         <HomeActionMiddle />
 

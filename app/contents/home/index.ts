@@ -4,6 +4,7 @@
 export * from "./action-middle";
 export * from "./examples";
 export * from "./explain-dashboard";
+export * from "./explain-sdk";
 export * from "./features";
 export * from "./intro";
 export * from "./partners";
