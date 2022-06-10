@@ -47,6 +47,8 @@ export default function Contact() {
           </ButtonAnchor>
           <ButtonAnchor href="/discord">Discord</ButtonAnchor>
           <ButtonAnchor href="/twitter">Twitter</ButtonAnchor>
+          <ButtonAnchor href="/demo">Schedule Demo</ButtonAnchor>
+          <ButtonAnchor href="/expert">Contact Tech Expert</ButtonAnchor>
         </ButtonGroup>
       </article>
 
