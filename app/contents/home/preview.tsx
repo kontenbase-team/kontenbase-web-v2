@@ -1,8 +1,15 @@
 /* eslint-disable react/jsx-no-bind */
-import { Dialog, Fragment, Transition, VideoYouTube } from "~/components";
+import {
+  Dialog,
+  Fragment,
+  Transition,
+  useTheme,
+  VideoYouTube,
+} from "~/components";
 import { useState } from "~/hooks";
 
 export const HomePreview = () => {
+  const { isLight } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -13,13 +20,15 @@ export const HomePreview = () => {
     setIsOpen(true);
   }
 
+  const colorMode = isLight ? "light" : "dark";
+
   return (
     <section className="layout-padding">
       <div className="flex items-center justify-center">
         <img
-          src="/assets/images/kontenbase-home-hero.png"
-          alt="Kontenbase Dashboard"
-          className="border-panel shadow-primary w-full max-w-5xl rounded-base"
+          src={`/assets/screenshots/home-${colorMode}.png`}
+          alt={`Kontenbase Dashboard (${colorMode})`}
+          className="border-panel shadow-primary aspect-video w-full max-w-5xl rounded-base"
         />
         <div
           role="button"
