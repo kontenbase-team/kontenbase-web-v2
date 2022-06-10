@@ -20,7 +20,7 @@ export const sitemapData = [
         text: "Getting Started",
       },
       {
-        href: "https://a.kontenbase.com/youtube",
+        href: "https://youtube.com/channel/UCmOBswBENyNAP10eZ_xCHSQ",
         text: "Tutorials",
       },
       {

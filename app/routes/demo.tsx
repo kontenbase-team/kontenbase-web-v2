@@ -9,5 +9,5 @@ export const handle: SEOHandle = {
 };
 
 export const loader: LoaderFunction = async () => {
-  return redirect("https://a.kontenbase.com/demo");
+  return redirect("https://calendly.com/kontenbase/demo");
 };

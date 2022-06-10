@@ -11,7 +11,6 @@ export * from "./partners";
 export * from "./powered";
 export * from "./pricing";
 export * from "./sitemap";
-export * from "./social-media-links";
 export * from "./stacks";
 export * from "./team";
 export * from "./theme";

@@ -16,31 +16,31 @@ export const configExternalLinks: ExternalLinkItems = [
   {
     slug: "github",
     name: "GitHub",
-    url: "https://a.kontenbase.com/github",
+    url: "https://github.com/kontenbase",
     isEnabled: true,
   },
   {
     slug: "twitter",
     name: "Twitter",
-    url: "https://a.kontenbase.com/twitter",
+    url: "https://twitter.com/kontenbase",
     isEnabled: true,
   },
   {
     slug: "youtube",
     name: "YouTube",
-    url: "https://a.kontenbase.com/youtube",
+    url: "https://youtube.com/channel/UCmOBswBENyNAP10eZ_xCHSQ",
     isEnabled: true,
   },
   {
     slug: "discord",
     name: "Discord",
-    url: "https://a.kontenbase.com/discord",
+    url: "https://discord.gg/2YJGYc99Gp",
     isEnabled: true,
   },
   {
     slug: "producthunt",
     name: "Product Hunt",
-    url: "https://a.kontenbase.com/producthunt",
+    url: "https://producthunt.com/posts/kontenbase-alpha",
     isEnabled: true,
   },
 ];
