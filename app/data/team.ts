@@ -9,7 +9,7 @@ export const dataTeamMembers = [
         links: [
           { name: "github", url: "https://github.com/radiegtya" },
           { name: "linkedin", url: "https://linkedin.com/in/radiegtya" },
-          { name: "facebook", url: "https://facebook.com/radiegtya" },
+          { name: "facebook", url: "https://facebook.com/ega.radiegtya" },
         ],
       },
       {
