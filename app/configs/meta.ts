@@ -4,7 +4,7 @@
  * Meta data mostly for information and SEO purpose
  */
 
-const domain = "v2.kontenbase.com";
+const domain = "kontenbase.com";
 
 export const configMeta = {
   charset: "utf-8",

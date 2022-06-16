@@ -6,8 +6,8 @@ Kontenbase marketing website v2 based on [Rewinds](https://rewinds.mhaidarhanif.
 
 Visit the website:
 
-- [kontenbase.com](https://kontenbase.com)
-- [v2.kontenbase.com](https://v2.kontenbase.com)
+- Production: [kontenbase.com](https://kontenbase.com)
+- Preview: [v2.kontenbase.com](https://v2.kontenbase.com)
 
 ## Screenshots
 
