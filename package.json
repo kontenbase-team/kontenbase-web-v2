@@ -22,18 +22,22 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "postinstall": "remix setup node",
+    "typecheck": "tsc --noEmit",
     "ncu": "ncu --reject react,react-dom,@types/react,@types/react-dom",
     "ncu:upgrade": "ncu -u --reject react,react-dom,@types/react,@types/react-dom",
     "commit": "cz"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
     "**/*.css": [
-      "stylelint --fix",
-      "prettier --write"
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "**/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "**/*.ts?(x)": [
+      "bash -c 'npm run typecheck'"
     ]
   },
   "config": {
@@ -83,6 +87,7 @@
     "dayjs": "1.11.3",
     "graphql": "16.5.0",
     "graphql-request": "4.3.0",
+    "markdown-it": "13.0.1",
     "phosphor-react": "1.4.1",
     "posthog-js": "1.23.0",
     "posthog-node": "1.3.0",
@@ -107,6 +112,8 @@
     "@remix-run/dev": "1.5.1",
     "@remix-run/eslint-config": "1.5.1",
     "@remix-run/serve": "1.5.1",
+    "@types/color-string": "1.5.2",
+    "@types/markdown-it": "12.2.3",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "autoprefixer": "10.4.7",
