@@ -18,6 +18,7 @@ const processEnv = {
   SENTRY_BROWSER_DSN: process.env.SENTRY_BROWSER_DSN,
   CONVERTKIT_API_KEY: process.env.CONVERTKIT_API_KEY,
   CONVERTKIT_FORM_ID: process.env.CONVERTKIT_FORM_ID,
+  CRISP_WEBSITE_ID: process.env.CRISP_WEBSITE_ID,
 };
 
 export function getEnv() {

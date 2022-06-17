@@ -63,7 +63,7 @@
 
   h4,
   .h4 {
-    @apply my-1 font-semibold sm:text-lg;
+    @apply my-1 text-lg font-semibold;
   }
 
   h1,

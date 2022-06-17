@@ -13,7 +13,7 @@ export const ExternalLinks = ({
   className,
 }: ExternalLinksProps) => {
   return (
-    <div className={classx("flex gap-3 text-2xl", className)}>
+    <div className={classx("flex flex-wrap gap-3 text-2xl", className)}>
       {links.map((item) => {
         return (
           <Anchor

@@ -50,6 +50,7 @@ export const dataTeamMembers = [
         avatarUrl: "",
         links: [
           { name: "website", url: "https://mhaidarhanif.com" },
+          { name: "project", url: "https://rewinds.mhaidarhanif.com" },
           { name: "github", url: "https://github.com/mhaidarhanif" },
           { name: "twitter", url: "https://twitter.com/mhaidarhanif" },
           { name: "linkedin", url: "https://linkedin.com/in/mhaidarhanif" },

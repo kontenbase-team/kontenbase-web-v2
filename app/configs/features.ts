@@ -11,4 +11,5 @@ export const configFeatures = {
   posthogNode: false,
   sentryBrowser: false,
   sentryNode: false,
+  crisp: true,
 };
