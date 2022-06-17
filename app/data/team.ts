@@ -53,6 +53,8 @@ export const dataTeamMembers = [
           { name: "github", url: "https://github.com/mhaidarhanif" },
           { name: "twitter", url: "https://twitter.com/mhaidarhanif" },
           { name: "linkedin", url: "https://linkedin.com/in/mhaidarhanif" },
+          { name: "showwcase", url: "https://showwcase.com/haidar" },
+          { name: "readcv", url: "https://read.cv/haidar" },
           { name: "youtube", url: "https://youtube.com/mhaidarhanif" },
         ],
       },
@@ -82,6 +84,23 @@ export const dataTeamMembers = [
           {
             name: "linkedin",
             url: "https://linkedin.com/in/muhamad-chairul-aziz",
+          },
+        ],
+      },
+      {
+        name: "Aldi Tegar Prakoso",
+        role: "Junior Frontend Developer",
+        avatarUrl: "",
+        links: [
+          { name: "website", url: "https://arpracreative.com" },
+          { name: "website", url: "https://alditegarprakoso.github.io" },
+          { name: "github", url: "https://github.com/alditegarprakoso" },
+          { name: "linkedin", url: "https://linkedin.com/in/alditegarprakoso" },
+          { name: "facebook", url: "https://instagram.com/alditegarprakoso" },
+          { name: "instagram", url: "https://instagram.com/alditegarprakoso" },
+          {
+            name: "youtube",
+            url: "https://youtube.com/channel/UCjWRDbV0_xSNLvSmY_HAA-Q",
           },
         ],
       },

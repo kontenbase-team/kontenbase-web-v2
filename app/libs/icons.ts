@@ -1,6 +1,7 @@
 import { AdjustmentsIcon as IconAdjustments } from "@heroicons/react/solid";
 import {
   ArrowRight as IconArrowRight,
+  Backpack as IconBackpack,
   CalendarBlank as IconCalendar,
   CaretDown as IconCaretDown,
   Chats as IconMessage,
@@ -16,6 +17,7 @@ import {
   LockSimple as IconSignOut,
   LockSimpleOpen as IconSignIn,
   Rewind as IconRewind,
+  Scroll as IconScroll,
   Timer as IconTimer,
 } from "phosphor-react";
 import {
@@ -37,6 +39,7 @@ import {
   FaFileAlt as IconCV,
   FaGithub as IconGitHub,
   FaGlobe as IconWebsite,
+  FaInstagram as IconInstagram,
   FaLinkedin as IconLinkedIn,
   FaMedium as IconMedium,
   FaMoon as IconLight,
@@ -65,6 +68,7 @@ export {
   IconArrowLeft,
   IconArrowRight,
   IconAuth,
+  IconBackpack,
   IconBolt,
   IconCalendar,
   IconCaretDown,
@@ -86,6 +90,7 @@ export {
   IconFunction,
   IconGear,
   IconGitHub,
+  IconInstagram,
   IconKafka,
   IconKey,
   IconKontenbase,
@@ -99,6 +104,7 @@ export {
   IconProductHunt,
   IconRealTime,
   IconRewind,
+  IconScroll,
   IconSignIn,
   IconSignOut,
   IconSignUp,
