@@ -19,8 +19,8 @@ export const configMeta = {
   ogType: "website",
   ogImageAlt: "Kontenbase",
   ogImageType: "image/png",
-  ogImageUrl: "assets/opengraph/rewinds-og.png",
-  twiterImageUrl: "assets/opengraph/rewinds-og.png",
+  ogImageUrl: "assets/opengraph/kontenbase-og.png",
+  twiterImageUrl: "assets/opengraph/kontenbase-og.png",
   fbAppId: "",
   locale: "en_US",
   author: {
