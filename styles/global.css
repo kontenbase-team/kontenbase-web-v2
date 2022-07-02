@@ -43,7 +43,7 @@
   }
 
   .h0.special {
-    @apply m-0 flex flex-wrap justify-center text-center text-3xl xs:text-4xl sm:text-5xl md:text-6xl md:leading-normal;
+    @apply m-0 justify-center text-center text-3xl xs:text-4xl sm:text-5xl md:text-6xl md:leading-normal;
   }
 
   h1,
