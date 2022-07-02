@@ -72,6 +72,16 @@ export default function About() {
             </p>
           </div>
           <div>
+            <h4>How to refund if there is a money-back guarantee?</h4>
+            <p>
+              All payments are refundable within 7 days. Please{" "}
+              <Anchor href="mailto:team@kontenbase.com">
+                send us an email
+              </Anchor>{" "}
+              and we'll refund it. No more question ask.
+            </p>
+          </div>
+          <div>
             <h4>Where is the database located, in what region?</h4>
             <p>
               Currently the data is only available in{" "}
