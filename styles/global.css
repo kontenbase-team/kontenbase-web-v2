@@ -553,7 +553,6 @@
   .prose-a-styles {
     @apply text-underline-left-right font-bold no-underline;
     @apply text-primary-500 dark:text-primary-300;
-    @apply visited:text-primary-700 visited:dark:text-primary-500;
   }
 
   /* Relate to prose-a-styles */
