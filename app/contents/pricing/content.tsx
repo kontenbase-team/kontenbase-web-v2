@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, ButtonLink } from "~/components";
+import { Button, ButtonAnchor, ButtonGroup, ButtonLink } from "~/components";
 import { configPricingPlans } from "~/configs";
 import { useState } from "~/hooks";
 
@@ -59,16 +59,16 @@ export const PricingPlans = ({ symbol }: PricingTableProps) => {
             key={plan.name}
             className="bg-panel border-panel stack-v w-full gap-5 rounded-base p-5"
           >
-            <div className="stack-v gap-1">
-              <span className="text-lg font-bold">{plan.name}</span>
-              <span className="text-4xl font-bold text-primary-500">
+            <div className="stack-v gap-1 font-bold">
+              <span className="text-lg">{plan.name}</span>
+              <span className="text-4xl text-primary-500">
                 {price ? priceText : "Contact Us"}
               </span>
-              <span>{price ? "/project/month" : "Contract"}</span>
+              <span>{plan.note}</span>
             </div>
 
             <div className="flex-1">
-              <span className="font-bold">{plan.info}</span>
+              <span>{plan.info}</span>
               <ul className="ul-checklist mt-5">
                 {plan.benefits.map((benefit) => {
                   return <li key={benefit}>{benefit}</li>;
@@ -82,9 +82,14 @@ export const PricingPlans = ({ symbol }: PricingTableProps) => {
                   {plan.button.text}
                 </ButtonLink>
               ) : (
-                <Button disabled size="lg" className="w-full">
-                  Coming Soon
-                </Button>
+                <ButtonAnchor
+                  href="/demo"
+                  size="lg"
+                  className="w-full"
+                  variant="outline"
+                >
+                  {plan.button.text}
+                </ButtonAnchor>
               )}
             </div>
           </div>

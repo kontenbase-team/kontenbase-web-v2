@@ -1,3 +1,8 @@
+/**
+ * This is deprecated
+ * Just for reference
+ */
+
 export const pricingFeaturesData = [
   { icon: "database", name: "Database" },
   { name: "Database Space" },

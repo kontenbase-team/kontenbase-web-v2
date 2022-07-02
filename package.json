@@ -1,10 +1,10 @@
 {
   "name": "kontenbase-web-v2",
-  "description": "Kontenbase marketing website v2 based on Rewinds",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Kontenbase landing or marketing website v2 based on Rewinds",
+  "version": "2.0.0",
   "license": "MIT",
   "sideEffects": false,
+  "private": true,
   "scripts": {
     "start": "doppler run -- npm run dev",
     "d": "npm-run-all -p build:css dev:remix",
