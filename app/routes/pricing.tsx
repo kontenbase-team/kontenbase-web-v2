@@ -20,9 +20,10 @@ export const meta: MetaFunction = () => {
 export default function Pricing() {
   return (
     <Layout variant="large">
-      <header className="header-center mb-0">
+      <header className="header-center">
         <h1>Pricing</h1>
         <h2>Choose what's the best plan for you</h2>
+        <p>Unsubscribe (stop to renew) anytime. 30 day money-back guarantee</p>
       </header>
 
       <PricingContent />

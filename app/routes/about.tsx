@@ -58,18 +58,26 @@ export default function About() {
           <div>
             <h4>Is it free or paid?</h4>
             <p>
-              You can start to use Kontenbase for free. Then upgrade if needed
-              to paid plans such as Hobby ($5) or Pro ($25).
+              You can start to use Kontenbase for free for 14 days. Then you can
+              upgrade if needed to paid plans such as Hobby ($5/month) or Pro
+              ($25/month).
+            </p>
+          </div>
+          <div>
+            <h4>Is there a chance for more free credits?</h4>
+            <p>
+              Yes, please <Anchor href="/demo">schedule a demo with us</Anchor>{" "}
+              and after that we'll top up your balance for $10 which you can use
+              it whenever.
             </p>
           </div>
           <div>
             <h4>Where is the database located, in what region?</h4>
             <p>
-              Currently the data is in{" "}
-              <Anchor href="https://vultr.com">Vultr</Anchor> (Singapore
-              region), but we're in the process of migration to{" "}
+              Currently the data is only available in{" "}
               <Anchor href="https://idcloudhost.com/en">IdCloudHost</Anchor>{" "}
-              (Singapore region).
+              servers (Singapore region). We will open more data centers in the
+              future.
             </p>
           </div>
           <div>
