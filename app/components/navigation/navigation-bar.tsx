@@ -4,7 +4,7 @@ import {
   RemixLink,
   RemixNavLink,
   ThemeSwitcher,
-  Badge,
+  
   NavigationBarNavMenu,
   NavigationBarDropdownMenu,
   ButtonAnchor,
@@ -50,8 +50,6 @@ export const NavigationBar = () => {
 };
 
 export const NavigationBarLogo = () => {
-  const badgeText = `Alpha`;
-
   return (
     <div className="flex items-center gap-2">
       <RemixLink
@@ -60,13 +58,6 @@ export const NavigationBarLogo = () => {
       >
         <Logo />
       </RemixLink>
-      <Badge
-        className="hidden font-bold uppercase tracking-wide xs:flex"
-        color="primary"
-        variant="solid"
-      >
-        {badgeText}
-      </Badge>
     </div>
   );
 };
