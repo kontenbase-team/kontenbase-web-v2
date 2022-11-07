@@ -49,7 +49,7 @@ export const PricingContent = () => {
 
 export const PricingPlans = ({ symbol }: PricingTableProps) => {
   return (
-    <div className="grid min-h-[500px] w-full grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid min-h-[500px] w-full grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
       {configPricingPlans.map((plan) => {
         const price = plan.price[symbol];
         const priceText = `${symbol} ${price}`;

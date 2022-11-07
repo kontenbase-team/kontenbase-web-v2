@@ -39,34 +39,6 @@ export const configPricingPlans = [
     features: [null, "50 MB", "500 MB", null, 50, null, "250 MB", "500 MB"],
   },
   {
-    name: "Hobby",
-    price: {
-      EUR: "4.6",
-      IDR: "75,000",
-      MYR: "22",
-      PHP: "264",
-      SGD: "7",
-      USD: "5",
-    },
-    note: "/project/month",
-    info: "For production and more complex applications",
-    button: {
-      text: "Sign up for Hobby",
-      to: "/signup",
-    },
-    benefits: [
-      "Shared container",
-      "Up to 250 MB database space",
-      "Up to 5 GB database transfer bandwidth",
-      "Up to 500 MB file storage space",
-      "Up to 5 GB file storage transfer bandwidth",
-      "Up to 500 registered users",
-      "Team Support",
-      // "7-day log retention",
-    ],
-    features: [null, "250 MB", "5 GB", null, 500, null, "500 MB", "5 GB"],
-  },
-  {
     name: "Pro",
     price: {
       EUR: "23",
