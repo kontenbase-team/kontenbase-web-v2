@@ -55,7 +55,6 @@ export const configPricingPlans = [
       to: "/signup",
     },
     benefits: [
-      "Dedicated container",
       "Up to 8 GB database space + $0.5 per GB",
       "Up to 50 GB database transfer bandwidth + $0.09 per GB",
       "Up to 100 GB file storage space + $0.05 per GB",
