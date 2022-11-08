@@ -27,7 +27,6 @@ export const configPricingPlans = [
       to: "/signup",
     },
     benefits: [
-      "Shared container",
       "Up to 250 MB database space",
       "Up to 5 GB database transfer bandwidth",
       "Up to 500 MB file storage space",
