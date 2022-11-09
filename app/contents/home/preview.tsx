@@ -20,7 +20,8 @@ export const HomePreview = () => {
     setIsOpen(true);
   }
 
-  const colorMode = isLight ? "light" : "dark";
+  // FIXME: After dark mode is available in v2
+  const colorMode = isLight ? "light" : "light";
 
   return (
     <section className="layout-padding">
@@ -74,8 +75,8 @@ export const HomePreview = () => {
                 <Dialog.Panel className="bg-panel shadow-primary stack-v w-full max-w-4xl transform gap-4 overflow-hidden rounded-base p-2 transition-all">
                   <div className="relative overflow-auto rounded-base">
                     <VideoYouTube
-                      title="Kontenbase Alpha - Product Demo"
-                      embedId="vGxKw-mWAB0"
+                      title="Kontenbase v2 Quick Look"
+                      embedId="Ofqw_UH0m8c"
                     />
                   </div>
                 </Dialog.Panel>

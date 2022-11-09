@@ -15,7 +15,7 @@ Visit the website:
 
 [![Homepage](public/assets/screenshots/home-light.png)](https://kontenbase.com)
 
-[![Homepage](public/assets/screenshots/home-dark.png)](https://kontenbase.com)
+<!-- [![Homepage](public/assets/screenshots/home-dark.png)](https://kontenbase.com) -->
 
 </div>
 
