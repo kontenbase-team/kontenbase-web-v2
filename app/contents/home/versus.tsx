@@ -39,7 +39,7 @@ export const VersusPanel = () => {
           <Logo />
           <div>
             <h4>Kontenbase Managed Service</h4>
-            <p className="text-xl">Start from free or $5-$25/project/month</p>
+            <p className="text-xl">Start from free or $25/project/month</p>
           </div>
           <ul className="space-y-3">
             {dataVersusChecks.map((item) => {
@@ -55,7 +55,7 @@ export const VersusPanel = () => {
           </ul>
         </div>
         <div className="text-dim text-center">
-          <h3 className="mb-0">Free or $5-$25/month managed by us</h3>
+          <h3 className="mb-0">Free trial or $25/month managed by us</h3>
           <p>Grow as your company go without hidden cost!</p>
         </div>
       </div>

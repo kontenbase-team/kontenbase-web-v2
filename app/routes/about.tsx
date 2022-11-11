@@ -59,8 +59,7 @@ export default function About() {
             <h4>Is it free or paid?</h4>
             <p>
               You can start to use Kontenbase for free for 14 days. Then you can
-              upgrade if needed to paid plans such as Hobby ($5/month) or Pro
-              ($25/month).
+              upgrade if needed to paid plans such as Pro ($25/month).
             </p>
           </div>
           <div>
