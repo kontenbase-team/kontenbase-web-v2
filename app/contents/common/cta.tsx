@@ -17,7 +17,7 @@ export const ButtonGroupCTA = ({
   return (
     <ButtonGroup size="lg" className={classx("flex gap-3 sm:gap-5", className)}>
       {primaryCTA || (
-        <ButtonAnchor href="/signup">Sign Up for Free</ButtonAnchor>
+        <ButtonAnchor href="/signup">Start from Free</ButtonAnchor>
       )}
       {secondaryCTA || (
         <ButtonAnchor

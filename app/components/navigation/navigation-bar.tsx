@@ -4,7 +4,6 @@ import {
   RemixLink,
   RemixNavLink,
   ThemeSwitcher,
-  
   NavigationBarNavMenu,
   NavigationBarDropdownMenu,
   ButtonAnchor,
@@ -88,7 +87,7 @@ export const NavigationBarAuth = () => {
         // className="btn-solid btn btn-md"
         // data-color="primary"
       >
-        Start for Free
+        Start from Free
       </ButtonAnchor>
     </div>
   );

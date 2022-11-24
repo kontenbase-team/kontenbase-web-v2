@@ -23,7 +23,7 @@ export const configPricingPlans = [
     note: "14 days trial",
     info: "For experiments and simple applications",
     button: {
-      text: "Sign up for Free Trial",
+      text: "Start from Free",
       to: "/signup",
     },
     benefits: [
@@ -38,7 +38,7 @@ export const configPricingPlans = [
     features: [null, "50 MB", "500 MB", null, 50, null, "250 MB", "500 MB"],
   },
   {
-    name: "Pro",
+    name: "Professional",
     price: {
       EUR: "23",
       IDR: "360,000",
@@ -50,7 +50,7 @@ export const configPricingPlans = [
     note: "/project/month",
     info: "For advanced production, with pay per usage",
     button: {
-      text: "Sign up for Pro",
+      text: "Start from Free",
       to: "/signup",
     },
     benefits: [
@@ -89,7 +89,7 @@ export const configPricingPlans = [
       text: "Schedule Demo",
     },
     benefits: [
-      "Everything from the Pro plan",
+      "Everything from the Professional plan",
       "Self hosted or on-premise",
       "Point in time recovery",
       "Designated Support manager & SLAs",
