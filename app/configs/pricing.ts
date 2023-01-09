@@ -20,8 +20,8 @@ export const configPricingPlans = [
       SGD: "0",
       USD: "0",
     },
-    note: "for 3 projects",
-    info: "For development and education",
+    note: "for 1 project",
+    info: "Suitable for development and education",
     button: {
       text: "Sign Up",
       to: "/signup",
@@ -57,7 +57,7 @@ export const configPricingPlans = [
       USD: "10",
     },
     note: "per project/month",
-    info: "For production purpose",
+    info: "Best for production purpose",
     button: {
       text: "Sign Up",
       to: "/signup",
@@ -92,7 +92,7 @@ export const configPricingPlans = [
       USD: "",
     },
     note: "for unlimited projects",
-    info: "For large-scale mission critical applications",
+    info: "Aimed for large-scale mission critical applications",
     button: {
       text: "Contact Us",
       to: "/microgen",
