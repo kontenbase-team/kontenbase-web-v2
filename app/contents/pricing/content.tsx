@@ -1,4 +1,4 @@
-import { Button, ButtonAnchor, ButtonGroup, ButtonLink } from "~/components";
+import { Button, ButtonAnchor, ButtonGroup } from "~/components";
 import { configPricingPlans } from "~/configs";
 import { useState } from "~/hooks";
 
@@ -31,7 +31,7 @@ export const PricingContent = () => {
             <Button
               key={item.symbol}
               color={item.symbol === symbol ? "primary" : "none"}
-              variant={item.symbol === symbol ? "solid" : "outline"}
+              variant={item.symbol === symbol ? "light" : "ghost"}
               onClick={() => {
                 return changeCurrency(item.symbol);
               }}
@@ -49,7 +49,7 @@ export const PricingContent = () => {
 
 export const PricingPlans = ({ symbol }: PricingTableProps) => {
   return (
-    <div className="grid min-h-[500px] w-full grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid min-h-[500px] w-full grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
       {configPricingPlans.map((plan) => {
         const price = plan.price[symbol];
         const priceText = `${symbol} ${price}`;
@@ -59,6 +59,8 @@ export const PricingPlans = ({ symbol }: PricingTableProps) => {
             key={plan.name}
             className="bg-panel border-panel stack-v w-full gap-5 rounded-base p-5"
           >
+            <PlanButton plan={plan} />
+
             <div className="stack-v gap-1 font-bold">
               <span className="text-lg">{plan.name}</span>
               <span className="text-4xl text-primary-500">
@@ -69,32 +71,56 @@ export const PricingPlans = ({ symbol }: PricingTableProps) => {
 
             <div className="flex-1">
               <span>{plan.info}</span>
-              <ul className="ul-checklist mt-5">
-                {plan.benefits.map((benefit) => {
-                  return <li key={benefit}>{benefit}</li>;
-                })}
-              </ul>
+
+              <div className="mt-5">
+                <h4>Features:</h4>
+                <ul className="ul-checklist">
+                  {plan.features.map((feature) => {
+                    return <li key={feature}>{feature}</li>;
+                  })}
+                </ul>
+              </div>
+
+              <div className="mt-5">
+                <h4>Benefits:</h4>
+                <ul className="ul-checklist">
+                  {plan.benefits.map((benefit) => {
+                    return <li key={benefit}>{benefit}</li>;
+                  })}
+                </ul>
+              </div>
             </div>
 
-            <div>
-              {plan.button?.to ? (
-                <ButtonLink to={plan.button.to} size="lg" className="w-full">
-                  {plan.button.text}
-                </ButtonLink>
-              ) : (
-                <ButtonAnchor
-                  href="/demo"
-                  size="lg"
-                  className="w-full"
-                  variant="outline"
-                >
-                  {plan.button.text}
-                </ButtonAnchor>
-              )}
-            </div>
+            <PlanButton plan={plan} />
           </div>
         );
       })}
+    </div>
+  );
+};
+
+export const PlanButton = ({ plan }: { plan: any }) => {
+  return (
+    <div>
+      {plan.button?.to ? (
+        <ButtonAnchor
+          href={plan.button.to}
+          variant="light"
+          size="lg"
+          className="w-full"
+        >
+          {plan.button.text}
+        </ButtonAnchor>
+      ) : (
+        <ButtonAnchor
+          href="/demo"
+          size="lg"
+          className="w-full"
+          variant="outline"
+        >
+          {plan.button.text}
+        </ButtonAnchor>
+      )}
     </div>
   );
 };
