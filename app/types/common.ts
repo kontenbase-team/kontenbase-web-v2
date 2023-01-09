@@ -14,11 +14,12 @@ export type DateTime = string | number | Date | null | undefined | dayjs.Dayjs;
 
 export type Locale = string | "en" | "fr";
 
-export type CurrencySymbol = "EUR" | "IDR" | "MYR" | "PHP" | "SGD" | "USD";
+export type CurrencyCode = "EUR" | "IDR" | "MYR" | "PHP" | "SGD" | "USD";
 
 export type Currency = {
-  symbol: CurrencySymbol;
+  code: CurrencyCode;
   name: string;
+  symbol: string;
 };
 
 export type TextItem = {

@@ -2,24 +2,25 @@ import { Button, ButtonAnchor, ButtonGroup } from "~/components";
 import { configPricingPlans } from "~/configs";
 import { useState } from "~/hooks";
 
-import type { Currencies, CurrencySymbol } from "~/types";
+import type { Currencies, CurrencyCode } from "~/types";
 
 interface PricingTableProps {
-  symbol: CurrencySymbol;
+  code: CurrencyCode;
 }
 
+const currencies: Currencies = [
+  { code: "USD", symbol: "US$", name: "$ USD" },
+  { code: "EUR", symbol: "€", name: "€ EUR" },
+  { code: "SGD", symbol: "S$", name: "$ SGD" },
+  { code: "IDR", symbol: "Rp", name: "Rp IDR" },
+  { code: "MYR", symbol: "RM", name: "RM MYR" },
+  { code: "PHP", symbol: "₱", name: "₱ PHP" },
+];
+
 export const PricingContent = () => {
-  const [symbol, setCurrency] = useState<CurrencySymbol>("USD");
+  const [code, setCurrency] = useState<CurrencyCode>("USD");
 
-  const currencies: Currencies = [
-    { symbol: "USD", name: "$ USD" },
-    { symbol: "IDR", name: "Rp IDR" },
-    { symbol: "MYR", name: "RM MYR" },
-    { symbol: "SGD", name: "$ SGD" },
-    { symbol: "PHP", name: "₱ PHP" },
-  ];
-
-  const changeCurrency = (currencySymbol: CurrencySymbol) => {
+  const changeCurrency = (currencySymbol: CurrencyCode) => {
     setCurrency(currencySymbol);
   };
 
@@ -29,11 +30,11 @@ export const PricingContent = () => {
         {currencies.map((item) => {
           return (
             <Button
-              key={item.symbol}
-              color={item.symbol === symbol ? "primary" : "none"}
-              variant={item.symbol === symbol ? "light" : "ghost"}
+              key={item.code}
+              color={item.code === code ? "primary" : "none"}
+              variant={item.code === code ? "light" : "ghost"}
               onClick={() => {
-                return changeCurrency(item.symbol);
+                return changeCurrency(item.code);
               }}
             >
               {item.name}
@@ -42,17 +43,18 @@ export const PricingContent = () => {
         })}
       </ButtonGroup>
 
-      <PricingPlans symbol={symbol} />
+      <PricingPlans code={code} />
     </div>
   );
 };
 
-export const PricingPlans = ({ symbol }: PricingTableProps) => {
+export const PricingPlans = ({ code }: PricingTableProps) => {
   return (
     <div className="grid min-h-[500px] w-full grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
       {configPricingPlans.map((plan) => {
-        const price = plan.price[symbol];
-        const priceText = `${symbol} ${price}`;
+        const currency = currencies.find((c) => c.code === code);
+        const price = plan.price[code];
+        const priceText = `${currency?.symbol} ${price}`;
 
         return (
           <div

@@ -50,7 +50,7 @@ export const configPricingPlans = [
     name: "Professional",
     price: {
       EUR: "10",
-      IDR: "155,000",
+      IDR: "155.000",
       MYR: "44",
       PHP: "551",
       SGD: "14",
@@ -105,7 +105,6 @@ export const configPricingPlans = [
       "Multi env function",
       "Infrastructure as code",
       "Database Sync to any db",
-      "and more than 10 other features",
       "Add-ons for any language and libs",
       "Active active region",
       "Monitoring",
