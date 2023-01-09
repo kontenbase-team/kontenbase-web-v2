@@ -14,6 +14,12 @@ import type { ExternalLinkItems } from "~/types";
 
 export const configExternalLinks: ExternalLinkItems = [
   {
+    slug: "microgen",
+    name: "Microgen",
+    url: "https://microgen.id",
+    isEnabled: true,
+  },
+  {
     slug: "github",
     name: "GitHub",
     url: "https://github.com/kontenbase",
