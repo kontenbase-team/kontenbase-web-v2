@@ -112,7 +112,7 @@ export const FooterComplexFormSubscribe = () => {
             <Button
               type="submit"
               size="lg"
-              variant="solid"
+              variant="light"
               color="primary"
               loading={loading}
               loadingText="Subscribing"

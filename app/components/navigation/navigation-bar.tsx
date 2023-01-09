@@ -83,11 +83,11 @@ export const NavigationBarAuth = () => {
   return (
     <div id="navigation-bar-auth" className="space-x-2">
       <ButtonAnchor
-        href="/signup"
+        href="/app"
         // className="btn-solid btn btn-md"
         // data-color="primary"
       >
-        Start from Free
+        Go to App
       </ButtonAnchor>
     </div>
   );
