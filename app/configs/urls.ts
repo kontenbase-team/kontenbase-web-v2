@@ -22,7 +22,7 @@ export const configExternalLinks: ExternalLinkItems = [
   {
     slug: "discord",
     name: "Discord",
-    url: "https://kontenbase.com/discord",
+    url: "https://discord.gg/2YJGYc99Gp",
     isEnabled: true,
   },
   {
