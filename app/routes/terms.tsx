@@ -1,4 +1,5 @@
 import { json } from "@remix-run/node";
+import type { RenderableTreeNode } from "@markdoc/markdoc";
 
 import { OnePageBySlug } from "~/graphql";
 import { useLoaderData } from "~/hooks";
@@ -24,7 +25,9 @@ export const loader: LoaderFunction = async () => {
     .query(OnePageBySlug, { slug: "terms" })
     .toPromise();
   const { page } = response.data;
-  const content = markdocTransform(markdocParse(page.content.markdown));
+  const content: RenderableTreeNode = markdocTransform(
+    markdocParse(page.content.markdown),
+  );
   return json({ page, content });
 };
 
