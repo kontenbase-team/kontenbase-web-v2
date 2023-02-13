@@ -7,7 +7,6 @@ import {
   ScrollRestoration,
   NProgress,
   ThemeProvider,
-  CrispChat,
   Anchor,
 } from "~/components";
 import { configDocumentLinks } from "~/configs";
