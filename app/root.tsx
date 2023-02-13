@@ -8,6 +8,7 @@ import {
   NProgress,
   ThemeProvider,
   CrispChat,
+  Anchor,
 } from "~/components";
 import { configDocumentLinks } from "~/configs";
 import { MessageCatch, MessageError } from "~/contents";
@@ -104,7 +105,16 @@ export const Document = ({ title, children }: DocumentProps) => {
             }}
           />
         )}
-        <CrispChat />
+
+        <div className="fixed bottom-0 left-0 p-5">
+          <Anchor href="/discord" className="hover:opacity-90">
+            <img
+              src="/assets/logos/discord.png"
+              alt="Discord"
+              className="h-14 w-14"
+            />
+          </Anchor>
+        </div>
       </body>
     </html>
   );

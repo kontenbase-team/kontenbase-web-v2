@@ -1,3 +1,4 @@
+export { Icon as IconVechai } from "@vechaiui/react";
 import {
   IconAmazonEC2,
   IconAmazonS3,
@@ -51,7 +52,7 @@ import {
 
 import type { HTMLElementProps } from "~/types";
 
-export { Icon as IconVechai } from "@vechaiui/react";
+// import IconMicrogen from "~/components/icons/microgen.svg";
 
 /**
  * Icon list mapping

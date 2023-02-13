@@ -1,4 +1,3 @@
-import { HomeExplainSDK } from "~/contents";
 import { Layout } from "~/layouts";
 
 import type { SEOHandle } from "~/types";
@@ -13,7 +12,7 @@ export default function Debug() {
   return (
     <Layout variant="full">
       <div className="stack-v mt-20 items-center gap-20">
-        <HomeExplainSDK />
+        <span>Debug</span>
       </div>
     </Layout>
   );
