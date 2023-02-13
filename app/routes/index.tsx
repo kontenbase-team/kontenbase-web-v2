@@ -6,7 +6,6 @@ import {
   HomeFeatures,
   HomeIntro,
   HomePartners,
-  HomePowered,
   HomePreview,
   HomeStacks,
   HomeVersus,
@@ -29,7 +28,6 @@ export default function Index() {
         <HomePreview />
 
         <div className="stack-v layout-padding items-center">
-          <HomePowered />
           <HomePartners />
         </div>
 
