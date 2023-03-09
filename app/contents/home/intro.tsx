@@ -1,23 +1,35 @@
+import { Image } from "~/components";
 import { ButtonGroupCTA } from "~/contents";
 
 export const HomeIntro = () => {
   return (
-    <section className="stack-v layout-padding items-center gap-10">
-      <div className="layout-content small md:medium flex justify-center">
-        <h1 className="h0 special max-w-[415px] sm:max-w-[680px]">
-          <span className="text-primary-500">No Code </span>
-          Backend API, Fast and Easy!
-        </h1>
-      </div>
+    <section className="stack-v lg:stack-h hero relative gap-6 pt-10 pb-20 lg:pt-20">
+      <section className="stack-v layout-padding grow gap-3">
+        <div className="layout-content small">
+          <Image src="/assets/icons/hero-blink.svg" alt="hero" />
+          <h1 className="h0 special max-w-[415px] sm:max-w-[680px]">
+            <span className="highlighted-word">Automate</span> your data and{" "}
+            <span className="highlighted-word">workflow</span> with{" "}
+            <span className="highlighted-word">no-code</span> platform
+          </h1>
+        </div>
 
-      <div className="layout-content small">
-        <p className="text-center text-lg sm:text-xl">
-          Kontenbase allows you to easily create backend API, auth, and storage
-          in less than one minute without coding.
-        </p>
-      </div>
+        <div className="layout-content small">
+          <p className="text-lg sm:text-xl">
+            Accelerate your business by easily managing your data, workflows and
+            teams.
+          </p>
+        </div>
 
-      <ButtonGroupCTA className="justify-center" />
+        <ButtonGroupCTA />
+      </section>
+      <section className="grow lg:max-w-lg xl:max-w-xl">
+        <Image
+          src="/assets/images/hero-image.png"
+          alt="kontenbase-hero"
+          className="w-full"
+        />
+      </section>
     </section>
   );
 };
