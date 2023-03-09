@@ -27,6 +27,10 @@ export const NavigationBarNavMenu = () => {
   return (
     <NavigationMenuRoot>
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuNavLink to="/">Home</NavigationMenuNavLink>
+        </NavigationMenuItem>
+
         <NavigationMenuItemFeatures />
 
         <NavigationMenuItem>
@@ -107,7 +111,9 @@ export const NavigationMenuContentPages = () => {
 export const NavigationMenuItemFeatures = () => {
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger>Features</NavigationMenuTrigger>
+      <NavigationMenuTrigger>
+        <NavLink to="/developer">Developer</NavLink>
+      </NavigationMenuTrigger>
       <NavigationMenuContent>
         <NavigationMenuContentFeatures />
       </NavigationMenuContent>
@@ -204,7 +210,7 @@ export const NavigationMenuTrigger = ({
       className={classx(
         "nav-menu-trigger",
         "navlink focus-visible:focus-ring focus:outline-none",
-        "flex items-center gap-1 rounded-base px-3 py-2 font-bold transition-colors",
+        "flex items-center gap-1 px-3 py-2 font-bold transition-colors",
         className,
       )}
       {...props}
@@ -356,7 +362,7 @@ export const NavigationMenuNavLink = ({
         end={end}
         className={classx(
           "navlink navlink-size",
-          "rounded-base font-bold transition-colors",
+          "font-bold transition-colors",
           isActive && "navlink-active",
           className,
         )}
