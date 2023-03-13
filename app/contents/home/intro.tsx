@@ -3,7 +3,7 @@ import { ButtonGroupCTA } from "~/contents";
 
 export const HomeIntro = () => {
   return (
-    <section className="stack-v lg:stack-h hero relative gap-6 pt-10 pb-20 lg:pt-20">
+    <section className="stack-v lg:stack-h hero relative gap-6 pt-5 pb-20 lg:pb-40 lg:pt-20">
       <section className="stack-v layout-padding grow gap-3">
         <div className="layout-content small">
           <Image src="/assets/icons/hero-blink.svg" alt="hero" />

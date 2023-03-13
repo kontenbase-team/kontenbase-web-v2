@@ -3,8 +3,8 @@ import { dataHighlightedFeatures } from "~/data";
 
 export const HighlightedFeatures = () => {
   return (
-    <section className="layout-padding feature pt-20 pb-60">
-      <div className="stack-v layout-content large mx-auto gap-20 lg:gap-40">
+    <section className="layout-padding feature pt-20 pb-40">
+      <div className="stack-v layout-content large mx-auto gap-20 md:gap-40">
         {dataHighlightedFeatures.map((feature, index) => {
           return (
             <HighlightedFeatureSection

@@ -18,13 +18,11 @@ export default function Index() {
   return (
     <Layout id="route-index" variant="full">
       <HomeIntro />
-      <div className="stack-v mt-20">
-        <HomeIdeas />
+      <HomeIdeas />
 
-        <HighlightedFeatures />
+      <HighlightedFeatures />
 
-        <FooterBanner />
-      </div>
+      <FooterBanner />
     </Layout>
   );
 }

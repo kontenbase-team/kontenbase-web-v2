@@ -6,8 +6,8 @@ import { dataIdeaSample } from "~/data";
 export const HomeIdeas = () => {
   return (
     <section className="stack-v-center layout-padding mb-20">
-      <div className="mb-6 text-center">
-        <h1 className="mb-4">
+      <div className="mb-2 text-center lg:mb-6">
+        <h1 className="mb-2">
           <span className="highlighted-word">Create</span> anything,{" "}
           <span className="highlighted-word">solve</span> anything
         </h1>

@@ -448,7 +448,7 @@
 
   .footer-banner {
     background-color: #151718;
-    @apply py-28;
+    @apply pt-5 md:pt-0;
   }
 }
 
