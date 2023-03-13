@@ -1,5 +1,4 @@
 import {
-  ExternalLinks,
   Logo,
   RemixLink,
   RemixNavLink,
@@ -18,21 +17,13 @@ export const NavigationBar = () => {
       className={classx("navigation-bar navigation-bar-scrolled")}
     >
       <div className="flex items-center justify-between">
-        <div className="flex gap-2 sm:gap-4">
-          <NavigationBarLogo />
-          <div className="flex gap-1">
-            {configStyle.navigationBar === "simple" && <NavigationBarLinks />}
-            {configStyle.navigationBar === "complex" && (
-              <NavigationBarNavMenu />
-            )}
-          </div>
+        <NavigationBarLogo />
+        <div className="flex gap-1">
+          {configStyle.navigationBar === "simple" && <NavigationBarLinks />}
+          {configStyle.navigationBar === "complex" && <NavigationBarNavMenu />}
         </div>
 
         <div className="flex items-center space-x-2">
-          <div className="hidden text-xl sm:flex">
-            <ExternalLinks />
-          </div>
-
           <ThemeSwitcher />
 
           <div className="hidden xl:flex">

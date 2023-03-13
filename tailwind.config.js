@@ -5,6 +5,7 @@ module.exports = {
   content: ["./app/**/*.tsx", "./node_modules/@vechaiui/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
+    colors,
     screens: {
       xs: "425px",
       sm: "640px",

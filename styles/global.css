@@ -43,7 +43,7 @@
   }
 
   .h0.special {
-    @apply m-0 justify-center text-center text-3xl xs:text-4xl sm:text-5xl md:text-6xl md:leading-normal;
+    @apply m-0 text-3xl xs:text-4xl sm:text-5xl md:text-6xl md:leading-normal;
   }
 
   h1,
@@ -110,7 +110,7 @@
   }
 
   .layout-padding {
-    @apply px-4;
+    @apply px-2 md:px-6 xl:px-32;
   }
 
   .layout-container {
@@ -125,6 +125,10 @@
     @apply w-full;
   }
 
+  .layout-content.extra-small {
+    @apply max-w-screen-xs;
+  }
+
   .layout-content.small {
     @apply max-w-screen-sm;
   }
@@ -135,6 +139,14 @@
 
   .layout-content.large {
     @apply max-w-screen-xl;
+  }
+
+  /**
+   * Hero
+   */
+  .hero {
+    background-image: url("/assets/images/hero-bg.jpg");
+    @apply bg-cover bg-center bg-no-repeat dark:bg-none;
   }
 
   /**
@@ -189,10 +201,6 @@
    * Footer
    */
 
-  .footer {
-    @apply mt-32;
-  }
-
   .footer-common {
     @apply flex justify-center;
   }
@@ -223,7 +231,7 @@
   }
 
   .card-shadow {
-    @apply bg-panel border-panel shadow-panel w-full flex-[1] space-y-5 rounded-base p-5;
+    @apply bg-panel w-full flex-[1] space-y-5 rounded-base p-5 shadow-inner drop-shadow-lg;
   }
 
   /**
@@ -244,8 +252,9 @@
    */
 
   .navigation-bar {
-    @apply sticky top-0 z-10 w-full flex-none select-none p-2 md:p-4;
+    @apply sticky top-0 z-10 w-full flex-none select-none p-2;
     @apply border-b border-transparent;
+    @apply md:layout-padding;
   }
 
   .navigation-bar-scrolled {
@@ -254,19 +263,17 @@
 
   .navlink {
     @apply leading-tight;
-    @apply hover:bg-primary-100 dark:hover:bg-primary-800;
+    @apply hover:border-primary-500 dark:hover:border-primary-800;
+    @apply border-b-2 border-transparent;
   }
 
   .navlink-size {
     @apply px-3 py-2;
   }
 
-  .navlink-active {
-    @apply bg-primary-100 text-primary-500 dark:bg-neutral-900;
-  }
-
+  .navlink-active,
   .navlink-focus {
-    @apply focus:bg-primary-100 dark:focus:bg-neutral-900;
+    @apply border-primary-500;
   }
 
   /**
@@ -288,6 +295,10 @@
 
   .stack-h {
     @apply stack flex-row;
+  }
+
+  .stack-h-reverse {
+    @apply stack flex-row-reverse;
   }
 
   .stack-h-center {
@@ -332,7 +343,7 @@
   }
 
   .nav-menu-link {
-    @apply navlink rounded-base px-3 py-2 font-bold;
+    @apply navlink px-3 py-2 font-bold;
   }
 
   /**
@@ -383,7 +394,7 @@
 
   .tabs-radix-trigger {
     @apply inline-block flex flex-shrink-0 items-center justify-center rounded-base;
-    @apply focus-ring -mb-px h-10 cursor-base whitespace-nowrap px-4 py-2 text-center font-bold;
+    @apply focus-ring mx-0 -mb-px h-10 cursor-base whitespace-nowrap px-4 py-2 text-center font-bold md:mx-4;
     @apply bg-transparent text-neutral-600;
     @apply hover:text-primary-900;
     @apply selected:bg-primary-500 selected:text-primary-50;
@@ -393,7 +404,7 @@
   }
 
   .tabs-radix-content {
-    @apply focus-ring w-full py-5;
+    @apply focus-ring w-full py-8 px-4;
   }
 
   /**
@@ -428,6 +439,16 @@
   .code-highlight .line-content .tag {
     cursor: auto;
     display: unset;
+  }
+
+  .feature {
+    background-image: url("/assets/images/features-bg.png");
+    @apply bg-cover bg-right bg-no-repeat;
+  }
+
+  .footer-banner {
+    background-color: #151718;
+    @apply pt-5 md:pt-0;
   }
 }
 
@@ -603,5 +624,37 @@
   /* https://css-tricks.com/custom-tailwind-css/#aa-envsafe-area-inset-bottom */
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .highlighted-word {
+    @apply relative inline-block px-4 pb-4 pt-2 leading-none text-primary-500;
+  }
+
+  .highlighted-word::before {
+    content: "";
+    background-image: url("/assets/icons/highlighted-word.svg");
+    @apply absolute bottom-0 left-0 h-full w-[90%] bg-cover bg-no-repeat;
+  }
+
+  .highlighted-word::after {
+    content: "";
+    background-image: url("/assets/icons/highlighted-word.svg");
+    width: calc(100% - 20px);
+    @apply absolute bottom-0 left-[20px] h-full bg-cover bg-right bg-no-repeat;
+  }
+
+  .highlighted-word.special::before {
+    content: none;
+  }
+
+  .highlighted-word.special::after {
+    height: calc(100% + 0.25rem);
+    @apply left-0 w-full;
+  }
+
+  @screen md {
+    .highlighted-word.special::after {
+      height: calc(100% + 0.5rem);
+    }
   }
 }
