@@ -44,7 +44,7 @@ export const TabsIdea = ({ tabs }: TabsProps) => {
         }
         return prev + 1;
       });
-    }, 3000);
+    }, 5000);
   }, [tabs.length]);
 
   return (
