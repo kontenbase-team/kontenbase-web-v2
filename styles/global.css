@@ -149,6 +149,10 @@
     @apply bg-cover bg-center bg-no-repeat dark:bg-none;
   }
 
+  .hero-carousel {
+    @apply h-[230px] md:h-[400px] lg:h-[550px] xl:h-[430px];
+  }
+
   /**
    * Example
    */
