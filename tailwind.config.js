@@ -2,7 +2,11 @@ const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  content: ["./app/**/*.tsx", "./node_modules/@vechaiui/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/*.tsx",
+    "./node_modules/@vechaiui/**/*.{js,jsx,ts,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
+  ],
   darkMode: "class",
   theme: {
     colors,
@@ -146,6 +150,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("flowbite/plugin"),
     require("tailwindcss-radix")(),
     // require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/typography"),

@@ -16,3 +16,4 @@ export * from "./stacks";
 export * from "./team";
 export * from "./theme";
 export * from "./versus";
+export * from "./intro-carousel";

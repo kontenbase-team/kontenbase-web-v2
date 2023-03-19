@@ -1,3 +1,5 @@
+import { FeaturePreview } from "./feature-preview";
+
 import { Image } from "~/components";
 import { dataHighlightedFeatures } from "~/data";
 
@@ -23,6 +25,8 @@ interface Feature {
   title: string;
   description: string;
   image: string;
+  imageAlt: string;
+  youtubeId?: string;
 }
 
 interface ExcellentFeatureSectionProps {
@@ -49,11 +53,19 @@ export const HighlightedFeatureSection = ({
         <p>{feature.description}</p>
       </div>
       <div className="grow">
-        <Image
-          src={feature.image}
-          alt={feature.title}
-          className="card-shadow p-1"
-        />
+        {feature?.youtubeId ? (
+          <FeaturePreview
+            image={feature.image}
+            imageAlt={feature.imageAlt}
+            youtubeId={feature.youtubeId}
+          />
+        ) : (
+          <Image
+            src={feature.image}
+            alt={feature.imageAlt}
+            className="card-shadow p-1"
+          />
+        )}
       </div>
     </section>
   );

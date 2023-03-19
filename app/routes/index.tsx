@@ -18,6 +18,7 @@ export default function Index() {
   return (
     <Layout id="route-index" variant="full">
       <HomeIntro />
+
       <HomeIdeas />
 
       <HighlightedFeatures />
