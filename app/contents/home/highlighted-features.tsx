@@ -1,6 +1,4 @@
-import { FeaturePreview } from "./feature-preview";
-
-import { Image } from "~/components";
+import { Image, VideoYouTube } from "~/components";
 import { dataHighlightedFeatures } from "~/data";
 
 export const HighlightedFeatures = () => {
@@ -44,28 +42,27 @@ export const HighlightedFeatureSection = ({
         index % 2 ? "lg:stack-h-reverse" : "lg:stack-h"
       }`}
     >
-      <div className="mb-4 w-full">
+      <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
         <h2
-          className="text-3xl md:min-w-[380px] md:text-4xl"
+          className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: feature.title }}
         />
         <p>{feature.description}</p>
       </div>
       <div className="grow">
-        {feature?.youtubeId ? (
-          <FeaturePreview
-            image={feature.image}
-            imageAlt={feature.imageAlt}
-            youtubeId={feature.youtubeId}
-          />
-        ) : (
-          <Image
-            src={feature.image}
-            alt={feature.imageAlt}
-            className="card-shadow p-1"
-          />
-        )}
+        <div className="card-shadow relative overflow-auto p-1">
+          {feature?.youtubeId ? (
+            <VideoYouTube
+              autoPlay
+              loop
+              title={feature.imageAlt}
+              embedId={feature.youtubeId}
+            />
+          ) : (
+            <Image src={feature.image} alt={feature.imageAlt} />
+          )}
+        </div>
       </div>
     </section>
   );
