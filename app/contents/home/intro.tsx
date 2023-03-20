@@ -27,7 +27,7 @@ export const HomeIntro = () => {
         <ButtonGroupCTA />
       </section>
       <section className="hero-carousel flex grow justify-end">
-        <div className="h-full w-full xl:max-w-3xl">
+        <div className="h-full w-full xl:max-w-4xl">
           <Carousel slideInterval={5000}>
             {carouselList.map((item) => (
               <Image key={item.id} src={item.image} alt={item.label} />
