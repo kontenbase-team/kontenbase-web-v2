@@ -42,9 +42,9 @@ export const HighlightedFeatureSection = ({
         index % 2 ? "lg:stack-h-reverse" : "lg:stack-h"
       }`}
     >
-      <div className="mb-4 w-full md:w-[380px] xl:w-[500px]">
+      <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
         <h2
-          className="text-3xl md:w-[380px] md:text-4xl xl:w-[500px]"
+          className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: feature.title }}
         />
