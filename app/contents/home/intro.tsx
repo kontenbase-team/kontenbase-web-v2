@@ -11,8 +11,8 @@ export const HomeIntro = () => {
         <div className="layout-content small">
           <Image src="/assets/icons/hero-blink.svg" alt="hero" />
           <h1 className="h0 special max-w-[415px] sm:max-w-[680px]">
-            <span className="highlighted-word">Automate</span> your data and{" "}
-            <span className="highlighted-word">workflow</span> with{" "}
+            <span className="highlighted-word mb-2 md:mb-0">Automate</span> your
+            data and <span className="highlighted-word">workflow</span> with{" "}
             <span className="highlighted-word">no-code</span> platform
           </h1>
         </div>

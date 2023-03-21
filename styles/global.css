@@ -631,7 +631,7 @@
   }
 
   .highlighted-word {
-    @apply relative mb-2 inline-block px-4 pb-4 pt-3 leading-none text-primary-500;
+    @apply relative inline-block px-4 pb-4 pt-3 leading-none text-primary-500;
   }
 
   .highlighted-word::before {
