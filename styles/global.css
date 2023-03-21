@@ -631,7 +631,7 @@
   }
 
   .highlighted-word {
-    @apply relative inline-block px-4 pb-4 pt-2 leading-none text-primary-500;
+    @apply relative mb-2 inline-block px-4 pb-4 pt-3 leading-none text-primary-500;
   }
 
   .highlighted-word::before {
@@ -648,15 +648,19 @@
   }
 
   .highlighted-word.special::before {
-    content: none;
+    height: calc(100% + 0.25rem);
   }
 
   .highlighted-word.special::after {
     height: calc(100% + 0.25rem);
-    @apply left-0 w-full;
+    @apply left-[1.25rem];
   }
 
   @screen md {
+    .highlighted-word.special::before {
+      height: calc(100% + 0.5rem);
+    }
+
     .highlighted-word.special::after {
       height: calc(100% + 0.5rem);
     }
