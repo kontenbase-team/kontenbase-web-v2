@@ -100,6 +100,7 @@
     "react-hook-form": "7.31.3",
     "react-icons": "4.4.0",
     "react-router-dom": "6.3.0",
+    "react-youtube": "^10.1.0",
     "remix": "1.5.1",
     "remix-utils": "3.3.0",
     "string-to-color": "2.2.2",
