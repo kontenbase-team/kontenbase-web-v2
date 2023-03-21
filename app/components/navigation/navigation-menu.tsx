@@ -112,7 +112,7 @@ export const NavigationMenuItemFeatures = () => {
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger>
-        <NavLink to="/developer">Developer</NavLink>
+        <NavLink to="/developer">for Developer</NavLink>
       </NavigationMenuTrigger>
       <NavigationMenuContent>
         <NavigationMenuContentFeatures />

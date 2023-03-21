@@ -16,7 +16,7 @@ import type {
 export const configNavigationHome: LinkItem = { to: "/", text: "Home" };
 
 export const configNavigationPages: LinkItems = [
-  { to: "/developer", text: "Developer" },
+  { to: "/developer", text: "for Developer" },
   { to: "/pricing", text: "Pricing" },
   { to: "/blog", text: "Blog" },
   { to: "/about", text: "About" },
