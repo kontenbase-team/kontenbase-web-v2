@@ -1,21 +1,14 @@
-import { useEffect, useState } from "react";
-
 import { Image, VideoYouTube } from "~/components";
 import { automationSamplesData } from "~/data";
+import { usePreviewInterval } from "~/hooks";
 
 export const HighlightedFeatures = () => {
-  const [activeAutomationIndex, setActiveAutomationIndex] = useState<number>(0);
-
-  useEffect(() => {
-    setInterval(() => {
-      setActiveAutomationIndex((prev) => {
-        if (prev === automationSamplesData.length - 1) {
-          return 0;
-        }
-        return prev + 1;
-      });
-    }, 4000);
-  }, []);
+  const {
+    activeIndex,
+    handleStartInterval,
+    handleStopInterval,
+    setActiveIndex,
+  } = usePreviewInterval(automationSamplesData, 3000);
 
   return (
     <section className="layout-padding feature pt-20 pb-40">
@@ -72,13 +65,18 @@ export const HighlightedFeatures = () => {
               </p>
               <ul className="stack-v mt-5 gap-2">
                 {automationSamplesData.map((item, index) => {
-                  const isActive = index === activeAutomationIndex;
+                  const isActive = index === activeIndex;
 
                   return (
-                    <li key={item.key} className="pointer">
+                    <li
+                      key={item.key}
+                      className="pointer"
+                      onMouseEnter={handleStopInterval}
+                      onMouseLeave={handleStartInterval}
+                    >
                       <button
                         type="button"
-                        onClick={() => setActiveAutomationIndex(index)}
+                        onClick={() => setActiveIndex(index)}
                       >
                         <h6
                           className={`stack-h-center gap-2 text-lg font-medium sm:text-xl ${
@@ -113,9 +111,13 @@ export const HighlightedFeatures = () => {
             </div>
           </div>
           <div className="grow">
-            <div className="card-shadow relative overflow-auto p-1">
+            <div
+              className="card-shadow relative overflow-auto p-1"
+              onMouseEnter={handleStopInterval}
+              onMouseLeave={handleStartInterval}
+            >
               <Image
-                src={automationSamplesData[activeAutomationIndex].image}
+                src={automationSamplesData[activeIndex].image}
                 alt="Automation"
               />
             </div>

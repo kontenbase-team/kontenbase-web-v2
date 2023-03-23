@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
-
 import { Image, Tabs } from "~/components";
 import { dataIdeaSample } from "~/data";
+import { usePreviewInterval } from "~/hooks";
 
 export const HomeIdeas = () => {
   return (
@@ -34,24 +33,15 @@ interface TabsProps {
 }
 
 export const TabsIdea = ({ tabs }: TabsProps) => {
-  const [selectedIdeaIndex, setSelectedIdeaIndex] = useState(0);
-
-  useEffect(() => {
-    setInterval(() => {
-      setSelectedIdeaIndex((prev) => {
-        if (prev === tabs.length - 1) {
-          return 0;
-        }
-        return prev + 1;
-      });
-    }, 5000);
-  }, [tabs.length]);
+  const {
+    activeIndex,
+    handleStartInterval,
+    handleStopInterval,
+    setActiveIndex,
+  } = usePreviewInterval(tabs, 5000);
 
   return (
-    <Tabs.Root
-      className="flex w-full flex-col"
-      value={tabs[selectedIdeaIndex].slug}
-    >
+    <Tabs.Root className="flex w-full flex-col" value={tabs[activeIndex].slug}>
       <Tabs.List
         aria-label="Tabs Explain Dashboard"
         className="stack-h flex-wrap justify-between md:justify-center"
@@ -62,7 +52,9 @@ export const TabsIdea = ({ tabs }: TabsProps) => {
               key={tab.slug}
               value={tab.slug}
               className="tabs-radix-trigger mb-4 lg:mb-0"
-              onClick={() => setSelectedIdeaIndex(index)}
+              onClick={() => setActiveIndex(index)}
+              onMouseEnter={handleStopInterval}
+              onMouseLeave={handleStartInterval}
             >
               {tab.title}
             </Tabs.Trigger>
@@ -77,6 +69,8 @@ export const TabsIdea = ({ tabs }: TabsProps) => {
             value={tab.slug}
             tabIndex={0}
             className="lg:mt-8 lg:px-24"
+            onMouseEnter={handleStopInterval}
+            onMouseLeave={handleStartInterval}
           >
             <div className="stack-v flex-wrap justify-center gap-8 md:flex-nowrap lg:flex-row-reverse">
               <div className="grow-1 space-y-3">
