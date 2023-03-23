@@ -76,7 +76,7 @@ export const HighlightedFeatures = () => {
                         >
                           <div
                             className={`rounded-base bg-${
-                              !isActive && "gray-400/75"
+                              !isActive && "gray-400"
                             }`}
                             style={
                               isActive
