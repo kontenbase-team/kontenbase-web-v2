@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Image, VideoYouTube } from "~/components";
 import { automationSamplesData } from "~/data";
 
 export const HighlightedFeatures = () => {
-  const [activeAutomation, setActiveAutomation] = useState<
-    typeof automationSamplesData[0]
-  >(automationSamplesData[0]);
+  const [activeAutomationIndex, setActiveAutomationIndex] = useState<number>(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      setActiveAutomationIndex((prev) => {
+        if (prev === automationSamplesData.length - 1) {
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 3000);
+  }, []);
 
   return (
     <section className="layout-padding feature pt-20 pb-40">
@@ -60,14 +69,14 @@ export const HighlightedFeatures = () => {
                 examples of automation for real use cases:
               </p>
               <ul className="stack-v mt-5 gap-2">
-                {automationSamplesData.map((item) => {
-                  const isActive = item.key === activeAutomation?.key;
+                {automationSamplesData.map((item, index) => {
+                  const isActive = index === activeAutomationIndex;
 
                   return (
                     <li key={item.key} className="pointer">
                       <button
                         type="button"
-                        onClick={() => setActiveAutomation(item)}
+                        onClick={() => setActiveAutomationIndex(index)}
                       >
                         <h6
                           className={`stack-h-center gap-2 font-medium ${
@@ -103,7 +112,10 @@ export const HighlightedFeatures = () => {
           </div>
           <div className="grow">
             <div className="card-shadow relative overflow-auto p-1">
-              <Image src={activeAutomation.image} alt="Automation" />
+              <Image
+                src={automationSamplesData[activeAutomationIndex].image}
+                alt="Automation"
+              />
             </div>
           </div>
         </div>
