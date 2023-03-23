@@ -14,19 +14,21 @@ export const HighlightedFeatures = () => {
         }
         return prev + 1;
       });
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
     <section className="layout-padding feature pt-20 pb-40">
-      <div className="stack-v layout-content large mx-auto gap-20 md:gap-40">
+      <div className="stack-v  mx-auto gap-20 md:gap-40">
         <div className="stack-v lg:stack-h w-full gap-x-6">
           <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
             <h2 className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]">
               Focus on <span className="highlighted-word">Data Driven</span>{" "}
               that help you analyze business better
             </h2>
-            <p>Bring all your data together to be managed, analyzed in sync.</p>
+            <p className="text-lg sm:text-xl">
+              Bring all your data together to be managed, analyzed in sync.
+            </p>
           </div>
           <div className="grow">
             <div className="card-shadow relative overflow-auto p-1">
@@ -39,7 +41,7 @@ export const HighlightedFeatures = () => {
             <h2 className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]">
               Create <span className="highlighted-word">custom App</span> easily
             </h2>
-            <p>
+            <p className="text-lg sm:text-xl">
               Create custom app super fast, with our no code technology to give
               every department relevant information they needs, and simple way
               to take action.
@@ -63,7 +65,7 @@ export const HighlightedFeatures = () => {
               for progressive company
             </h2>
             <div>
-              <p>
+              <p className="text-lg sm:text-xl">
                 Discover deep integration such as emailing, payment gateway, and
                 any extension that automate your business workflows. Here some
                 examples of automation for real use cases:
@@ -79,7 +81,7 @@ export const HighlightedFeatures = () => {
                         onClick={() => setActiveAutomationIndex(index)}
                       >
                         <h6
-                          className={`stack-h-center gap-2 font-medium ${
+                          className={`stack-h-center gap-2 text-lg font-medium sm:text-xl ${
                             isActive ? "text-black" : "text-gray-400"
                           }`}
                         >

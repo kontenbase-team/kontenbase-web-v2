@@ -85,7 +85,7 @@ export const TabsIdea = ({ tabs }: TabsProps) => {
                     <Image src={tab.icon} alt={tab.name} />
                   </div>
                   <h2 className="m-0 mb-1 text-3xl font-bold">{tab.name}</h2>
-                  <p>{tab.description}</p>
+                  <p className="text-lg sm:text-xl">{tab.description}</p>
                 </div>
               </div>
               <div className="h-[164] xs:h-[220px] sm:h-[336px] md:h-[388px] lg:h-[225px] xl:h-[287px] 2xl:h-[316px] 3xl:h-[335px]">
