@@ -3,7 +3,7 @@ import { dataStacks } from "~/data";
 
 export const HomeStacks = () => {
   return (
-    <section className="stack-v-center layout-padding">
+    <section className="stack-v-center layout-padding mb-40">
       <h2 className="max-w-3xl text-center">
         Try our managed service with battle tested technology stack
       </h2>
