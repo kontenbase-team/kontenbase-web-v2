@@ -89,11 +89,16 @@ export const TabsIdea = ({ tabs }: TabsProps) => {
                 </div>
               </div>
               <div className="h-[164] xs:h-[220px] sm:h-[336px] md:h-[388px] lg:h-[225px] xl:h-[287px] 2xl:h-[316px] 3xl:h-[335px]">
-                <Image
-                  src={tab.image}
-                  alt={tab.name}
-                  className="w-full rounded-base bg-primary-500 object-contain"
-                />
+                <div
+                  className="rounded-base"
+                  style={{ backgroundColor: tab.color }}
+                >
+                  <Image
+                    src={tab.image}
+                    alt={tab.name}
+                    className="w-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           </Tabs.Content>
