@@ -78,9 +78,13 @@ export const HighlightedFeatures = () => {
                             className={`rounded-base bg-${
                               !isActive && "gray-400/75"
                             }`}
-                            style={{
-                              backgroundColor: isActive ? item.color : "",
-                            }}
+                            style={
+                              isActive
+                                ? {
+                                    backgroundColor: item.color,
+                                  }
+                                : {}
+                            }
                           >
                             <Image
                               src={item.icon}
