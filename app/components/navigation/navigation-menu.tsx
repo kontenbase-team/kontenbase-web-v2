@@ -112,7 +112,9 @@ export const NavigationMenuItemFeatures = () => {
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger>
-        <NavLink to="/developer">for Developer</NavLink>
+        <NavigationMenuNavLink to="/developer">
+          for Developer
+        </NavigationMenuNavLink>
       </NavigationMenuTrigger>
       <NavigationMenuContent>
         <NavigationMenuContentFeatures />
@@ -209,7 +211,7 @@ export const NavigationMenuTrigger = ({
     <NavigationMenu.Trigger
       className={classx(
         "nav-menu-trigger",
-        "navlink focus-visible:focus-ring focus:outline-none",
+        "focus-visible:focus-ring focus:outline-none",
         "flex items-center gap-1 px-3 py-2 font-bold transition-colors",
         className,
       )}

@@ -4,7 +4,7 @@ import { IconArrowRight } from "~/libs";
 
 export const HomeExplainSDK = () => {
   return (
-    <section className="stack-v-center layout-padding layout-content medium gap-10">
+    <section className="stack-v-center layout-padding layout-content large gap-10">
       <div className="stack-h flex-wrap justify-between gap-10 sm:flex-nowrap">
         <div className="max-w-sm">
           <h2 className="mt-0 max-w-2xl">

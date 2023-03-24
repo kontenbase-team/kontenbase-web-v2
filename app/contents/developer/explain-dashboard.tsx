@@ -3,7 +3,7 @@ import { dataExplainDashboard } from "~/data";
 
 export const HomeExplainDashboard = () => {
   return (
-    <section className="stack-v-center layout-padding layout-content medium py-20">
+    <section className="stack-v-center layout-padding layout-content large py-20">
       <h1 className="max-w-2xl text-center">
         Easy to use Dashboard &amp; Instant API Creation
       </h1>

@@ -1,67 +1,127 @@
 import { Image, VideoYouTube } from "~/components";
-import { dataHighlightedFeatures } from "~/data";
+import { automationSamplesData } from "~/data";
+import { usePreviewInterval } from "~/hooks";
 
 export const HighlightedFeatures = () => {
+  const {
+    activeIndex,
+    handleStartInterval,
+    handleStopInterval,
+    setActiveIndex,
+  } = usePreviewInterval(automationSamplesData, 3000);
+
   return (
     <section className="layout-padding feature pt-20 pb-40">
-      <div className="stack-v layout-content large mx-auto gap-20 md:gap-40">
-        {dataHighlightedFeatures.map((feature, index) => {
-          return (
-            <HighlightedFeatureSection
-              key={feature.title}
-              feature={feature}
-              index={index}
-            />
-          );
-        })}
-      </div>
-    </section>
-  );
-};
+      <div className="stack-v  mx-auto gap-20 md:gap-40">
+        <div className="stack-v lg:stack-h w-full gap-x-6">
+          <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
+            <h2 className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]">
+              Focus on <span className="highlighted-word">Data Driven</span>{" "}
+              that help you analyze business better
+            </h2>
+            <p className="text-lg sm:text-xl">
+              Bring all your data together to be managed, analyzed in sync.
+            </p>
+          </div>
+          <div className="grow">
+            <div className="card-shadow relative overflow-auto p-1">
+              <VideoYouTube autoPlay loop title="Data" embedId="Fe3qAEhjSvw" />
+            </div>
+          </div>
+        </div>
+        <div className="stack-v lg:stack-h-reverse w-full gap-x-6">
+          <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
+            <h2 className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]">
+              Create <span className="highlighted-word">custom App</span> easily
+            </h2>
+            <p className="text-lg sm:text-xl">
+              Create custom app super fast, with our no code technology to give
+              every department relevant information they needs, and simple way
+              to take action.
+            </p>
+          </div>
+          <div className="grow">
+            <div className="card-shadow relative overflow-auto p-1">
+              <VideoYouTube
+                autoPlay
+                loop
+                title="App Builder"
+                embedId="wEVasLcvUJM"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="stack-v lg:stack-h w-full gap-x-6">
+          <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
+            <h2 className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]">
+              <span className="highlighted-word special">Custom workflow</span>{" "}
+              for progressive company
+            </h2>
+            <div>
+              <p className="text-lg sm:text-xl">
+                Discover deep integration such as emailing, payment gateway, and
+                any extension that automate your business workflows. Here some
+                examples of automation for real use cases:
+              </p>
+              <ul className="stack-v mt-5 gap-2">
+                {automationSamplesData.map((item, index) => {
+                  const isActive = index === activeIndex;
 
-interface Feature {
-  title: string;
-  description: string;
-  image: string;
-  imageAlt: string;
-  youtubeId?: string;
-}
-
-interface ExcellentFeatureSectionProps {
-  feature: Feature;
-  index: number;
-}
-
-export const HighlightedFeatureSection = ({
-  feature,
-  index,
-}: ExcellentFeatureSectionProps) => {
-  return (
-    <section
-      className={`stack-v w-full gap-x-6 ${
-        index % 2 ? "lg:stack-h-reverse" : "lg:stack-h"
-      }`}
-    >
-      <div className="mb-4 w-full lg:w-[380px] xl:w-[500px]">
-        <h2
-          className="text-3xl md:text-4xl lg:min-w-[380px] xl:min-w-[500px]"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: feature.title }}
-        />
-        <p>{feature.description}</p>
-      </div>
-      <div className="grow">
-        <div className="card-shadow relative overflow-auto p-1">
-          {feature?.youtubeId ? (
-            <VideoYouTube
-              autoPlay
-              loop
-              title={feature.imageAlt}
-              embedId={feature.youtubeId}
-            />
-          ) : (
-            <Image src={feature.image} alt={feature.imageAlt} />
-          )}
+                  return (
+                    <li
+                      key={item.key}
+                      className="pointer"
+                      onMouseEnter={handleStopInterval}
+                      onMouseLeave={handleStartInterval}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => setActiveIndex(index)}
+                      >
+                        <h6
+                          className={`stack-h-center gap-2 text-lg font-medium sm:text-xl ${
+                            isActive ? "text-black" : "text-gray-400"
+                          }`}
+                        >
+                          <div
+                            className={`rounded-base bg-${
+                              !isActive && "gray-400"
+                            }`}
+                            style={
+                              isActive
+                                ? {
+                                    backgroundColor: item.color,
+                                  }
+                                : {}
+                            }
+                          >
+                            <Image
+                              src={item.icon}
+                              alt={item.title}
+                              width={32}
+                            />
+                          </div>
+                          {item.title}
+                        </h6>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+          <div className="grow">
+            <div
+              className="card-shadow relative overflow-auto p-1"
+              onMouseEnter={handleStopInterval}
+              onMouseLeave={handleStartInterval}
+            >
+              <Image
+                src={automationSamplesData[activeIndex].image}
+                alt="Automation"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
