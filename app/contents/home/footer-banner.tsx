@@ -21,8 +21,7 @@ export const FooterBanner = () => {
       <section className="stack-v gap-2 py-10 text-white">
         <div className="layout-content flex">
           <h2 className="mt-0 text-5xl sm:text-6xl">
-            <span className="text-primary-500">Better</span> way than{" "}
-            <span className="text-primary-500">managing multiple apps</span>
+            Better way than managing multiple apps
           </h2>
         </div>
 
