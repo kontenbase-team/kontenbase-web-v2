@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Image } from "~/components";
 
 export const FooterBanner = () => {
-  const [imageUrl, setImageUrl] = useState("");
+  const [, setImageUrl] = useState("");
 
   useEffect(() => {
     const windowWith = window.innerWidth;
@@ -34,7 +34,11 @@ export const FooterBanner = () => {
         </div>
       </section>
       <section className="center">
-        <Image alt="footer banner" src={imageUrl} />
+        <Image
+          alt="footer banner"
+          src="/assets/images/footer-banner.png"
+          className="w-[530px]"
+        />
       </section>
     </section>
   );
