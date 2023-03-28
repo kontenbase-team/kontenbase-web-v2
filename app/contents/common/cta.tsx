@@ -6,18 +6,24 @@ import type { HTMLElementProps } from "~/types";
 
 interface ButtonGroupCTAProps extends HTMLElementProps {
   primaryCTA?: React.ReactNode;
+  primaryCTAText?: string;
   secondaryCTA?: React.ReactNode;
+  secondaryCTAText?: string;
 }
 
 export const ButtonGroupCTA = ({
   className,
   primaryCTA,
+  primaryCTAText,
   secondaryCTA,
+  secondaryCTAText,
 }: ButtonGroupCTAProps) => {
   return (
     <ButtonGroup size="lg" className={classx("flex gap-3 sm:gap-5", className)}>
       {primaryCTA || (
-        <ButtonAnchor href="/signup">Sign Up for Free</ButtonAnchor>
+        <ButtonAnchor href="/signup">
+          {primaryCTAText || "Sign Up for Free"}
+        </ButtonAnchor>
       )}
       {secondaryCTA || (
         <ButtonAnchor
@@ -31,7 +37,7 @@ export const ButtonGroupCTA = ({
             />
           }
         >
-          Schedule Demo
+          {secondaryCTAText || "Schedule Demo"}
         </ButtonAnchor>
       )}
     </ButtonGroup>

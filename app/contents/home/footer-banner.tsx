@@ -1,6 +1,6 @@
-// import { useTheme } from "~/components";
-
 import { useEffect, useState } from "react";
+
+import { ButtonGroupCTA } from "../common";
 
 import { Image } from "~/components";
 
@@ -18,26 +18,28 @@ export const FooterBanner = () => {
 
   return (
     <section className="stack-v md:stack-h-reverse layout-padding footer-banner items-center gap-8 md:justify-center">
-      <section className="stack-v gap-3 text-white">
+      <section className="stack-v gap-2 py-10 text-white">
         <div className="layout-content flex">
-          <h2>
-            Never <span className="text-primary-500">confuse</span> to{" "}
-            <span className="text-primary-500">manage multiple apps</span> again
+          <h2 className="mt-0 text-5xl sm:text-6xl">
+            <span className="text-primary-500">Better</span> way than{" "}
+            <span className="text-primary-500">managing multiple apps</span>
           </h2>
         </div>
 
         <div className="layout-content">
           <p className="text-lg sm:text-xl">
-            Accelerate your business by easily managing your data, workflows and
-            teams.
+            Bring it all together in our single platform to automate workflows
+            and data.
           </p>
+
+          <ButtonGroupCTA className="mt-3" primaryCTAText="Try now for Free" />
         </div>
       </section>
       <section className="center">
         <Image
           alt="footer banner"
           src="/assets/images/footer-banner.png"
-          className="w-[530px]"
+          className="h-full w-full xl:max-w-[920px]"
         />
       </section>
     </section>
