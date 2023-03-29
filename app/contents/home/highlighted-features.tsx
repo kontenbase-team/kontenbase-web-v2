@@ -98,7 +98,7 @@ export const HighlightedFeatures = () => {
                           />
                         </div>
                         <h6
-                          className={`-mt-1 text-left text-lg font-medium leading-tight sm:text-xl md:mt-0 ${
+                          className={`-mt-[0.15rem] text-left text-lg font-medium leading-tight sm:text-xl md:mt-0 ${
                             isActive
                               ? "text-black dark:text-white"
                               : "text-gray-400"
