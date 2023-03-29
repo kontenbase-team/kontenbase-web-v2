@@ -139,7 +139,7 @@ export const configSpecialPricingPlans = [
     bgColor: "#48da85",
     button: {
       text: "Contact Us",
-      to: "http://bit.ly/kontenbase",
+      to: "/form?interest=custom-development",
     },
   },
   {
@@ -150,7 +150,7 @@ export const configSpecialPricingPlans = [
     bgColor: "#f8de4b",
     button: {
       text: "Contact Us",
-      to: "http://bit.ly/kontenbase",
+      to: "/form?interest=company-training",
     },
   },
 ];
