@@ -1,5 +1,5 @@
-import { Button, ButtonAnchor, ButtonGroup } from "~/components";
-import { configPricingPlans } from "~/configs";
+import { Button, ButtonAnchor, ButtonGroup, Image } from "~/components";
+import { configPricingPlans, configSpecialPricingPlans } from "~/configs";
 import { useState } from "~/hooks";
 
 import type { Currencies, CurrencyCode } from "~/types";
@@ -97,6 +97,24 @@ export const PricingPlans = ({ code }: PricingTableProps) => {
           </div>
         );
       })}
+      <div className="stack-v xl:stack-v gap-5 md:col-span-2 md:grid md:grid-cols-2 xl:col-auto">
+        {configSpecialPricingPlans.map((plan) => (
+          <div
+            key={plan.name}
+            className="stack-v !justify-center gap-8 rounded-base p-10"
+            style={{ background: plan.bgColor }}
+          >
+            <Image src={plan.icon} alt={plan.name} className="h-[80px]" />
+
+            <div>
+              <h2 className="my-0 text-center text-lg">{plan.name}</h2>
+              <p className="text-center text-lg">{plan.description}</p>
+            </div>
+
+            <PlanButton plan={plan} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
