@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useLayoutEffect, useRef, useState } from "react";
 
 export const usePreviewInterval = (
   data: Record<string, string>[],
@@ -26,9 +26,13 @@ export const usePreviewInterval = (
     clearInterval(intervalRef.current);
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     handleStartInterval();
-  }, [handleStartInterval, currInterval]);
+
+    return () => {
+      handleStopInterval();
+    };
+  }, [handleStartInterval, currInterval, handleStopInterval]);
 
   return {
     activeIndex,
