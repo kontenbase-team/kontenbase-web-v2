@@ -145,7 +145,7 @@ export const configSpecialPricingPlans = [
   {
     name: "No Code Company Training",
     description:
-      "We help employee implementing No Code to automate workflow and boost productivity by creating 5 real world applications!",
+      "We help employee implementing No Code to automate workflow and boost productivity by creating 3 real world applications!",
     icon: "/assets/icons/pricing/training.svg",
     bgColor: "#f8de4b",
     button: {
