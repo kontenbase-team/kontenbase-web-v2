@@ -17,7 +17,7 @@ export const FooterBanner = () => {
   }, []);
 
   return (
-    <section className="stack-v md:stack-h-reverse layout-padding footer-banner -mb-40 items-center gap-8 md:justify-center">
+    <section className="stack-v lg:stack-h-reverse layout-padding footer-banner -mb-40 items-center gap-8 md:justify-center">
       <section className="stack-v gap-2 py-10 text-white">
         <div className="layout-content flex">
           <h2 className="mt-0 text-5xl sm:text-6xl">
@@ -38,7 +38,7 @@ export const FooterBanner = () => {
         <Image
           alt="footer banner"
           src="/assets/images/footer-banner.png"
-          className="h-full w-full xl:max-w-[920px]"
+          className="h-full w-full lg:w-[640px] xl:max-w-[920px]"
         />
       </section>
     </section>

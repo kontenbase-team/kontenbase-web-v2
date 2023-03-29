@@ -76,7 +76,7 @@ export const HighlightedFeatures = () => {
                     >
                       <button
                         type="button"
-                        className="stack-h-center items-start gap-2"
+                        className="stack-h-center items-start gap-2 md:items-center"
                         onClick={() => setActiveIndex(index)}
                       >
                         <div
@@ -98,8 +98,10 @@ export const HighlightedFeatures = () => {
                           />
                         </div>
                         <h6
-                          className={`grow text-left text-lg font-medium sm:text-xl ${
-                            isActive ? "text-black" : "text-gray-400"
+                          className={`-mt-1 text-left text-lg font-medium leading-tight sm:text-xl md:mt-0 ${
+                            isActive
+                              ? "text-black dark:text-white"
+                              : "text-gray-400"
                           }`}
                         >
                           {item.title}
