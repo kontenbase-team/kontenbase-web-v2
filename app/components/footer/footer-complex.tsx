@@ -22,7 +22,7 @@ import { configNavigationSitemap } from "~/configs";
 
 export const FooterComplex = () => {
   return (
-    <footer className="footer footer-complex">
+    <footer className="footer footer-complex mt-40">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:gap-8">
           <div className="space-y-4 text-neutral-900 dark:text-neutral-100">

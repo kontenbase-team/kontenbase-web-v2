@@ -17,7 +17,7 @@ export const FooterBanner = () => {
   }, []);
 
   return (
-    <section className="stack-v md:stack-h-reverse layout-padding footer-banner items-center gap-8 md:justify-center">
+    <section className="stack-v md:stack-h-reverse layout-padding footer-banner -mb-40 items-center gap-8 md:justify-center">
       <section className="stack-v gap-2 py-10 text-white">
         <div className="layout-content flex">
           <h2 className="mt-0 text-5xl sm:text-6xl">
