@@ -76,31 +76,34 @@ export const HighlightedFeatures = () => {
                     >
                       <button
                         type="button"
+                        className="stack-h-center items-start gap-2 md:items-center"
                         onClick={() => setActiveIndex(index)}
                       >
+                        <div
+                          className={`w-full max-w-[32px] rounded-base bg-${
+                            !isActive && "gray-400"
+                          }`}
+                          style={
+                            isActive
+                              ? {
+                                  backgroundColor: item.color,
+                                }
+                              : {}
+                          }
+                        >
+                          <Image
+                            src={item.icon}
+                            alt={item.title}
+                            className="w-full"
+                          />
+                        </div>
                         <h6
-                          className={`stack-h-center gap-2 text-lg font-medium sm:text-xl ${
-                            isActive ? "text-black" : "text-gray-400"
+                          className={`-mt-[0.15rem] text-left text-lg font-medium leading-tight sm:text-xl md:mt-0 ${
+                            isActive
+                              ? "text-black dark:text-white"
+                              : "text-gray-400"
                           }`}
                         >
-                          <div
-                            className={`rounded-base bg-${
-                              !isActive && "gray-400"
-                            }`}
-                            style={
-                              isActive
-                                ? {
-                                    backgroundColor: item.color,
-                                  }
-                                : {}
-                            }
-                          >
-                            <Image
-                              src={item.icon}
-                              alt={item.title}
-                              width={32}
-                            />
-                          </div>
                           {item.title}
                         </h6>
                       </button>
