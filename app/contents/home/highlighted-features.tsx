@@ -115,7 +115,7 @@ export const HighlightedFeatures = () => {
           </div>
           <div className="grow">
             <div
-              className="relative overflow-auto"
+              className="card-shadow relative overflow-auto rounded-base bg-transparent p-0"
               onMouseEnter={handleStopInterval}
               onMouseLeave={handleStartInterval}
             >
