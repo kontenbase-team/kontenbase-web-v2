@@ -10,9 +10,9 @@ export const configMeta = {
   charset: "utf-8",
   viewport: "width=device-width,initial-scale=1",
   name: "Kontenbase",
-  title: "Kontenbase — No Code Backend API, Fast and Easy!",
+  title: "Kontenbase — No Code Platform. App Builder. Backend API",
   description:
-    "No code backend API, fast and easy! Easily create REST API, auth, and storage in less than one minute without coding.",
+    "Automate your data and workflow with no-code platform. Accelerate your business by easily managing your data, workflows and teams.",
   url: `https://${domain}`,
   hostname: domain,
   color: "#ffffff",
