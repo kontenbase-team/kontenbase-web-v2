@@ -454,6 +454,12 @@
     background-color: #151718;
     @apply pt-5 md:pt-0;
   }
+
+  .releases {
+    width: 100%;
+    height: calc(100vh - 52px);
+    @apply -mb-5;
+  }
 }
 
 /**

@@ -35,6 +35,13 @@ export const configNavigationMisc: LinkItems = [
   { to: "/sla", text: "Service Level Agreement" },
 ];
 
+export const configNavigationMiscAnchors: AnchorItems = [
+  {
+    href: "/releases",
+    text: "Releases",
+  },
+];
+
 export const configNavigationExamples: AnchorItems = [
   {
     href: "https://talk.ink",
@@ -146,6 +153,7 @@ export const configNavigationSitemap: ConfigNavigation = [
   {
     name: "Misc",
     links: [...configNavigationMisc],
+    anchors: [...configNavigationMiscAnchors],
   },
   {
     name: "Account",
